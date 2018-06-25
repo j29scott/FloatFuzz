@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+'''
+The fuzzer tool that generates new problems.
+'''
+
+from slap.mk import *
+
+def main():
+    x = mk_float("x", 32)
+    y = mk_float("y", 32)
+
+    print(mk_fp_gt(x,y))
+
+
+if __name__ == '__main__':
+    main()

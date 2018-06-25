@@ -1,0 +1,12 @@
+.antlr
+__pycache__
+*.pyc
+*~
+*#
+.#*
+.vscode
+.idea
+venv
+build
+dist
+floatfuzz.egg-info
