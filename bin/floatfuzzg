@@ -5,13 +5,23 @@ The fuzzer tool that generates new problems.
 '''
 
 from slap.mk import *
+from slap.interface.solver import solve
 
 def main():
-    x = mk_float("x", 32)
-    y = mk_float("y", 32)
+    ast = [mk_set_logic("QF_FPA")]
 
-    print(mk_fp_gt(x,y))
+    x = mk_float("x", 11, 53)
+    y = mk_float("y", 11, 53)
 
+    c = mk_fp_gt(x, y)
+
+    ast.append(mk_assert(c))
+    ast.append(mk_check_sat())
+    ast.append(mk_get_model())
+
+    res = solve(ast, [x,y])
+
+    print(res['time'])
 
 if __name__ == '__main__':
     main()
