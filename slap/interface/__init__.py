@@ -1,0 +1,5 @@
+AST = "ast"
+SMTLIB20 = "smtlib20"
+SMTLIB26 = "smtlib26"
+
+LANGUAGES = [AST, SMTLIB20, SMTLIB26]

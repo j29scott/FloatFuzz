@@ -1,0 +1,3281 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    COMMENT
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> commandlist
+Rule 2     symbol -> SIMPLE_SYMBOL
+Rule 3     symbol -> QUOTED_SYMBOL
+Rule 4     keyword -> COLON SIMPLE_SYMBOL
+Rule 5     attribute_value -> constant
+Rule 6     attribute_value -> symbol
+Rule 7     attribute_value -> SAT
+Rule 8     attribute_value -> UNSAT
+Rule 9     attribute -> keyword
+Rule 10    attribute -> keyword attribute_value
+Rule 11    attributes -> <empty>
+Rule 12    attributes -> attributes attribute
+Rule 13    option -> keyword attribute_value
+Rule 14    info_flag -> keyword
+Rule 15    index -> NUMBER
+Rule 16    index -> symbol
+Rule 17    indexlist -> <empty>
+Rule 18    indexlist -> indexlist index
+Rule 19    identifier -> symbol
+Rule 20    identifier -> LPAR UNDERSCORE symbol indexlist RPAR
+Rule 21    constant -> NUMBER
+Rule 22    constant -> BOOL
+Rule 23    constant -> STRING_LITERAL
+Rule 24    symbollist -> <empty>
+Rule 25    symbollist -> symbollist symbol
+Rule 26    sort -> identifier
+Rule 27    sort -> LPAR identifier sortlist RPAR
+Rule 28    sortlist -> <empty>
+Rule 29    sortlist -> sortlist sort
+Rule 30    qual_identifier -> identifier
+Rule 31    qual_identifier -> LPAR AS identifier sort RPAR
+Rule 32    var_binding -> LPAR symbol term RPAR
+Rule 33    var_binding_list -> var_binding
+Rule 34    var_binding_list -> var_binding_list var_binding
+Rule 35    sorted_var -> LPAR symbol sort RPAR
+Rule 36    sorted_var_list -> <empty>
+Rule 37    sorted_var_list -> sorted_var
+Rule 38    sorted_var_list -> sorted_var_list sorted_var
+Rule 39    pattern -> symbol
+Rule 40    pattern -> LPAR symbol symbollist RPAR
+Rule 41    match_case -> LPAR pattern term RPAR
+Rule 42    match_case_list -> match_case
+Rule 43    match_case_list -> match_case_list match_case
+Rule 44    term -> constant
+Rule 45    term -> qual_identifier
+Rule 46    term -> LPAR qual_identifier term_list RPAR
+Rule 47    term -> LPAR LET LPAR var_binding_list RPAR term RPAR
+Rule 48    term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+Rule 49    term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+Rule 50    term -> LPAR MATCH term LPAR match_case_list RPAR RPAR
+Rule 51    term -> LPAR EXCLMARK term attributes RPAR
+Rule 52    term_list -> <empty>
+Rule 53    term_list -> term_list term
+Rule 54    selector_dec -> LPAR symbol sort RPAR
+Rule 55    selector_dec_list -> <empty>
+Rule 56    selector_dec_list -> selector_dec_list selector_dec
+Rule 57    constructor_dec -> LPAR symbol selector_dec_list RPAR
+Rule 58    constructor_dec_list -> <empty>
+Rule 59    constructor_dec_list -> constructor_dec_list constructor_dec
+Rule 60    datatype_dec -> LPAR constructor_dec_list RPAR
+Rule 61    datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+Rule 62    datatype_dec_list -> <empty>
+Rule 63    datatype_dec_list -> datatype_dec_list datatype_dec
+Rule 64    function_def -> symbol LPAR sorted_var_list RPAR sort term
+Rule 65    function_def_list -> <empty>
+Rule 66    function_def_list -> function_def_list function_def
+Rule 67    prop_literal -> symbol
+Rule 68    prop_literal -> LPAR symbol symbol RPAR
+Rule 69    prop_literal_list -> <empty>
+Rule 70    prop_literal_list -> prop_literal_list prop_literal
+Rule 71    command -> LPAR ASSERT term RPAR
+Rule 72    command -> LPAR CHKSAT RPAR
+Rule 73    command -> LPAR CHKSATASSUMING prop_literal_list RPAR
+Rule 74    command -> LPAR DECLCONST symbol sort RPAR
+Rule 75    command -> LPAR DECLDATATYPE symbol datatype_dec RPAR
+Rule 76    command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+Rule 77    command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR
+Rule 78    command -> LPAR DECLSORT symbol NUMBER RPAR
+Rule 79    command -> LPAR DEFFUN function_def RPAR
+Rule 80    command -> LPAR DEFFUNREC function_def RPAR
+Rule 81    command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR
+Rule 82    command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR
+Rule 83    command -> LPAR ECHO STRING RPAR
+Rule 84    command -> LPAR EXIT RPAR
+Rule 85    command -> LPAR GETASSERTIONS RPAR
+Rule 86    command -> LPAR GETASSIGNMENT RPAR
+Rule 87    command -> LPAR GETINF info_flag RPAR
+Rule 88    command -> LPAR GETMOD RPAR
+Rule 89    command -> LPAR GETOPT RPAR
+Rule 90    command -> LPAR GETPRF RPAR
+Rule 91    command -> LPAR GETUNSATASSUMPTS RPAR
+Rule 92    command -> LPAR GETUNSATCORE RPAR
+Rule 93    command -> LPAR GETVAL LPAR term_list RPAR RPAR
+Rule 94    command -> LPAR POP NUMBER RPAR
+Rule 95    command -> LPAR PUSH NUMBER RPAR
+Rule 96    command -> LPAR RESET RPAR
+Rule 97    command -> LPAR RESETASSERTIONS
+Rule 98    command -> LPAR SETINFO attribute RPAR
+Rule 99    command -> LPAR SETLOGIC symbol RPAR
+Rule 100   command -> LPAR SETOPT option RPAR
+Rule 101   command -> LPAR MODEL commandlist RPAR
+Rule 102   command -> LPAR ERROR STRING_LITERAL RPAR
+Rule 103   command -> SAT
+Rule 104   command -> UNSAT
+Rule 105   commandlist -> <empty>
+Rule 106   commandlist -> commandlist command
+
+Terminals, with rules where they appear
+
+AS                   : 31
+ASSERT               : 71
+BOOL                 : 22
+CHKSAT               : 72
+CHKSATASSUMING       : 73
+COLON                : 4
+COMMENT              : 
+DECLCONST            : 74
+DECLDATATYPE         : 75
+DECLDATATYPES        : 76
+DECLFUN              : 77
+DECLSORT             : 78
+DEFFUN               : 79
+DEFFUNREC            : 80
+DEFFUNSREC           : 81
+DEFSORT              : 82
+ECHO                 : 83
+ERROR                : 102
+EXCLMARK             : 51
+EXISTS               : 49
+EXIT                 : 84
+FORALL               : 48
+GETASSERTIONS        : 85
+GETASSIGNMENT        : 86
+GETINF               : 87
+GETMOD               : 88
+GETOPT               : 89
+GETPRF               : 90
+GETUNSATASSUMPTS     : 91
+GETUNSATCORE         : 92
+GETVAL               : 93
+LET                  : 47
+LPAR                 : 20 27 31 32 35 40 41 46 47 47 48 48 49 49 50 50 51 54 57 60 61 61 61 64 68 71 72 73 74 75 76 76 76 77 77 78 79 80 81 81 81 82 82 83 84 85 86 87 88 89 90 91 92 93 93 94 95 96 97 98 99 100 101 102
+MATCH                : 50
+MODEL                : 101
+NUMBER               : 15 21 78 94 95
+PAR                  : 61
+POP                  : 94
+PUSH                 : 95
+QUOTED_SYMBOL        : 3
+RESET                : 96
+RESETASSERTIONS      : 97
+RPAR                 : 20 27 31 32 35 40 41 46 47 47 48 48 49 49 50 50 51 54 57 60 61 61 61 64 68 71 72 73 74 75 76 76 76 77 77 78 79 80 81 81 81 82 82 83 84 85 86 87 88 89 90 91 92 93 93 94 95 96 98 99 100 101 102
+SAT                  : 7 103
+SETINFO              : 98
+SETLOGIC             : 99
+SETOPT               : 100
+SIMPLE_SYMBOL        : 2 4
+STRING               : 83
+STRING_LITERAL       : 23 102
+UNDERSCORE           : 20
+UNSAT                : 8 104
+error                : 
+
+Nonterminals, with rules where they appear
+
+attribute            : 12 98
+attribute_value      : 10 13
+attributes           : 12 51
+command              : 106
+commandlist          : 1 101 106
+constant             : 5 44
+constructor_dec      : 59
+constructor_dec_list : 59 60 61
+datatype_dec         : 63 75
+datatype_dec_list    : 63 76
+function_def         : 66 79 80
+function_def_list    : 66 81
+identifier           : 26 27 30 31
+index                : 18
+indexlist            : 18 20
+info_flag            : 87
+keyword              : 9 10 13 14
+match_case           : 42 43
+match_case_list      : 43 50
+option               : 100
+pattern              : 41
+program              : 0
+prop_literal         : 70
+prop_literal_list    : 70 73
+qual_identifier      : 45 46
+selector_dec         : 56
+selector_dec_list    : 56 57
+sort                 : 29 31 35 54 64 74 77 82
+sorted_var           : 37 38
+sorted_var_list      : 38 48 49 64
+sortlist             : 27 29 77
+symbol               : 6 16 19 20 25 32 35 39 40 54 57 64 67 68 68 74 75 77 78 82 99
+symbollist           : 25 40 61 76 82
+term                 : 32 41 47 48 49 50 51 53 64 71
+term_list            : 46 53 81 93
+var_binding          : 33 34
+var_binding_list     : 34 47
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . commandlist
+    (105) commandlist -> .
+    (106) commandlist -> . commandlist command
+
+    LPAR            reduce using rule 105 (commandlist -> .)
+    SAT             reduce using rule 105 (commandlist -> .)
+    UNSAT           reduce using rule 105 (commandlist -> .)
+    $end            reduce using rule 105 (commandlist -> .)
+
+    commandlist                    shift and go to state 1
+    program                        shift and go to state 2
+
+state 1
+
+    (1) program -> commandlist .
+    (106) commandlist -> commandlist . command
+    (71) command -> . LPAR ASSERT term RPAR
+    (72) command -> . LPAR CHKSAT RPAR
+    (73) command -> . LPAR CHKSATASSUMING prop_literal_list RPAR
+    (74) command -> . LPAR DECLCONST symbol sort RPAR
+    (75) command -> . LPAR DECLDATATYPE symbol datatype_dec RPAR
+    (76) command -> . LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+    (77) command -> . LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR
+    (78) command -> . LPAR DECLSORT symbol NUMBER RPAR
+    (79) command -> . LPAR DEFFUN function_def RPAR
+    (80) command -> . LPAR DEFFUNREC function_def RPAR
+    (81) command -> . LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR
+    (82) command -> . LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR
+    (83) command -> . LPAR ECHO STRING RPAR
+    (84) command -> . LPAR EXIT RPAR
+    (85) command -> . LPAR GETASSERTIONS RPAR
+    (86) command -> . LPAR GETASSIGNMENT RPAR
+    (87) command -> . LPAR GETINF info_flag RPAR
+    (88) command -> . LPAR GETMOD RPAR
+    (89) command -> . LPAR GETOPT RPAR
+    (90) command -> . LPAR GETPRF RPAR
+    (91) command -> . LPAR GETUNSATASSUMPTS RPAR
+    (92) command -> . LPAR GETUNSATCORE RPAR
+    (93) command -> . LPAR GETVAL LPAR term_list RPAR RPAR
+    (94) command -> . LPAR POP NUMBER RPAR
+    (95) command -> . LPAR PUSH NUMBER RPAR
+    (96) command -> . LPAR RESET RPAR
+    (97) command -> . LPAR RESETASSERTIONS
+    (98) command -> . LPAR SETINFO attribute RPAR
+    (99) command -> . LPAR SETLOGIC symbol RPAR
+    (100) command -> . LPAR SETOPT option RPAR
+    (101) command -> . LPAR MODEL commandlist RPAR
+    (102) command -> . LPAR ERROR STRING_LITERAL RPAR
+    (103) command -> . SAT
+    (104) command -> . UNSAT
+
+    $end            reduce using rule 1 (program -> commandlist .)
+    LPAR            shift and go to state 5
+    SAT             shift and go to state 4
+    UNSAT           shift and go to state 3
+
+    command                        shift and go to state 6
+
+state 2
+
+    (0) S' -> program .
+
+
+
+state 3
+
+    (104) command -> UNSAT .
+
+    RPAR            reduce using rule 104 (command -> UNSAT .)
+    LPAR            reduce using rule 104 (command -> UNSAT .)
+    SAT             reduce using rule 104 (command -> UNSAT .)
+    UNSAT           reduce using rule 104 (command -> UNSAT .)
+    $end            reduce using rule 104 (command -> UNSAT .)
+
+
+state 4
+
+    (103) command -> SAT .
+
+    RPAR            reduce using rule 103 (command -> SAT .)
+    LPAR            reduce using rule 103 (command -> SAT .)
+    SAT             reduce using rule 103 (command -> SAT .)
+    UNSAT           reduce using rule 103 (command -> SAT .)
+    $end            reduce using rule 103 (command -> SAT .)
+
+
+state 5
+
+    (71) command -> LPAR . ASSERT term RPAR
+    (72) command -> LPAR . CHKSAT RPAR
+    (73) command -> LPAR . CHKSATASSUMING prop_literal_list RPAR
+    (74) command -> LPAR . DECLCONST symbol sort RPAR
+    (75) command -> LPAR . DECLDATATYPE symbol datatype_dec RPAR
+    (76) command -> LPAR . DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+    (77) command -> LPAR . DECLFUN symbol LPAR sortlist RPAR sort RPAR
+    (78) command -> LPAR . DECLSORT symbol NUMBER RPAR
+    (79) command -> LPAR . DEFFUN function_def RPAR
+    (80) command -> LPAR . DEFFUNREC function_def RPAR
+    (81) command -> LPAR . DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR
+    (82) command -> LPAR . DEFSORT symbol LPAR symbollist RPAR sort RPAR
+    (83) command -> LPAR . ECHO STRING RPAR
+    (84) command -> LPAR . EXIT RPAR
+    (85) command -> LPAR . GETASSERTIONS RPAR
+    (86) command -> LPAR . GETASSIGNMENT RPAR
+    (87) command -> LPAR . GETINF info_flag RPAR
+    (88) command -> LPAR . GETMOD RPAR
+    (89) command -> LPAR . GETOPT RPAR
+    (90) command -> LPAR . GETPRF RPAR
+    (91) command -> LPAR . GETUNSATASSUMPTS RPAR
+    (92) command -> LPAR . GETUNSATCORE RPAR
+    (93) command -> LPAR . GETVAL LPAR term_list RPAR RPAR
+    (94) command -> LPAR . POP NUMBER RPAR
+    (95) command -> LPAR . PUSH NUMBER RPAR
+    (96) command -> LPAR . RESET RPAR
+    (97) command -> LPAR . RESETASSERTIONS
+    (98) command -> LPAR . SETINFO attribute RPAR
+    (99) command -> LPAR . SETLOGIC symbol RPAR
+    (100) command -> LPAR . SETOPT option RPAR
+    (101) command -> LPAR . MODEL commandlist RPAR
+    (102) command -> LPAR . ERROR STRING_LITERAL RPAR
+
+    ASSERT          shift and go to state 36
+    CHKSAT          shift and go to state 22
+    CHKSATASSUMING  shift and go to state 34
+    DECLCONST       shift and go to state 27
+    DECLDATATYPE    shift and go to state 32
+    DECLDATATYPES   shift and go to state 14
+    DECLFUN         shift and go to state 16
+    DECLSORT        shift and go to state 35
+    DEFFUN          shift and go to state 31
+    DEFFUNREC       shift and go to state 33
+    DEFFUNSREC      shift and go to state 28
+    DEFSORT         shift and go to state 11
+    ECHO            shift and go to state 19
+    EXIT            shift and go to state 12
+    GETASSERTIONS   shift and go to state 8
+    GETASSIGNMENT   shift and go to state 25
+    GETINF          shift and go to state 17
+    GETMOD          shift and go to state 13
+    GETOPT          shift and go to state 37
+    GETPRF          shift and go to state 30
+    GETUNSATASSUMPTS shift and go to state 29
+    GETUNSATCORE    shift and go to state 9
+    GETVAL          shift and go to state 26
+    POP             shift and go to state 24
+    PUSH            shift and go to state 21
+    RESET           shift and go to state 15
+    RESETASSERTIONS shift and go to state 20
+    SETINFO         shift and go to state 23
+    SETLOGIC        shift and go to state 38
+    SETOPT          shift and go to state 18
+    MODEL           shift and go to state 7
+    ERROR           shift and go to state 10
+
+
+state 6
+
+    (106) commandlist -> commandlist command .
+
+    LPAR            reduce using rule 106 (commandlist -> commandlist command .)
+    SAT             reduce using rule 106 (commandlist -> commandlist command .)
+    UNSAT           reduce using rule 106 (commandlist -> commandlist command .)
+    $end            reduce using rule 106 (commandlist -> commandlist command .)
+    RPAR            reduce using rule 106 (commandlist -> commandlist command .)
+
+
+state 7
+
+    (101) command -> LPAR MODEL . commandlist RPAR
+    (105) commandlist -> .
+    (106) commandlist -> . commandlist command
+
+    RPAR            reduce using rule 105 (commandlist -> .)
+    LPAR            reduce using rule 105 (commandlist -> .)
+    SAT             reduce using rule 105 (commandlist -> .)
+    UNSAT           reduce using rule 105 (commandlist -> .)
+
+    commandlist                    shift and go to state 39
+
+state 8
+
+    (85) command -> LPAR GETASSERTIONS . RPAR
+
+    RPAR            shift and go to state 40
+
+
+state 9
+
+    (92) command -> LPAR GETUNSATCORE . RPAR
+
+    RPAR            shift and go to state 41
+
+
+state 10
+
+    (102) command -> LPAR ERROR . STRING_LITERAL RPAR
+
+    STRING_LITERAL  shift and go to state 42
+
+
+state 11
+
+    (82) command -> LPAR DEFSORT . symbol LPAR symbollist RPAR sort RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 45
+
+state 12
+
+    (84) command -> LPAR EXIT . RPAR
+
+    RPAR            shift and go to state 46
+
+
+state 13
+
+    (88) command -> LPAR GETMOD . RPAR
+
+    RPAR            shift and go to state 47
+
+
+state 14
+
+    (76) command -> LPAR DECLDATATYPES . LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+
+    LPAR            shift and go to state 48
+
+
+state 15
+
+    (96) command -> LPAR RESET . RPAR
+
+    RPAR            shift and go to state 49
+
+
+state 16
+
+    (77) command -> LPAR DECLFUN . symbol LPAR sortlist RPAR sort RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 50
+
+state 17
+
+    (87) command -> LPAR GETINF . info_flag RPAR
+    (14) info_flag -> . keyword
+    (4) keyword -> . COLON SIMPLE_SYMBOL
+
+    COLON           shift and go to state 53
+
+    info_flag                      shift and go to state 52
+    keyword                        shift and go to state 51
+
+state 18
+
+    (100) command -> LPAR SETOPT . option RPAR
+    (13) option -> . keyword attribute_value
+    (4) keyword -> . COLON SIMPLE_SYMBOL
+
+    COLON           shift and go to state 53
+
+    keyword                        shift and go to state 54
+    option                         shift and go to state 55
+
+state 19
+
+    (83) command -> LPAR ECHO . STRING RPAR
+
+    STRING          shift and go to state 56
+
+
+state 20
+
+    (97) command -> LPAR RESETASSERTIONS .
+
+    RPAR            reduce using rule 97 (command -> LPAR RESETASSERTIONS .)
+    LPAR            reduce using rule 97 (command -> LPAR RESETASSERTIONS .)
+    SAT             reduce using rule 97 (command -> LPAR RESETASSERTIONS .)
+    UNSAT           reduce using rule 97 (command -> LPAR RESETASSERTIONS .)
+    $end            reduce using rule 97 (command -> LPAR RESETASSERTIONS .)
+
+
+state 21
+
+    (95) command -> LPAR PUSH . NUMBER RPAR
+
+    NUMBER          shift and go to state 57
+
+
+state 22
+
+    (72) command -> LPAR CHKSAT . RPAR
+
+    RPAR            shift and go to state 58
+
+
+state 23
+
+    (98) command -> LPAR SETINFO . attribute RPAR
+    (9) attribute -> . keyword
+    (10) attribute -> . keyword attribute_value
+    (4) keyword -> . COLON SIMPLE_SYMBOL
+
+    COLON           shift and go to state 53
+
+    attribute                      shift and go to state 59
+    keyword                        shift and go to state 60
+
+state 24
+
+    (94) command -> LPAR POP . NUMBER RPAR
+
+    NUMBER          shift and go to state 61
+
+
+state 25
+
+    (86) command -> LPAR GETASSIGNMENT . RPAR
+
+    RPAR            shift and go to state 62
+
+
+state 26
+
+    (93) command -> LPAR GETVAL . LPAR term_list RPAR RPAR
+
+    LPAR            shift and go to state 63
+
+
+state 27
+
+    (74) command -> LPAR DECLCONST . symbol sort RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 64
+
+state 28
+
+    (81) command -> LPAR DEFFUNSREC . LPAR function_def_list RPAR LPAR term_list RPAR RPAR
+
+    LPAR            shift and go to state 65
+
+
+state 29
+
+    (91) command -> LPAR GETUNSATASSUMPTS . RPAR
+
+    RPAR            shift and go to state 66
+
+
+state 30
+
+    (90) command -> LPAR GETPRF . RPAR
+
+    RPAR            shift and go to state 67
+
+
+state 31
+
+    (79) command -> LPAR DEFFUN . function_def RPAR
+    (64) function_def -> . symbol LPAR sorted_var_list RPAR sort term
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 68
+    function_def                   shift and go to state 69
+
+state 32
+
+    (75) command -> LPAR DECLDATATYPE . symbol datatype_dec RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 70
+
+state 33
+
+    (80) command -> LPAR DEFFUNREC . function_def RPAR
+    (64) function_def -> . symbol LPAR sorted_var_list RPAR sort term
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 68
+    function_def                   shift and go to state 71
+
+state 34
+
+    (73) command -> LPAR CHKSATASSUMING . prop_literal_list RPAR
+    (69) prop_literal_list -> .
+    (70) prop_literal_list -> . prop_literal_list prop_literal
+
+    RPAR            reduce using rule 69 (prop_literal_list -> .)
+    LPAR            reduce using rule 69 (prop_literal_list -> .)
+    SIMPLE_SYMBOL   reduce using rule 69 (prop_literal_list -> .)
+    QUOTED_SYMBOL   reduce using rule 69 (prop_literal_list -> .)
+
+    prop_literal_list              shift and go to state 72
+
+state 35
+
+    (78) command -> LPAR DECLSORT . symbol NUMBER RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 73
+
+state 36
+
+    (71) command -> LPAR ASSERT . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 74
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 37
+
+    (89) command -> LPAR GETOPT . RPAR
+
+    RPAR            shift and go to state 83
+
+
+state 38
+
+    (99) command -> LPAR SETLOGIC . symbol RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 84
+
+state 39
+
+    (101) command -> LPAR MODEL commandlist . RPAR
+    (106) commandlist -> commandlist . command
+    (71) command -> . LPAR ASSERT term RPAR
+    (72) command -> . LPAR CHKSAT RPAR
+    (73) command -> . LPAR CHKSATASSUMING prop_literal_list RPAR
+    (74) command -> . LPAR DECLCONST symbol sort RPAR
+    (75) command -> . LPAR DECLDATATYPE symbol datatype_dec RPAR
+    (76) command -> . LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+    (77) command -> . LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR
+    (78) command -> . LPAR DECLSORT symbol NUMBER RPAR
+    (79) command -> . LPAR DEFFUN function_def RPAR
+    (80) command -> . LPAR DEFFUNREC function_def RPAR
+    (81) command -> . LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR
+    (82) command -> . LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR
+    (83) command -> . LPAR ECHO STRING RPAR
+    (84) command -> . LPAR EXIT RPAR
+    (85) command -> . LPAR GETASSERTIONS RPAR
+    (86) command -> . LPAR GETASSIGNMENT RPAR
+    (87) command -> . LPAR GETINF info_flag RPAR
+    (88) command -> . LPAR GETMOD RPAR
+    (89) command -> . LPAR GETOPT RPAR
+    (90) command -> . LPAR GETPRF RPAR
+    (91) command -> . LPAR GETUNSATASSUMPTS RPAR
+    (92) command -> . LPAR GETUNSATCORE RPAR
+    (93) command -> . LPAR GETVAL LPAR term_list RPAR RPAR
+    (94) command -> . LPAR POP NUMBER RPAR
+    (95) command -> . LPAR PUSH NUMBER RPAR
+    (96) command -> . LPAR RESET RPAR
+    (97) command -> . LPAR RESETASSERTIONS
+    (98) command -> . LPAR SETINFO attribute RPAR
+    (99) command -> . LPAR SETLOGIC symbol RPAR
+    (100) command -> . LPAR SETOPT option RPAR
+    (101) command -> . LPAR MODEL commandlist RPAR
+    (102) command -> . LPAR ERROR STRING_LITERAL RPAR
+    (103) command -> . SAT
+    (104) command -> . UNSAT
+
+    RPAR            shift and go to state 85
+    LPAR            shift and go to state 5
+    SAT             shift and go to state 4
+    UNSAT           shift and go to state 3
+
+    command                        shift and go to state 6
+
+state 40
+
+    (85) command -> LPAR GETASSERTIONS RPAR .
+
+    RPAR            reduce using rule 85 (command -> LPAR GETASSERTIONS RPAR .)
+    LPAR            reduce using rule 85 (command -> LPAR GETASSERTIONS RPAR .)
+    SAT             reduce using rule 85 (command -> LPAR GETASSERTIONS RPAR .)
+    UNSAT           reduce using rule 85 (command -> LPAR GETASSERTIONS RPAR .)
+    $end            reduce using rule 85 (command -> LPAR GETASSERTIONS RPAR .)
+
+
+state 41
+
+    (92) command -> LPAR GETUNSATCORE RPAR .
+
+    RPAR            reduce using rule 92 (command -> LPAR GETUNSATCORE RPAR .)
+    LPAR            reduce using rule 92 (command -> LPAR GETUNSATCORE RPAR .)
+    SAT             reduce using rule 92 (command -> LPAR GETUNSATCORE RPAR .)
+    UNSAT           reduce using rule 92 (command -> LPAR GETUNSATCORE RPAR .)
+    $end            reduce using rule 92 (command -> LPAR GETUNSATCORE RPAR .)
+
+
+state 42
+
+    (102) command -> LPAR ERROR STRING_LITERAL . RPAR
+
+    RPAR            shift and go to state 86
+
+
+state 43
+
+    (2) symbol -> SIMPLE_SYMBOL .
+
+    RPAR            reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    SIMPLE_SYMBOL   reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    QUOTED_SYMBOL   reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    LPAR            reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    COLON           reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    NUMBER          reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    BOOL            reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+    STRING_LITERAL  reduce using rule 2 (symbol -> SIMPLE_SYMBOL .)
+
+
+state 44
+
+    (3) symbol -> QUOTED_SYMBOL .
+
+    RPAR            reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    SIMPLE_SYMBOL   reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    QUOTED_SYMBOL   reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    LPAR            reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    COLON           reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    NUMBER          reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    BOOL            reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+    STRING_LITERAL  reduce using rule 3 (symbol -> QUOTED_SYMBOL .)
+
+
+state 45
+
+    (82) command -> LPAR DEFSORT symbol . LPAR symbollist RPAR sort RPAR
+
+    LPAR            shift and go to state 87
+
+
+state 46
+
+    (84) command -> LPAR EXIT RPAR .
+
+    RPAR            reduce using rule 84 (command -> LPAR EXIT RPAR .)
+    LPAR            reduce using rule 84 (command -> LPAR EXIT RPAR .)
+    SAT             reduce using rule 84 (command -> LPAR EXIT RPAR .)
+    UNSAT           reduce using rule 84 (command -> LPAR EXIT RPAR .)
+    $end            reduce using rule 84 (command -> LPAR EXIT RPAR .)
+
+
+state 47
+
+    (88) command -> LPAR GETMOD RPAR .
+
+    RPAR            reduce using rule 88 (command -> LPAR GETMOD RPAR .)
+    LPAR            reduce using rule 88 (command -> LPAR GETMOD RPAR .)
+    SAT             reduce using rule 88 (command -> LPAR GETMOD RPAR .)
+    UNSAT           reduce using rule 88 (command -> LPAR GETMOD RPAR .)
+    $end            reduce using rule 88 (command -> LPAR GETMOD RPAR .)
+
+
+state 48
+
+    (76) command -> LPAR DECLDATATYPES LPAR . symbollist RPAR LPAR datatype_dec_list RPAR RPAR
+    (24) symbollist -> .
+    (25) symbollist -> . symbollist symbol
+
+    RPAR            reduce using rule 24 (symbollist -> .)
+    SIMPLE_SYMBOL   reduce using rule 24 (symbollist -> .)
+    QUOTED_SYMBOL   reduce using rule 24 (symbollist -> .)
+
+    symbollist                     shift and go to state 88
+
+state 49
+
+    (96) command -> LPAR RESET RPAR .
+
+    RPAR            reduce using rule 96 (command -> LPAR RESET RPAR .)
+    LPAR            reduce using rule 96 (command -> LPAR RESET RPAR .)
+    SAT             reduce using rule 96 (command -> LPAR RESET RPAR .)
+    UNSAT           reduce using rule 96 (command -> LPAR RESET RPAR .)
+    $end            reduce using rule 96 (command -> LPAR RESET RPAR .)
+
+
+state 50
+
+    (77) command -> LPAR DECLFUN symbol . LPAR sortlist RPAR sort RPAR
+
+    LPAR            shift and go to state 89
+
+
+state 51
+
+    (14) info_flag -> keyword .
+
+    RPAR            reduce using rule 14 (info_flag -> keyword .)
+
+
+state 52
+
+    (87) command -> LPAR GETINF info_flag . RPAR
+
+    RPAR            shift and go to state 90
+
+
+state 53
+
+    (4) keyword -> COLON . SIMPLE_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 91
+
+
+state 54
+
+    (13) option -> keyword . attribute_value
+    (5) attribute_value -> . constant
+    (6) attribute_value -> . symbol
+    (7) attribute_value -> . SAT
+    (8) attribute_value -> . UNSAT
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SAT             shift and go to state 92
+    UNSAT           shift and go to state 95
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 96
+    attribute_value                shift and go to state 94
+    constant                       shift and go to state 93
+
+state 55
+
+    (100) command -> LPAR SETOPT option . RPAR
+
+    RPAR            shift and go to state 97
+
+
+state 56
+
+    (83) command -> LPAR ECHO STRING . RPAR
+
+    RPAR            shift and go to state 98
+
+
+state 57
+
+    (95) command -> LPAR PUSH NUMBER . RPAR
+
+    RPAR            shift and go to state 99
+
+
+state 58
+
+    (72) command -> LPAR CHKSAT RPAR .
+
+    RPAR            reduce using rule 72 (command -> LPAR CHKSAT RPAR .)
+    LPAR            reduce using rule 72 (command -> LPAR CHKSAT RPAR .)
+    SAT             reduce using rule 72 (command -> LPAR CHKSAT RPAR .)
+    UNSAT           reduce using rule 72 (command -> LPAR CHKSAT RPAR .)
+    $end            reduce using rule 72 (command -> LPAR CHKSAT RPAR .)
+
+
+state 59
+
+    (98) command -> LPAR SETINFO attribute . RPAR
+
+    RPAR            shift and go to state 100
+
+
+state 60
+
+    (9) attribute -> keyword .
+    (10) attribute -> keyword . attribute_value
+    (5) attribute_value -> . constant
+    (6) attribute_value -> . symbol
+    (7) attribute_value -> . SAT
+    (8) attribute_value -> . UNSAT
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            reduce using rule 9 (attribute -> keyword .)
+    COLON           reduce using rule 9 (attribute -> keyword .)
+    SAT             shift and go to state 92
+    UNSAT           shift and go to state 95
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 96
+    attribute_value                shift and go to state 101
+    constant                       shift and go to state 93
+
+state 61
+
+    (94) command -> LPAR POP NUMBER . RPAR
+
+    RPAR            shift and go to state 102
+
+
+state 62
+
+    (86) command -> LPAR GETASSIGNMENT RPAR .
+
+    RPAR            reduce using rule 86 (command -> LPAR GETASSIGNMENT RPAR .)
+    LPAR            reduce using rule 86 (command -> LPAR GETASSIGNMENT RPAR .)
+    SAT             reduce using rule 86 (command -> LPAR GETASSIGNMENT RPAR .)
+    UNSAT           reduce using rule 86 (command -> LPAR GETASSIGNMENT RPAR .)
+    $end            reduce using rule 86 (command -> LPAR GETASSIGNMENT RPAR .)
+
+
+state 63
+
+    (93) command -> LPAR GETVAL LPAR . term_list RPAR RPAR
+    (52) term_list -> .
+    (53) term_list -> . term_list term
+
+    RPAR            reduce using rule 52 (term_list -> .)
+    LPAR            reduce using rule 52 (term_list -> .)
+    NUMBER          reduce using rule 52 (term_list -> .)
+    BOOL            reduce using rule 52 (term_list -> .)
+    STRING_LITERAL  reduce using rule 52 (term_list -> .)
+    SIMPLE_SYMBOL   reduce using rule 52 (term_list -> .)
+    QUOTED_SYMBOL   reduce using rule 52 (term_list -> .)
+
+    term_list                      shift and go to state 103
+
+state 64
+
+    (74) command -> LPAR DECLCONST symbol . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 104
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 65
+
+    (81) command -> LPAR DEFFUNSREC LPAR . function_def_list RPAR LPAR term_list RPAR RPAR
+    (65) function_def_list -> .
+    (66) function_def_list -> . function_def_list function_def
+
+    RPAR            reduce using rule 65 (function_def_list -> .)
+    SIMPLE_SYMBOL   reduce using rule 65 (function_def_list -> .)
+    QUOTED_SYMBOL   reduce using rule 65 (function_def_list -> .)
+
+    function_def_list              shift and go to state 107
+
+state 66
+
+    (91) command -> LPAR GETUNSATASSUMPTS RPAR .
+
+    RPAR            reduce using rule 91 (command -> LPAR GETUNSATASSUMPTS RPAR .)
+    LPAR            reduce using rule 91 (command -> LPAR GETUNSATASSUMPTS RPAR .)
+    SAT             reduce using rule 91 (command -> LPAR GETUNSATASSUMPTS RPAR .)
+    UNSAT           reduce using rule 91 (command -> LPAR GETUNSATASSUMPTS RPAR .)
+    $end            reduce using rule 91 (command -> LPAR GETUNSATASSUMPTS RPAR .)
+
+
+state 67
+
+    (90) command -> LPAR GETPRF RPAR .
+
+    RPAR            reduce using rule 90 (command -> LPAR GETPRF RPAR .)
+    LPAR            reduce using rule 90 (command -> LPAR GETPRF RPAR .)
+    SAT             reduce using rule 90 (command -> LPAR GETPRF RPAR .)
+    UNSAT           reduce using rule 90 (command -> LPAR GETPRF RPAR .)
+    $end            reduce using rule 90 (command -> LPAR GETPRF RPAR .)
+
+
+state 68
+
+    (64) function_def -> symbol . LPAR sorted_var_list RPAR sort term
+
+    LPAR            shift and go to state 108
+
+
+state 69
+
+    (79) command -> LPAR DEFFUN function_def . RPAR
+
+    RPAR            shift and go to state 109
+
+
+state 70
+
+    (75) command -> LPAR DECLDATATYPE symbol . datatype_dec RPAR
+    (60) datatype_dec -> . LPAR constructor_dec_list RPAR
+    (61) datatype_dec -> . LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+
+    LPAR            shift and go to state 111
+
+    datatype_dec                   shift and go to state 110
+
+state 71
+
+    (80) command -> LPAR DEFFUNREC function_def . RPAR
+
+    RPAR            shift and go to state 112
+
+
+state 72
+
+    (73) command -> LPAR CHKSATASSUMING prop_literal_list . RPAR
+    (70) prop_literal_list -> prop_literal_list . prop_literal
+    (67) prop_literal -> . symbol
+    (68) prop_literal -> . LPAR symbol symbol RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 114
+    LPAR            shift and go to state 115
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    prop_literal                   shift and go to state 113
+    symbol                         shift and go to state 116
+
+state 73
+
+    (78) command -> LPAR DECLSORT symbol . NUMBER RPAR
+
+    NUMBER          shift and go to state 117
+
+
+state 74
+
+    (71) command -> LPAR ASSERT term . RPAR
+
+    RPAR            shift and go to state 118
+
+
+state 75
+
+    (22) constant -> BOOL .
+
+    RPAR            reduce using rule 22 (constant -> BOOL .)
+    COLON           reduce using rule 22 (constant -> BOOL .)
+    LPAR            reduce using rule 22 (constant -> BOOL .)
+    NUMBER          reduce using rule 22 (constant -> BOOL .)
+    BOOL            reduce using rule 22 (constant -> BOOL .)
+    STRING_LITERAL  reduce using rule 22 (constant -> BOOL .)
+    SIMPLE_SYMBOL   reduce using rule 22 (constant -> BOOL .)
+    QUOTED_SYMBOL   reduce using rule 22 (constant -> BOOL .)
+
+
+state 76
+
+    (44) term -> constant .
+
+    RPAR            reduce using rule 44 (term -> constant .)
+    LPAR            reduce using rule 44 (term -> constant .)
+    NUMBER          reduce using rule 44 (term -> constant .)
+    BOOL            reduce using rule 44 (term -> constant .)
+    STRING_LITERAL  reduce using rule 44 (term -> constant .)
+    SIMPLE_SYMBOL   reduce using rule 44 (term -> constant .)
+    QUOTED_SYMBOL   reduce using rule 44 (term -> constant .)
+    COLON           reduce using rule 44 (term -> constant .)
+
+
+state 77
+
+    (23) constant -> STRING_LITERAL .
+
+    RPAR            reduce using rule 23 (constant -> STRING_LITERAL .)
+    COLON           reduce using rule 23 (constant -> STRING_LITERAL .)
+    LPAR            reduce using rule 23 (constant -> STRING_LITERAL .)
+    NUMBER          reduce using rule 23 (constant -> STRING_LITERAL .)
+    BOOL            reduce using rule 23 (constant -> STRING_LITERAL .)
+    STRING_LITERAL  reduce using rule 23 (constant -> STRING_LITERAL .)
+    SIMPLE_SYMBOL   reduce using rule 23 (constant -> STRING_LITERAL .)
+    QUOTED_SYMBOL   reduce using rule 23 (constant -> STRING_LITERAL .)
+
+
+state 78
+
+    (45) term -> qual_identifier .
+
+    RPAR            reduce using rule 45 (term -> qual_identifier .)
+    LPAR            reduce using rule 45 (term -> qual_identifier .)
+    NUMBER          reduce using rule 45 (term -> qual_identifier .)
+    BOOL            reduce using rule 45 (term -> qual_identifier .)
+    STRING_LITERAL  reduce using rule 45 (term -> qual_identifier .)
+    SIMPLE_SYMBOL   reduce using rule 45 (term -> qual_identifier .)
+    QUOTED_SYMBOL   reduce using rule 45 (term -> qual_identifier .)
+    COLON           reduce using rule 45 (term -> qual_identifier .)
+
+
+state 79
+
+    (19) identifier -> symbol .
+
+    RPAR            reduce using rule 19 (identifier -> symbol .)
+    LPAR            reduce using rule 19 (identifier -> symbol .)
+    NUMBER          reduce using rule 19 (identifier -> symbol .)
+    BOOL            reduce using rule 19 (identifier -> symbol .)
+    STRING_LITERAL  reduce using rule 19 (identifier -> symbol .)
+    SIMPLE_SYMBOL   reduce using rule 19 (identifier -> symbol .)
+    QUOTED_SYMBOL   reduce using rule 19 (identifier -> symbol .)
+    COLON           reduce using rule 19 (identifier -> symbol .)
+
+
+state 80
+
+    (21) constant -> NUMBER .
+
+    RPAR            reduce using rule 21 (constant -> NUMBER .)
+    COLON           reduce using rule 21 (constant -> NUMBER .)
+    LPAR            reduce using rule 21 (constant -> NUMBER .)
+    NUMBER          reduce using rule 21 (constant -> NUMBER .)
+    BOOL            reduce using rule 21 (constant -> NUMBER .)
+    STRING_LITERAL  reduce using rule 21 (constant -> NUMBER .)
+    SIMPLE_SYMBOL   reduce using rule 21 (constant -> NUMBER .)
+    QUOTED_SYMBOL   reduce using rule 21 (constant -> NUMBER .)
+
+
+state 81
+
+    (30) qual_identifier -> identifier .
+
+    RPAR            reduce using rule 30 (qual_identifier -> identifier .)
+    SIMPLE_SYMBOL   reduce using rule 30 (qual_identifier -> identifier .)
+    QUOTED_SYMBOL   reduce using rule 30 (qual_identifier -> identifier .)
+    LPAR            reduce using rule 30 (qual_identifier -> identifier .)
+    NUMBER          reduce using rule 30 (qual_identifier -> identifier .)
+    BOOL            reduce using rule 30 (qual_identifier -> identifier .)
+    STRING_LITERAL  reduce using rule 30 (qual_identifier -> identifier .)
+    COLON           reduce using rule 30 (qual_identifier -> identifier .)
+
+
+state 82
+
+    (46) term -> LPAR . qual_identifier term_list RPAR
+    (47) term -> LPAR . LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> LPAR . FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> LPAR . EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> LPAR . MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> LPAR . EXCLMARK term attributes RPAR
+    (31) qual_identifier -> LPAR . AS identifier sort RPAR
+    (20) identifier -> LPAR . UNDERSCORE symbol indexlist RPAR
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LET             shift and go to state 126
+    FORALL          shift and go to state 124
+    EXISTS          shift and go to state 120
+    MATCH           shift and go to state 125
+    EXCLMARK        shift and go to state 119
+    AS              shift and go to state 121
+    UNDERSCORE      shift and go to state 122
+    LPAR            shift and go to state 127
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 79
+    qual_identifier                shift and go to state 123
+    identifier                     shift and go to state 81
+
+state 83
+
+    (89) command -> LPAR GETOPT RPAR .
+
+    RPAR            reduce using rule 89 (command -> LPAR GETOPT RPAR .)
+    LPAR            reduce using rule 89 (command -> LPAR GETOPT RPAR .)
+    SAT             reduce using rule 89 (command -> LPAR GETOPT RPAR .)
+    UNSAT           reduce using rule 89 (command -> LPAR GETOPT RPAR .)
+    $end            reduce using rule 89 (command -> LPAR GETOPT RPAR .)
+
+
+state 84
+
+    (99) command -> LPAR SETLOGIC symbol . RPAR
+
+    RPAR            shift and go to state 128
+
+
+state 85
+
+    (101) command -> LPAR MODEL commandlist RPAR .
+
+    RPAR            reduce using rule 101 (command -> LPAR MODEL commandlist RPAR .)
+    LPAR            reduce using rule 101 (command -> LPAR MODEL commandlist RPAR .)
+    SAT             reduce using rule 101 (command -> LPAR MODEL commandlist RPAR .)
+    UNSAT           reduce using rule 101 (command -> LPAR MODEL commandlist RPAR .)
+    $end            reduce using rule 101 (command -> LPAR MODEL commandlist RPAR .)
+
+
+state 86
+
+    (102) command -> LPAR ERROR STRING_LITERAL RPAR .
+
+    RPAR            reduce using rule 102 (command -> LPAR ERROR STRING_LITERAL RPAR .)
+    LPAR            reduce using rule 102 (command -> LPAR ERROR STRING_LITERAL RPAR .)
+    SAT             reduce using rule 102 (command -> LPAR ERROR STRING_LITERAL RPAR .)
+    UNSAT           reduce using rule 102 (command -> LPAR ERROR STRING_LITERAL RPAR .)
+    $end            reduce using rule 102 (command -> LPAR ERROR STRING_LITERAL RPAR .)
+
+
+state 87
+
+    (82) command -> LPAR DEFSORT symbol LPAR . symbollist RPAR sort RPAR
+    (24) symbollist -> .
+    (25) symbollist -> . symbollist symbol
+
+    RPAR            reduce using rule 24 (symbollist -> .)
+    SIMPLE_SYMBOL   reduce using rule 24 (symbollist -> .)
+    QUOTED_SYMBOL   reduce using rule 24 (symbollist -> .)
+
+    symbollist                     shift and go to state 129
+
+state 88
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist . RPAR LPAR datatype_dec_list RPAR RPAR
+    (25) symbollist -> symbollist . symbol
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 130
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 131
+
+state 89
+
+    (77) command -> LPAR DECLFUN symbol LPAR . sortlist RPAR sort RPAR
+    (28) sortlist -> .
+    (29) sortlist -> . sortlist sort
+
+    RPAR            reduce using rule 28 (sortlist -> .)
+    LPAR            reduce using rule 28 (sortlist -> .)
+    SIMPLE_SYMBOL   reduce using rule 28 (sortlist -> .)
+    QUOTED_SYMBOL   reduce using rule 28 (sortlist -> .)
+
+    sortlist                       shift and go to state 132
+
+state 90
+
+    (87) command -> LPAR GETINF info_flag RPAR .
+
+    RPAR            reduce using rule 87 (command -> LPAR GETINF info_flag RPAR .)
+    LPAR            reduce using rule 87 (command -> LPAR GETINF info_flag RPAR .)
+    SAT             reduce using rule 87 (command -> LPAR GETINF info_flag RPAR .)
+    UNSAT           reduce using rule 87 (command -> LPAR GETINF info_flag RPAR .)
+    $end            reduce using rule 87 (command -> LPAR GETINF info_flag RPAR .)
+
+
+state 91
+
+    (4) keyword -> COLON SIMPLE_SYMBOL .
+
+    RPAR            reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    SAT             reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    UNSAT           reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    NUMBER          reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    BOOL            reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    STRING_LITERAL  reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    SIMPLE_SYMBOL   reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    QUOTED_SYMBOL   reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+    COLON           reduce using rule 4 (keyword -> COLON SIMPLE_SYMBOL .)
+
+
+state 92
+
+    (7) attribute_value -> SAT .
+
+    RPAR            reduce using rule 7 (attribute_value -> SAT .)
+    COLON           reduce using rule 7 (attribute_value -> SAT .)
+
+
+state 93
+
+    (5) attribute_value -> constant .
+
+    RPAR            reduce using rule 5 (attribute_value -> constant .)
+    COLON           reduce using rule 5 (attribute_value -> constant .)
+
+
+state 94
+
+    (13) option -> keyword attribute_value .
+
+    RPAR            reduce using rule 13 (option -> keyword attribute_value .)
+
+
+state 95
+
+    (8) attribute_value -> UNSAT .
+
+    RPAR            reduce using rule 8 (attribute_value -> UNSAT .)
+    COLON           reduce using rule 8 (attribute_value -> UNSAT .)
+
+
+state 96
+
+    (6) attribute_value -> symbol .
+
+    RPAR            reduce using rule 6 (attribute_value -> symbol .)
+    COLON           reduce using rule 6 (attribute_value -> symbol .)
+
+
+state 97
+
+    (100) command -> LPAR SETOPT option RPAR .
+
+    RPAR            reduce using rule 100 (command -> LPAR SETOPT option RPAR .)
+    LPAR            reduce using rule 100 (command -> LPAR SETOPT option RPAR .)
+    SAT             reduce using rule 100 (command -> LPAR SETOPT option RPAR .)
+    UNSAT           reduce using rule 100 (command -> LPAR SETOPT option RPAR .)
+    $end            reduce using rule 100 (command -> LPAR SETOPT option RPAR .)
+
+
+state 98
+
+    (83) command -> LPAR ECHO STRING RPAR .
+
+    RPAR            reduce using rule 83 (command -> LPAR ECHO STRING RPAR .)
+    LPAR            reduce using rule 83 (command -> LPAR ECHO STRING RPAR .)
+    SAT             reduce using rule 83 (command -> LPAR ECHO STRING RPAR .)
+    UNSAT           reduce using rule 83 (command -> LPAR ECHO STRING RPAR .)
+    $end            reduce using rule 83 (command -> LPAR ECHO STRING RPAR .)
+
+
+state 99
+
+    (95) command -> LPAR PUSH NUMBER RPAR .
+
+    RPAR            reduce using rule 95 (command -> LPAR PUSH NUMBER RPAR .)
+    LPAR            reduce using rule 95 (command -> LPAR PUSH NUMBER RPAR .)
+    SAT             reduce using rule 95 (command -> LPAR PUSH NUMBER RPAR .)
+    UNSAT           reduce using rule 95 (command -> LPAR PUSH NUMBER RPAR .)
+    $end            reduce using rule 95 (command -> LPAR PUSH NUMBER RPAR .)
+
+
+state 100
+
+    (98) command -> LPAR SETINFO attribute RPAR .
+
+    RPAR            reduce using rule 98 (command -> LPAR SETINFO attribute RPAR .)
+    LPAR            reduce using rule 98 (command -> LPAR SETINFO attribute RPAR .)
+    SAT             reduce using rule 98 (command -> LPAR SETINFO attribute RPAR .)
+    UNSAT           reduce using rule 98 (command -> LPAR SETINFO attribute RPAR .)
+    $end            reduce using rule 98 (command -> LPAR SETINFO attribute RPAR .)
+
+
+state 101
+
+    (10) attribute -> keyword attribute_value .
+
+    RPAR            reduce using rule 10 (attribute -> keyword attribute_value .)
+    COLON           reduce using rule 10 (attribute -> keyword attribute_value .)
+
+
+state 102
+
+    (94) command -> LPAR POP NUMBER RPAR .
+
+    RPAR            reduce using rule 94 (command -> LPAR POP NUMBER RPAR .)
+    LPAR            reduce using rule 94 (command -> LPAR POP NUMBER RPAR .)
+    SAT             reduce using rule 94 (command -> LPAR POP NUMBER RPAR .)
+    UNSAT           reduce using rule 94 (command -> LPAR POP NUMBER RPAR .)
+    $end            reduce using rule 94 (command -> LPAR POP NUMBER RPAR .)
+
+
+state 103
+
+    (93) command -> LPAR GETVAL LPAR term_list . RPAR RPAR
+    (53) term_list -> term_list . term
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 134
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 133
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 104
+
+    (74) command -> LPAR DECLCONST symbol sort . RPAR
+
+    RPAR            shift and go to state 135
+
+
+state 105
+
+    (26) sort -> identifier .
+
+    RPAR            reduce using rule 26 (sort -> identifier .)
+    LPAR            reduce using rule 26 (sort -> identifier .)
+    NUMBER          reduce using rule 26 (sort -> identifier .)
+    BOOL            reduce using rule 26 (sort -> identifier .)
+    STRING_LITERAL  reduce using rule 26 (sort -> identifier .)
+    SIMPLE_SYMBOL   reduce using rule 26 (sort -> identifier .)
+    QUOTED_SYMBOL   reduce using rule 26 (sort -> identifier .)
+
+
+state 106
+
+    (27) sort -> LPAR . identifier sortlist RPAR
+    (20) identifier -> LPAR . UNDERSCORE symbol indexlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    UNDERSCORE      shift and go to state 122
+    LPAR            shift and go to state 136
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    identifier                     shift and go to state 137
+    symbol                         shift and go to state 79
+
+state 107
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list . RPAR LPAR term_list RPAR RPAR
+    (66) function_def_list -> function_def_list . function_def
+    (64) function_def -> . symbol LPAR sorted_var_list RPAR sort term
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 139
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 68
+    function_def                   shift and go to state 138
+
+state 108
+
+    (64) function_def -> symbol LPAR . sorted_var_list RPAR sort term
+    (36) sorted_var_list -> .
+    (37) sorted_var_list -> . sorted_var
+    (38) sorted_var_list -> . sorted_var_list sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+  ! shift/reduce conflict for LPAR resolved as shift
+    RPAR            reduce using rule 36 (sorted_var_list -> .)
+    LPAR            shift and go to state 142
+
+  ! LPAR            [ reduce using rule 36 (sorted_var_list -> .) ]
+
+    sorted_var_list                shift and go to state 140
+    sorted_var                     shift and go to state 141
+
+state 109
+
+    (79) command -> LPAR DEFFUN function_def RPAR .
+
+    RPAR            reduce using rule 79 (command -> LPAR DEFFUN function_def RPAR .)
+    LPAR            reduce using rule 79 (command -> LPAR DEFFUN function_def RPAR .)
+    SAT             reduce using rule 79 (command -> LPAR DEFFUN function_def RPAR .)
+    UNSAT           reduce using rule 79 (command -> LPAR DEFFUN function_def RPAR .)
+    $end            reduce using rule 79 (command -> LPAR DEFFUN function_def RPAR .)
+
+
+state 110
+
+    (75) command -> LPAR DECLDATATYPE symbol datatype_dec . RPAR
+
+    RPAR            shift and go to state 143
+
+
+state 111
+
+    (60) datatype_dec -> LPAR . constructor_dec_list RPAR
+    (61) datatype_dec -> LPAR . PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+    (58) constructor_dec_list -> .
+    (59) constructor_dec_list -> . constructor_dec_list constructor_dec
+
+    PAR             shift and go to state 144
+    RPAR            reduce using rule 58 (constructor_dec_list -> .)
+    LPAR            reduce using rule 58 (constructor_dec_list -> .)
+
+    constructor_dec_list           shift and go to state 145
+
+state 112
+
+    (80) command -> LPAR DEFFUNREC function_def RPAR .
+
+    RPAR            reduce using rule 80 (command -> LPAR DEFFUNREC function_def RPAR .)
+    LPAR            reduce using rule 80 (command -> LPAR DEFFUNREC function_def RPAR .)
+    SAT             reduce using rule 80 (command -> LPAR DEFFUNREC function_def RPAR .)
+    UNSAT           reduce using rule 80 (command -> LPAR DEFFUNREC function_def RPAR .)
+    $end            reduce using rule 80 (command -> LPAR DEFFUNREC function_def RPAR .)
+
+
+state 113
+
+    (70) prop_literal_list -> prop_literal_list prop_literal .
+
+    RPAR            reduce using rule 70 (prop_literal_list -> prop_literal_list prop_literal .)
+    LPAR            reduce using rule 70 (prop_literal_list -> prop_literal_list prop_literal .)
+    SIMPLE_SYMBOL   reduce using rule 70 (prop_literal_list -> prop_literal_list prop_literal .)
+    QUOTED_SYMBOL   reduce using rule 70 (prop_literal_list -> prop_literal_list prop_literal .)
+
+
+state 114
+
+    (73) command -> LPAR CHKSATASSUMING prop_literal_list RPAR .
+
+    RPAR            reduce using rule 73 (command -> LPAR CHKSATASSUMING prop_literal_list RPAR .)
+    LPAR            reduce using rule 73 (command -> LPAR CHKSATASSUMING prop_literal_list RPAR .)
+    SAT             reduce using rule 73 (command -> LPAR CHKSATASSUMING prop_literal_list RPAR .)
+    UNSAT           reduce using rule 73 (command -> LPAR CHKSATASSUMING prop_literal_list RPAR .)
+    $end            reduce using rule 73 (command -> LPAR CHKSATASSUMING prop_literal_list RPAR .)
+
+
+state 115
+
+    (68) prop_literal -> LPAR . symbol symbol RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 146
+
+state 116
+
+    (67) prop_literal -> symbol .
+
+    RPAR            reduce using rule 67 (prop_literal -> symbol .)
+    LPAR            reduce using rule 67 (prop_literal -> symbol .)
+    SIMPLE_SYMBOL   reduce using rule 67 (prop_literal -> symbol .)
+    QUOTED_SYMBOL   reduce using rule 67 (prop_literal -> symbol .)
+
+
+state 117
+
+    (78) command -> LPAR DECLSORT symbol NUMBER . RPAR
+
+    RPAR            shift and go to state 147
+
+
+state 118
+
+    (71) command -> LPAR ASSERT term RPAR .
+
+    RPAR            reduce using rule 71 (command -> LPAR ASSERT term RPAR .)
+    LPAR            reduce using rule 71 (command -> LPAR ASSERT term RPAR .)
+    SAT             reduce using rule 71 (command -> LPAR ASSERT term RPAR .)
+    UNSAT           reduce using rule 71 (command -> LPAR ASSERT term RPAR .)
+    $end            reduce using rule 71 (command -> LPAR ASSERT term RPAR .)
+
+
+state 119
+
+    (51) term -> LPAR EXCLMARK . term attributes RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 148
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 120
+
+    (49) term -> LPAR EXISTS . LPAR sorted_var_list RPAR term RPAR
+
+    LPAR            shift and go to state 149
+
+
+state 121
+
+    (31) qual_identifier -> LPAR AS . identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 136
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    identifier                     shift and go to state 150
+    symbol                         shift and go to state 79
+
+state 122
+
+    (20) identifier -> LPAR UNDERSCORE . symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 151
+
+state 123
+
+    (46) term -> LPAR qual_identifier . term_list RPAR
+    (52) term_list -> .
+    (53) term_list -> . term_list term
+
+    RPAR            reduce using rule 52 (term_list -> .)
+    LPAR            reduce using rule 52 (term_list -> .)
+    NUMBER          reduce using rule 52 (term_list -> .)
+    BOOL            reduce using rule 52 (term_list -> .)
+    STRING_LITERAL  reduce using rule 52 (term_list -> .)
+    SIMPLE_SYMBOL   reduce using rule 52 (term_list -> .)
+    QUOTED_SYMBOL   reduce using rule 52 (term_list -> .)
+
+    term_list                      shift and go to state 152
+
+state 124
+
+    (48) term -> LPAR FORALL . LPAR sorted_var_list RPAR term RPAR
+
+    LPAR            shift and go to state 153
+
+
+state 125
+
+    (50) term -> LPAR MATCH . term LPAR match_case_list RPAR RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 154
+    identifier                     shift and go to state 81
+    constant                       shift and go to state 76
+    symbol                         shift and go to state 79
+    qual_identifier                shift and go to state 78
+
+state 126
+
+    (47) term -> LPAR LET . LPAR var_binding_list RPAR term RPAR
+
+    LPAR            shift and go to state 155
+
+
+state 127
+
+    (31) qual_identifier -> LPAR . AS identifier sort RPAR
+    (20) identifier -> LPAR . UNDERSCORE symbol indexlist RPAR
+
+    AS              shift and go to state 121
+    UNDERSCORE      shift and go to state 122
+
+
+state 128
+
+    (99) command -> LPAR SETLOGIC symbol RPAR .
+
+    RPAR            reduce using rule 99 (command -> LPAR SETLOGIC symbol RPAR .)
+    LPAR            reduce using rule 99 (command -> LPAR SETLOGIC symbol RPAR .)
+    SAT             reduce using rule 99 (command -> LPAR SETLOGIC symbol RPAR .)
+    UNSAT           reduce using rule 99 (command -> LPAR SETLOGIC symbol RPAR .)
+    $end            reduce using rule 99 (command -> LPAR SETLOGIC symbol RPAR .)
+
+
+state 129
+
+    (82) command -> LPAR DEFSORT symbol LPAR symbollist . RPAR sort RPAR
+    (25) symbollist -> symbollist . symbol
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 156
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 131
+
+state 130
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist RPAR . LPAR datatype_dec_list RPAR RPAR
+
+    LPAR            shift and go to state 157
+
+
+state 131
+
+    (25) symbollist -> symbollist symbol .
+
+    RPAR            reduce using rule 25 (symbollist -> symbollist symbol .)
+    SIMPLE_SYMBOL   reduce using rule 25 (symbollist -> symbollist symbol .)
+    QUOTED_SYMBOL   reduce using rule 25 (symbollist -> symbollist symbol .)
+
+
+state 132
+
+    (77) command -> LPAR DECLFUN symbol LPAR sortlist . RPAR sort RPAR
+    (29) sortlist -> sortlist . sort
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 158
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 159
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 133
+
+    (53) term_list -> term_list term .
+
+    RPAR            reduce using rule 53 (term_list -> term_list term .)
+    LPAR            reduce using rule 53 (term_list -> term_list term .)
+    NUMBER          reduce using rule 53 (term_list -> term_list term .)
+    BOOL            reduce using rule 53 (term_list -> term_list term .)
+    STRING_LITERAL  reduce using rule 53 (term_list -> term_list term .)
+    SIMPLE_SYMBOL   reduce using rule 53 (term_list -> term_list term .)
+    QUOTED_SYMBOL   reduce using rule 53 (term_list -> term_list term .)
+
+
+state 134
+
+    (93) command -> LPAR GETVAL LPAR term_list RPAR . RPAR
+
+    RPAR            shift and go to state 160
+
+
+state 135
+
+    (74) command -> LPAR DECLCONST symbol sort RPAR .
+
+    RPAR            reduce using rule 74 (command -> LPAR DECLCONST symbol sort RPAR .)
+    LPAR            reduce using rule 74 (command -> LPAR DECLCONST symbol sort RPAR .)
+    SAT             reduce using rule 74 (command -> LPAR DECLCONST symbol sort RPAR .)
+    UNSAT           reduce using rule 74 (command -> LPAR DECLCONST symbol sort RPAR .)
+    $end            reduce using rule 74 (command -> LPAR DECLCONST symbol sort RPAR .)
+
+
+state 136
+
+    (20) identifier -> LPAR . UNDERSCORE symbol indexlist RPAR
+
+    UNDERSCORE      shift and go to state 122
+
+
+state 137
+
+    (27) sort -> LPAR identifier . sortlist RPAR
+    (28) sortlist -> .
+    (29) sortlist -> . sortlist sort
+
+    RPAR            reduce using rule 28 (sortlist -> .)
+    LPAR            reduce using rule 28 (sortlist -> .)
+    SIMPLE_SYMBOL   reduce using rule 28 (sortlist -> .)
+    QUOTED_SYMBOL   reduce using rule 28 (sortlist -> .)
+
+    sortlist                       shift and go to state 161
+
+state 138
+
+    (66) function_def_list -> function_def_list function_def .
+
+    RPAR            reduce using rule 66 (function_def_list -> function_def_list function_def .)
+    SIMPLE_SYMBOL   reduce using rule 66 (function_def_list -> function_def_list function_def .)
+    QUOTED_SYMBOL   reduce using rule 66 (function_def_list -> function_def_list function_def .)
+
+
+state 139
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list RPAR . LPAR term_list RPAR RPAR
+
+    LPAR            shift and go to state 162
+
+
+state 140
+
+    (64) function_def -> symbol LPAR sorted_var_list . RPAR sort term
+    (38) sorted_var_list -> sorted_var_list . sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+    RPAR            shift and go to state 163
+    LPAR            shift and go to state 142
+
+    sorted_var                     shift and go to state 164
+
+state 141
+
+    (37) sorted_var_list -> sorted_var .
+
+    RPAR            reduce using rule 37 (sorted_var_list -> sorted_var .)
+    LPAR            reduce using rule 37 (sorted_var_list -> sorted_var .)
+
+
+state 142
+
+    (35) sorted_var -> LPAR . symbol sort RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 165
+
+state 143
+
+    (75) command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .
+
+    RPAR            reduce using rule 75 (command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .)
+    LPAR            reduce using rule 75 (command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .)
+    SAT             reduce using rule 75 (command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .)
+    UNSAT           reduce using rule 75 (command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .)
+    $end            reduce using rule 75 (command -> LPAR DECLDATATYPE symbol datatype_dec RPAR .)
+
+
+state 144
+
+    (61) datatype_dec -> LPAR PAR . LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+
+    LPAR            shift and go to state 166
+
+
+state 145
+
+    (60) datatype_dec -> LPAR constructor_dec_list . RPAR
+    (59) constructor_dec_list -> constructor_dec_list . constructor_dec
+    (57) constructor_dec -> . LPAR symbol selector_dec_list RPAR
+
+    RPAR            shift and go to state 167
+    LPAR            shift and go to state 169
+
+    constructor_dec                shift and go to state 168
+
+state 146
+
+    (68) prop_literal -> LPAR symbol . symbol RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 170
+
+state 147
+
+    (78) command -> LPAR DECLSORT symbol NUMBER RPAR .
+
+    RPAR            reduce using rule 78 (command -> LPAR DECLSORT symbol NUMBER RPAR .)
+    LPAR            reduce using rule 78 (command -> LPAR DECLSORT symbol NUMBER RPAR .)
+    SAT             reduce using rule 78 (command -> LPAR DECLSORT symbol NUMBER RPAR .)
+    UNSAT           reduce using rule 78 (command -> LPAR DECLSORT symbol NUMBER RPAR .)
+    $end            reduce using rule 78 (command -> LPAR DECLSORT symbol NUMBER RPAR .)
+
+
+state 148
+
+    (51) term -> LPAR EXCLMARK term . attributes RPAR
+    (11) attributes -> .
+    (12) attributes -> . attributes attribute
+
+    RPAR            reduce using rule 11 (attributes -> .)
+    COLON           reduce using rule 11 (attributes -> .)
+
+    attributes                     shift and go to state 171
+
+state 149
+
+    (49) term -> LPAR EXISTS LPAR . sorted_var_list RPAR term RPAR
+    (36) sorted_var_list -> .
+    (37) sorted_var_list -> . sorted_var
+    (38) sorted_var_list -> . sorted_var_list sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+  ! shift/reduce conflict for LPAR resolved as shift
+    RPAR            reduce using rule 36 (sorted_var_list -> .)
+    LPAR            shift and go to state 142
+
+  ! LPAR            [ reduce using rule 36 (sorted_var_list -> .) ]
+
+    sorted_var_list                shift and go to state 172
+    sorted_var                     shift and go to state 141
+
+state 150
+
+    (31) qual_identifier -> LPAR AS identifier . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 173
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 151
+
+    (20) identifier -> LPAR UNDERSCORE symbol . indexlist RPAR
+    (17) indexlist -> .
+    (18) indexlist -> . indexlist index
+
+    RPAR            reduce using rule 17 (indexlist -> .)
+    NUMBER          reduce using rule 17 (indexlist -> .)
+    SIMPLE_SYMBOL   reduce using rule 17 (indexlist -> .)
+    QUOTED_SYMBOL   reduce using rule 17 (indexlist -> .)
+
+    indexlist                      shift and go to state 174
+
+state 152
+
+    (46) term -> LPAR qual_identifier term_list . RPAR
+    (53) term_list -> term_list . term
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 175
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 133
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 153
+
+    (48) term -> LPAR FORALL LPAR . sorted_var_list RPAR term RPAR
+    (36) sorted_var_list -> .
+    (37) sorted_var_list -> . sorted_var
+    (38) sorted_var_list -> . sorted_var_list sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+  ! shift/reduce conflict for LPAR resolved as shift
+    RPAR            reduce using rule 36 (sorted_var_list -> .)
+    LPAR            shift and go to state 142
+
+  ! LPAR            [ reduce using rule 36 (sorted_var_list -> .) ]
+
+    sorted_var_list                shift and go to state 176
+    sorted_var                     shift and go to state 141
+
+state 154
+
+    (50) term -> LPAR MATCH term . LPAR match_case_list RPAR RPAR
+
+    LPAR            shift and go to state 177
+
+
+state 155
+
+    (47) term -> LPAR LET LPAR . var_binding_list RPAR term RPAR
+    (33) var_binding_list -> . var_binding
+    (34) var_binding_list -> . var_binding_list var_binding
+    (32) var_binding -> . LPAR symbol term RPAR
+
+    LPAR            shift and go to state 179
+
+    var_binding                    shift and go to state 178
+    var_binding_list               shift and go to state 180
+
+state 156
+
+    (82) command -> LPAR DEFSORT symbol LPAR symbollist RPAR . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 181
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 157
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR . datatype_dec_list RPAR RPAR
+    (62) datatype_dec_list -> .
+    (63) datatype_dec_list -> . datatype_dec_list datatype_dec
+
+    RPAR            reduce using rule 62 (datatype_dec_list -> .)
+    LPAR            reduce using rule 62 (datatype_dec_list -> .)
+
+    datatype_dec_list              shift and go to state 182
+
+state 158
+
+    (77) command -> LPAR DECLFUN symbol LPAR sortlist RPAR . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 183
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 159
+
+    (29) sortlist -> sortlist sort .
+
+    RPAR            reduce using rule 29 (sortlist -> sortlist sort .)
+    LPAR            reduce using rule 29 (sortlist -> sortlist sort .)
+    SIMPLE_SYMBOL   reduce using rule 29 (sortlist -> sortlist sort .)
+    QUOTED_SYMBOL   reduce using rule 29 (sortlist -> sortlist sort .)
+
+
+state 160
+
+    (93) command -> LPAR GETVAL LPAR term_list RPAR RPAR .
+
+    RPAR            reduce using rule 93 (command -> LPAR GETVAL LPAR term_list RPAR RPAR .)
+    LPAR            reduce using rule 93 (command -> LPAR GETVAL LPAR term_list RPAR RPAR .)
+    SAT             reduce using rule 93 (command -> LPAR GETVAL LPAR term_list RPAR RPAR .)
+    UNSAT           reduce using rule 93 (command -> LPAR GETVAL LPAR term_list RPAR RPAR .)
+    $end            reduce using rule 93 (command -> LPAR GETVAL LPAR term_list RPAR RPAR .)
+
+
+state 161
+
+    (27) sort -> LPAR identifier sortlist . RPAR
+    (29) sortlist -> sortlist . sort
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 184
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 159
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 162
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR . term_list RPAR RPAR
+    (52) term_list -> .
+    (53) term_list -> . term_list term
+
+    RPAR            reduce using rule 52 (term_list -> .)
+    LPAR            reduce using rule 52 (term_list -> .)
+    NUMBER          reduce using rule 52 (term_list -> .)
+    BOOL            reduce using rule 52 (term_list -> .)
+    STRING_LITERAL  reduce using rule 52 (term_list -> .)
+    SIMPLE_SYMBOL   reduce using rule 52 (term_list -> .)
+    QUOTED_SYMBOL   reduce using rule 52 (term_list -> .)
+
+    term_list                      shift and go to state 185
+
+state 163
+
+    (64) function_def -> symbol LPAR sorted_var_list RPAR . sort term
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 186
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 164
+
+    (38) sorted_var_list -> sorted_var_list sorted_var .
+
+    RPAR            reduce using rule 38 (sorted_var_list -> sorted_var_list sorted_var .)
+    LPAR            reduce using rule 38 (sorted_var_list -> sorted_var_list sorted_var .)
+
+
+state 165
+
+    (35) sorted_var -> LPAR symbol . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 187
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 166
+
+    (61) datatype_dec -> LPAR PAR LPAR . symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+    (24) symbollist -> .
+    (25) symbollist -> . symbollist symbol
+
+    RPAR            reduce using rule 24 (symbollist -> .)
+    SIMPLE_SYMBOL   reduce using rule 24 (symbollist -> .)
+    QUOTED_SYMBOL   reduce using rule 24 (symbollist -> .)
+
+    symbollist                     shift and go to state 188
+
+state 167
+
+    (60) datatype_dec -> LPAR constructor_dec_list RPAR .
+
+    RPAR            reduce using rule 60 (datatype_dec -> LPAR constructor_dec_list RPAR .)
+    LPAR            reduce using rule 60 (datatype_dec -> LPAR constructor_dec_list RPAR .)
+
+
+state 168
+
+    (59) constructor_dec_list -> constructor_dec_list constructor_dec .
+
+    RPAR            reduce using rule 59 (constructor_dec_list -> constructor_dec_list constructor_dec .)
+    LPAR            reduce using rule 59 (constructor_dec_list -> constructor_dec_list constructor_dec .)
+
+
+state 169
+
+    (57) constructor_dec -> LPAR . symbol selector_dec_list RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 189
+
+state 170
+
+    (68) prop_literal -> LPAR symbol symbol . RPAR
+
+    RPAR            shift and go to state 190
+
+
+state 171
+
+    (51) term -> LPAR EXCLMARK term attributes . RPAR
+    (12) attributes -> attributes . attribute
+    (9) attribute -> . keyword
+    (10) attribute -> . keyword attribute_value
+    (4) keyword -> . COLON SIMPLE_SYMBOL
+
+    RPAR            shift and go to state 191
+    COLON           shift and go to state 53
+
+    attribute                      shift and go to state 192
+    keyword                        shift and go to state 60
+
+state 172
+
+    (49) term -> LPAR EXISTS LPAR sorted_var_list . RPAR term RPAR
+    (38) sorted_var_list -> sorted_var_list . sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+    RPAR            shift and go to state 193
+    LPAR            shift and go to state 142
+
+    sorted_var                     shift and go to state 164
+
+state 173
+
+    (31) qual_identifier -> LPAR AS identifier sort . RPAR
+
+    RPAR            shift and go to state 194
+
+
+state 174
+
+    (20) identifier -> LPAR UNDERSCORE symbol indexlist . RPAR
+    (18) indexlist -> indexlist . index
+    (15) index -> . NUMBER
+    (16) index -> . symbol
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 195
+    NUMBER          shift and go to state 196
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    index                          shift and go to state 197
+    symbol                         shift and go to state 198
+
+state 175
+
+    (46) term -> LPAR qual_identifier term_list RPAR .
+
+    RPAR            reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    LPAR            reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    NUMBER          reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    BOOL            reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    STRING_LITERAL  reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    QUOTED_SYMBOL   reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+    COLON           reduce using rule 46 (term -> LPAR qual_identifier term_list RPAR .)
+
+
+state 176
+
+    (48) term -> LPAR FORALL LPAR sorted_var_list . RPAR term RPAR
+    (38) sorted_var_list -> sorted_var_list . sorted_var
+    (35) sorted_var -> . LPAR symbol sort RPAR
+
+    RPAR            shift and go to state 199
+    LPAR            shift and go to state 142
+
+    sorted_var                     shift and go to state 164
+
+state 177
+
+    (50) term -> LPAR MATCH term LPAR . match_case_list RPAR RPAR
+    (42) match_case_list -> . match_case
+    (43) match_case_list -> . match_case_list match_case
+    (41) match_case -> . LPAR pattern term RPAR
+
+    LPAR            shift and go to state 201
+
+    match_case                     shift and go to state 200
+    match_case_list                shift and go to state 202
+
+state 178
+
+    (33) var_binding_list -> var_binding .
+
+    RPAR            reduce using rule 33 (var_binding_list -> var_binding .)
+    LPAR            reduce using rule 33 (var_binding_list -> var_binding .)
+
+
+state 179
+
+    (32) var_binding -> LPAR . symbol term RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 203
+
+state 180
+
+    (47) term -> LPAR LET LPAR var_binding_list . RPAR term RPAR
+    (34) var_binding_list -> var_binding_list . var_binding
+    (32) var_binding -> . LPAR symbol term RPAR
+
+    RPAR            shift and go to state 204
+    LPAR            shift and go to state 179
+
+    var_binding                    shift and go to state 205
+
+state 181
+
+    (82) command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort . RPAR
+
+    RPAR            shift and go to state 206
+
+
+state 182
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list . RPAR RPAR
+    (63) datatype_dec_list -> datatype_dec_list . datatype_dec
+    (60) datatype_dec -> . LPAR constructor_dec_list RPAR
+    (61) datatype_dec -> . LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR
+
+    RPAR            shift and go to state 207
+    LPAR            shift and go to state 111
+
+    datatype_dec                   shift and go to state 208
+
+state 183
+
+    (77) command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort . RPAR
+
+    RPAR            shift and go to state 209
+
+
+state 184
+
+    (27) sort -> LPAR identifier sortlist RPAR .
+
+    RPAR            reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    LPAR            reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    NUMBER          reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    BOOL            reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    STRING_LITERAL  reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+    QUOTED_SYMBOL   reduce using rule 27 (sort -> LPAR identifier sortlist RPAR .)
+
+
+state 185
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list . RPAR RPAR
+    (53) term_list -> term_list . term
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 210
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 133
+    identifier                     shift and go to state 81
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+    symbol                         shift and go to state 79
+
+state 186
+
+    (64) function_def -> symbol LPAR sorted_var_list RPAR sort . term
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 211
+    identifier                     shift and go to state 81
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+    symbol                         shift and go to state 79
+
+state 187
+
+    (35) sorted_var -> LPAR symbol sort . RPAR
+
+    RPAR            shift and go to state 212
+
+
+state 188
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist . RPAR LPAR constructor_dec_list RPAR RPAR
+    (25) symbollist -> symbollist . symbol
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 213
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 131
+
+state 189
+
+    (57) constructor_dec -> LPAR symbol . selector_dec_list RPAR
+    (55) selector_dec_list -> .
+    (56) selector_dec_list -> . selector_dec_list selector_dec
+
+    RPAR            reduce using rule 55 (selector_dec_list -> .)
+    LPAR            reduce using rule 55 (selector_dec_list -> .)
+
+    selector_dec_list              shift and go to state 214
+
+state 190
+
+    (68) prop_literal -> LPAR symbol symbol RPAR .
+
+    RPAR            reduce using rule 68 (prop_literal -> LPAR symbol symbol RPAR .)
+    LPAR            reduce using rule 68 (prop_literal -> LPAR symbol symbol RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 68 (prop_literal -> LPAR symbol symbol RPAR .)
+    QUOTED_SYMBOL   reduce using rule 68 (prop_literal -> LPAR symbol symbol RPAR .)
+
+
+state 191
+
+    (51) term -> LPAR EXCLMARK term attributes RPAR .
+
+    RPAR            reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    LPAR            reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    NUMBER          reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    BOOL            reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    STRING_LITERAL  reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    QUOTED_SYMBOL   reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+    COLON           reduce using rule 51 (term -> LPAR EXCLMARK term attributes RPAR .)
+
+
+state 192
+
+    (12) attributes -> attributes attribute .
+
+    RPAR            reduce using rule 12 (attributes -> attributes attribute .)
+    COLON           reduce using rule 12 (attributes -> attributes attribute .)
+
+
+state 193
+
+    (49) term -> LPAR EXISTS LPAR sorted_var_list RPAR . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 215
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 194
+
+    (31) qual_identifier -> LPAR AS identifier sort RPAR .
+
+    RPAR            reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    QUOTED_SYMBOL   reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    LPAR            reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    NUMBER          reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    BOOL            reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    STRING_LITERAL  reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+    COLON           reduce using rule 31 (qual_identifier -> LPAR AS identifier sort RPAR .)
+
+
+state 195
+
+    (20) identifier -> LPAR UNDERSCORE symbol indexlist RPAR .
+
+    RPAR            reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    LPAR            reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    NUMBER          reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    BOOL            reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    STRING_LITERAL  reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    QUOTED_SYMBOL   reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+    COLON           reduce using rule 20 (identifier -> LPAR UNDERSCORE symbol indexlist RPAR .)
+
+
+state 196
+
+    (15) index -> NUMBER .
+
+    RPAR            reduce using rule 15 (index -> NUMBER .)
+    NUMBER          reduce using rule 15 (index -> NUMBER .)
+    SIMPLE_SYMBOL   reduce using rule 15 (index -> NUMBER .)
+    QUOTED_SYMBOL   reduce using rule 15 (index -> NUMBER .)
+
+
+state 197
+
+    (18) indexlist -> indexlist index .
+
+    RPAR            reduce using rule 18 (indexlist -> indexlist index .)
+    NUMBER          reduce using rule 18 (indexlist -> indexlist index .)
+    SIMPLE_SYMBOL   reduce using rule 18 (indexlist -> indexlist index .)
+    QUOTED_SYMBOL   reduce using rule 18 (indexlist -> indexlist index .)
+
+
+state 198
+
+    (16) index -> symbol .
+
+    RPAR            reduce using rule 16 (index -> symbol .)
+    NUMBER          reduce using rule 16 (index -> symbol .)
+    SIMPLE_SYMBOL   reduce using rule 16 (index -> symbol .)
+    QUOTED_SYMBOL   reduce using rule 16 (index -> symbol .)
+
+
+state 199
+
+    (48) term -> LPAR FORALL LPAR sorted_var_list RPAR . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 216
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 200
+
+    (42) match_case_list -> match_case .
+
+    RPAR            reduce using rule 42 (match_case_list -> match_case .)
+    LPAR            reduce using rule 42 (match_case_list -> match_case .)
+
+
+state 201
+
+    (41) match_case -> LPAR . pattern term RPAR
+    (39) pattern -> . symbol
+    (40) pattern -> . LPAR symbol symbollist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 218
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    pattern                        shift and go to state 217
+    symbol                         shift and go to state 219
+
+state 202
+
+    (50) term -> LPAR MATCH term LPAR match_case_list . RPAR RPAR
+    (43) match_case_list -> match_case_list . match_case
+    (41) match_case -> . LPAR pattern term RPAR
+
+    RPAR            shift and go to state 220
+    LPAR            shift and go to state 201
+
+    match_case                     shift and go to state 221
+
+state 203
+
+    (32) var_binding -> LPAR symbol . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 222
+    identifier                     shift and go to state 81
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+    symbol                         shift and go to state 79
+
+state 204
+
+    (47) term -> LPAR LET LPAR var_binding_list RPAR . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 223
+    identifier                     shift and go to state 81
+    symbol                         shift and go to state 79
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+
+state 205
+
+    (34) var_binding_list -> var_binding_list var_binding .
+
+    RPAR            reduce using rule 34 (var_binding_list -> var_binding_list var_binding .)
+    LPAR            reduce using rule 34 (var_binding_list -> var_binding_list var_binding .)
+
+
+state 206
+
+    (82) command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .
+
+    RPAR            reduce using rule 82 (command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .)
+    LPAR            reduce using rule 82 (command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .)
+    SAT             reduce using rule 82 (command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .)
+    UNSAT           reduce using rule 82 (command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .)
+    $end            reduce using rule 82 (command -> LPAR DEFSORT symbol LPAR symbollist RPAR sort RPAR .)
+
+
+state 207
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR . RPAR
+
+    RPAR            shift and go to state 224
+
+
+state 208
+
+    (63) datatype_dec_list -> datatype_dec_list datatype_dec .
+
+    RPAR            reduce using rule 63 (datatype_dec_list -> datatype_dec_list datatype_dec .)
+    LPAR            reduce using rule 63 (datatype_dec_list -> datatype_dec_list datatype_dec .)
+
+
+state 209
+
+    (77) command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .
+
+    RPAR            reduce using rule 77 (command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .)
+    LPAR            reduce using rule 77 (command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .)
+    SAT             reduce using rule 77 (command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .)
+    UNSAT           reduce using rule 77 (command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .)
+    $end            reduce using rule 77 (command -> LPAR DECLFUN symbol LPAR sortlist RPAR sort RPAR .)
+
+
+state 210
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR . RPAR
+
+    RPAR            shift and go to state 225
+
+
+state 211
+
+    (64) function_def -> symbol LPAR sorted_var_list RPAR sort term .
+
+    RPAR            reduce using rule 64 (function_def -> symbol LPAR sorted_var_list RPAR sort term .)
+    SIMPLE_SYMBOL   reduce using rule 64 (function_def -> symbol LPAR sorted_var_list RPAR sort term .)
+    QUOTED_SYMBOL   reduce using rule 64 (function_def -> symbol LPAR sorted_var_list RPAR sort term .)
+
+
+state 212
+
+    (35) sorted_var -> LPAR symbol sort RPAR .
+
+    RPAR            reduce using rule 35 (sorted_var -> LPAR symbol sort RPAR .)
+    LPAR            reduce using rule 35 (sorted_var -> LPAR symbol sort RPAR .)
+
+
+state 213
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist RPAR . LPAR constructor_dec_list RPAR RPAR
+
+    LPAR            shift and go to state 226
+
+
+state 214
+
+    (57) constructor_dec -> LPAR symbol selector_dec_list . RPAR
+    (56) selector_dec_list -> selector_dec_list . selector_dec
+    (54) selector_dec -> . LPAR symbol sort RPAR
+
+    RPAR            shift and go to state 227
+    LPAR            shift and go to state 228
+
+    selector_dec                   shift and go to state 229
+
+state 215
+
+    (49) term -> LPAR EXISTS LPAR sorted_var_list RPAR term . RPAR
+
+    RPAR            shift and go to state 230
+
+
+state 216
+
+    (48) term -> LPAR FORALL LPAR sorted_var_list RPAR term . RPAR
+
+    RPAR            shift and go to state 231
+
+
+state 217
+
+    (41) match_case -> LPAR pattern . term RPAR
+    (44) term -> . constant
+    (45) term -> . qual_identifier
+    (46) term -> . LPAR qual_identifier term_list RPAR
+    (47) term -> . LPAR LET LPAR var_binding_list RPAR term RPAR
+    (48) term -> . LPAR FORALL LPAR sorted_var_list RPAR term RPAR
+    (49) term -> . LPAR EXISTS LPAR sorted_var_list RPAR term RPAR
+    (50) term -> . LPAR MATCH term LPAR match_case_list RPAR RPAR
+    (51) term -> . LPAR EXCLMARK term attributes RPAR
+    (21) constant -> . NUMBER
+    (22) constant -> . BOOL
+    (23) constant -> . STRING_LITERAL
+    (30) qual_identifier -> . identifier
+    (31) qual_identifier -> . LPAR AS identifier sort RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 82
+    NUMBER          shift and go to state 80
+    BOOL            shift and go to state 75
+    STRING_LITERAL  shift and go to state 77
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    term                           shift and go to state 232
+    identifier                     shift and go to state 81
+    constant                       shift and go to state 76
+    qual_identifier                shift and go to state 78
+    symbol                         shift and go to state 79
+
+state 218
+
+    (40) pattern -> LPAR . symbol symbollist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 233
+
+state 219
+
+    (39) pattern -> symbol .
+
+    LPAR            reduce using rule 39 (pattern -> symbol .)
+    NUMBER          reduce using rule 39 (pattern -> symbol .)
+    BOOL            reduce using rule 39 (pattern -> symbol .)
+    STRING_LITERAL  reduce using rule 39 (pattern -> symbol .)
+    SIMPLE_SYMBOL   reduce using rule 39 (pattern -> symbol .)
+    QUOTED_SYMBOL   reduce using rule 39 (pattern -> symbol .)
+
+
+state 220
+
+    (50) term -> LPAR MATCH term LPAR match_case_list RPAR . RPAR
+
+    RPAR            shift and go to state 234
+
+
+state 221
+
+    (43) match_case_list -> match_case_list match_case .
+
+    RPAR            reduce using rule 43 (match_case_list -> match_case_list match_case .)
+    LPAR            reduce using rule 43 (match_case_list -> match_case_list match_case .)
+
+
+state 222
+
+    (32) var_binding -> LPAR symbol term . RPAR
+
+    RPAR            shift and go to state 235
+
+
+state 223
+
+    (47) term -> LPAR LET LPAR var_binding_list RPAR term . RPAR
+
+    RPAR            shift and go to state 236
+
+
+state 224
+
+    (76) command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .
+
+    RPAR            reduce using rule 76 (command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .)
+    LPAR            reduce using rule 76 (command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .)
+    SAT             reduce using rule 76 (command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .)
+    UNSAT           reduce using rule 76 (command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .)
+    $end            reduce using rule 76 (command -> LPAR DECLDATATYPES LPAR symbollist RPAR LPAR datatype_dec_list RPAR RPAR .)
+
+
+state 225
+
+    (81) command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .
+
+    RPAR            reduce using rule 81 (command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .)
+    LPAR            reduce using rule 81 (command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .)
+    SAT             reduce using rule 81 (command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .)
+    UNSAT           reduce using rule 81 (command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .)
+    $end            reduce using rule 81 (command -> LPAR DEFFUNSREC LPAR function_def_list RPAR LPAR term_list RPAR RPAR .)
+
+
+state 226
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR . constructor_dec_list RPAR RPAR
+    (58) constructor_dec_list -> .
+    (59) constructor_dec_list -> . constructor_dec_list constructor_dec
+
+    RPAR            reduce using rule 58 (constructor_dec_list -> .)
+    LPAR            reduce using rule 58 (constructor_dec_list -> .)
+
+    constructor_dec_list           shift and go to state 237
+
+state 227
+
+    (57) constructor_dec -> LPAR symbol selector_dec_list RPAR .
+
+    RPAR            reduce using rule 57 (constructor_dec -> LPAR symbol selector_dec_list RPAR .)
+    LPAR            reduce using rule 57 (constructor_dec -> LPAR symbol selector_dec_list RPAR .)
+
+
+state 228
+
+    (54) selector_dec -> LPAR . symbol sort RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 238
+
+state 229
+
+    (56) selector_dec_list -> selector_dec_list selector_dec .
+
+    RPAR            reduce using rule 56 (selector_dec_list -> selector_dec_list selector_dec .)
+    LPAR            reduce using rule 56 (selector_dec_list -> selector_dec_list selector_dec .)
+
+
+state 230
+
+    (49) term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .
+
+    RPAR            reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    LPAR            reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    NUMBER          reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    BOOL            reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    STRING_LITERAL  reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    QUOTED_SYMBOL   reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+    COLON           reduce using rule 49 (term -> LPAR EXISTS LPAR sorted_var_list RPAR term RPAR .)
+
+
+state 231
+
+    (48) term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .
+
+    RPAR            reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    LPAR            reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    NUMBER          reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    BOOL            reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    STRING_LITERAL  reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    QUOTED_SYMBOL   reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+    COLON           reduce using rule 48 (term -> LPAR FORALL LPAR sorted_var_list RPAR term RPAR .)
+
+
+state 232
+
+    (41) match_case -> LPAR pattern term . RPAR
+
+    RPAR            shift and go to state 239
+
+
+state 233
+
+    (40) pattern -> LPAR symbol . symbollist RPAR
+    (24) symbollist -> .
+    (25) symbollist -> . symbollist symbol
+
+    RPAR            reduce using rule 24 (symbollist -> .)
+    SIMPLE_SYMBOL   reduce using rule 24 (symbollist -> .)
+    QUOTED_SYMBOL   reduce using rule 24 (symbollist -> .)
+
+    symbollist                     shift and go to state 240
+
+state 234
+
+    (50) term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .
+
+    RPAR            reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    LPAR            reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    NUMBER          reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    BOOL            reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    STRING_LITERAL  reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    QUOTED_SYMBOL   reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+    COLON           reduce using rule 50 (term -> LPAR MATCH term LPAR match_case_list RPAR RPAR .)
+
+
+state 235
+
+    (32) var_binding -> LPAR symbol term RPAR .
+
+    RPAR            reduce using rule 32 (var_binding -> LPAR symbol term RPAR .)
+    LPAR            reduce using rule 32 (var_binding -> LPAR symbol term RPAR .)
+
+
+state 236
+
+    (47) term -> LPAR LET LPAR var_binding_list RPAR term RPAR .
+
+    RPAR            reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    LPAR            reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    NUMBER          reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    BOOL            reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    STRING_LITERAL  reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    QUOTED_SYMBOL   reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+    COLON           reduce using rule 47 (term -> LPAR LET LPAR var_binding_list RPAR term RPAR .)
+
+
+state 237
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list . RPAR RPAR
+    (59) constructor_dec_list -> constructor_dec_list . constructor_dec
+    (57) constructor_dec -> . LPAR symbol selector_dec_list RPAR
+
+    RPAR            shift and go to state 241
+    LPAR            shift and go to state 169
+
+    constructor_dec                shift and go to state 168
+
+state 238
+
+    (54) selector_dec -> LPAR symbol . sort RPAR
+    (26) sort -> . identifier
+    (27) sort -> . LPAR identifier sortlist RPAR
+    (19) identifier -> . symbol
+    (20) identifier -> . LPAR UNDERSCORE symbol indexlist RPAR
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    LPAR            shift and go to state 106
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    sort                           shift and go to state 242
+    identifier                     shift and go to state 105
+    symbol                         shift and go to state 79
+
+state 239
+
+    (41) match_case -> LPAR pattern term RPAR .
+
+    RPAR            reduce using rule 41 (match_case -> LPAR pattern term RPAR .)
+    LPAR            reduce using rule 41 (match_case -> LPAR pattern term RPAR .)
+
+
+state 240
+
+    (40) pattern -> LPAR symbol symbollist . RPAR
+    (25) symbollist -> symbollist . symbol
+    (2) symbol -> . SIMPLE_SYMBOL
+    (3) symbol -> . QUOTED_SYMBOL
+
+    RPAR            shift and go to state 243
+    SIMPLE_SYMBOL   shift and go to state 43
+    QUOTED_SYMBOL   shift and go to state 44
+
+    symbol                         shift and go to state 131
+
+state 241
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR . RPAR
+
+    RPAR            shift and go to state 244
+
+
+state 242
+
+    (54) selector_dec -> LPAR symbol sort . RPAR
+
+    RPAR            shift and go to state 245
+
+
+state 243
+
+    (40) pattern -> LPAR symbol symbollist RPAR .
+
+    LPAR            reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+    NUMBER          reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+    BOOL            reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+    STRING_LITERAL  reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+    SIMPLE_SYMBOL   reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+    QUOTED_SYMBOL   reduce using rule 40 (pattern -> LPAR symbol symbollist RPAR .)
+
+
+state 244
+
+    (61) datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR .
+
+    RPAR            reduce using rule 61 (datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR .)
+    LPAR            reduce using rule 61 (datatype_dec -> LPAR PAR LPAR symbollist RPAR LPAR constructor_dec_list RPAR RPAR .)
+
+
+state 245
+
+    (54) selector_dec -> LPAR symbol sort RPAR .
+
+    RPAR            reduce using rule 54 (selector_dec -> LPAR symbol sort RPAR .)
+    LPAR            reduce using rule 54 (selector_dec -> LPAR symbol sort RPAR .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for LPAR in state 108 resolved as shift
+WARNING: shift/reduce conflict for LPAR in state 149 resolved as shift
+WARNING: shift/reduce conflict for LPAR in state 153 resolved as shift

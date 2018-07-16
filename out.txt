@@ -1,0 +1,26 @@
+0.21910524368286133
+[('x3', <slap.interface.parser.ast.FApp object at 0x7f9a234af0b8>), ('x2', <slap.interface.parser.ast.FApp object at 0x7f9a234af470>), ('x4', <slap.interface.parser.ast.FApp object at 0x7f9a234af828>), ('x0', <slap.interface.parser.ast.FApp object at 0x7f9a234afbe0>)]
+sat
+(model 
+  (define-fun x3 () (_ FloatingPoint 8 24)
+    (fp #b1 #x7f #b00000000000000000000000))
+  (define-fun x2 () (_ FloatingPoint 8 24)
+    (fp #b0 #x7f #b00000000000000000000000))
+  (define-fun x4 () (_ FloatingPoint 8 24)
+    (fp #b1 #x4a #b00001000000000000001000))
+  (define-fun x0 () (_ FloatingPoint 8 24)
+    (fp #b1 #x00 #b11111111111111111111111))
+)
+
+0.2801175117492676
+[('x3', <slap.interface.parser.ast.FApp object at 0x7f9a234af630>), ('x4', <slap.interface.parser.ast.FApp object at 0x7f9a234b6160>), ('x0', <slap.interface.parser.ast.FApp object at 0x7f9a234b6518>)]
+sat
+(model 
+  (define-fun x3 () (_ FloatingPoint 8 24)
+    (fp #b0 #x82 #b00000000000000000010110))
+  (define-fun x4 () (_ FloatingPoint 8 24)
+    (fp #b1 #xfe #b10000000000001010111110))
+  (define-fun x0 () (_ FloatingPoint 8 24)
+    (fp #b1 #x83 #b11100000100000100010111))
+)
+
