@@ -140,7 +140,7 @@ def main():
 				nextGen.append(inst(gen.mutate(population[-1-i].val),maxChars,maxTime))
 		while len(nextGen) < nPop:
 			nextGen.append(inst(gen.gen(),maxChars,maxTime))
-		print(" Hardness = " + str( hardness/nKeepBest),flush=True))
+		print(" Hardness = " + str( hardness/nKeepBest),flush=True)
 		hardnessLog.append(hardness/nKeepBest)
 		population = nextGen
 		log.write(str(hardness/nKeepBest)+"\n")
