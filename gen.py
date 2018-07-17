@@ -1,6 +1,9 @@
 from random import randint, random, choice
 from slap.mk import *
 from slap.theory.floatingpoint import *
+import argparse
+
+
 class operator:
 	def __init__(self, operator, nargs, isrounded,isBoolean,weight=1,):
 		self.operator = operator

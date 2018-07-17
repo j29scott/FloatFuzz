@@ -23,9 +23,13 @@ clean:
 	find . -name '__pycache__' -exec rm --force --recursive {} +
 	rm -rf venv build dist floatfuzz.egg-info
 cleandata:
-	rm -rf data/*
-	mkdir data/hard
-	mkdir data/final
+	rm -rf tmpdata/*
+	mkdir tmpdata/hard
+	mkdir tmpdata/final
+cleandatanosave:
+	rm -rf tmpdata/*
+	mkdir tmpdata/hard
+	mkdir tmpdata/final
 venv: venv/bin/activate
 
 venv/bin/activate: requirements.txt

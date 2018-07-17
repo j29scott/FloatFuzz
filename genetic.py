@@ -12,6 +12,7 @@ from slap.interface.solver import solve
 from slap.interface.printer import smtlib_string
 from gen import *
 import time
+import argparse
 
 
 class inst:
@@ -22,7 +23,7 @@ class inst:
 		self.numChars = len(str(val))
 		self.maxChars = maxChars
 		self.maxTime = maxTime
-	def Solve(self,consts,saveIfHard=True,outFilePath="data/hard/"):
+	def Solve(self,consts,saveIfHard=True,outFilePath="tmpdata/hard/"):
 		if self.solved:
 			return
 		ast = [mk_set_logic("QF_FP")]
@@ -54,6 +55,11 @@ class inst:
 
 
 def main():
+
+	parser = argparse.ArgumentParser(description='Float Fuzz Genetic')
+	parser.add_argument('id', type=str)
+	
+
 	print ("Genetic Algorithm Fuzzer Start!")
 	maxTime=600
 	
@@ -85,7 +91,7 @@ def main():
 	gen = Generator(numConsts=15,ops=ops,exponent=8,mantisa=24,roundMode=rne,maxDepth=10)
 
 
-	log = open("data/run"+str(time.time())+".txt","w")
+	log = open("tmpdata/run"+str(time.time())+".txt","w")
 
 	
 	#Population sizeing
@@ -115,13 +121,15 @@ def main():
 		population.append(inst(gen.gen(),maxChars,maxTime))
 	##MAIN LOOP
 	for generation in range(nGener):
+		print("----------------------------------------------------")
+		print("Starting Generation #"+str(generation+1))
 		if generation != 0 and hardnessLog[-1] > 0.98:
 			print("Achieved expected score")
 			break
 	
 		for i in range(nPop):
 			population[i].Solve(gen.consts)
-			print("Score = " +str(population[i].Score()) + "\tTime = " + str(population[i].time) + "\tChars = "+str(population[i].numChars))
+			print("\t("+str(i+1)+"/"+str(nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tChars = "+str(population[i].numChars))
 		population.sort()
 		nextGen = []
 		hardness = 0.0
@@ -133,19 +141,18 @@ def main():
 				nextGen.append(inst(gen.mutate(population[-1-i].val),maxChars,maxTime))
 		while len(nextGen) < nPop:
 			nextGen.append(inst(gen.gen(),maxChars,maxTime))
-		print(generation," Hardness", hardness/nKeepBest)
+		print(generation," Hardness = ", hardness/nKeepBest)
 		hardnessLog.append(hardness/nKeepBest)
 		population = nextGen
-		print("gen#"+str(generation) + ": " + str(hardness))
 		log.write(str(hardness/nKeepBest)+"\n")
 		log.flush()
 
 	dir = "run"+str(time.time())
-	print("Finished. Logging Hardest in data/final/" + dir)
-	os.makedirs("data/final/"+dir)
+	print("Finished. Logging Hardest in tmpdata/final/" + dir)
+	os.makedirs("tmpdata/final/"+dir)
 	population.sort()
 	for i in range(nKeepBest):
-		out = open("data/final/"+dir+"/inst" + str(i)+".smt2","w")
+		out = open("tmpdata/final/"+dir+"/inst" + str(i)+".smt2","w")
 		out.write(";  time  = " + str(population[-i-1].time)+ "\n" )
 		out.write(";  chars = " + str(population[-i-1].numChars)+ "\n" )
 		out.write(";  score = " + str(population[-i-1].Score())+ "\n" )
@@ -154,3 +161,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+	print("Termination.")
