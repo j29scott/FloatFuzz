@@ -108,10 +108,10 @@ def main():
 	print("Approximating maximum terms in formula.",flush=True)
 	maxval = 0
 	for i in range(1000):
-		instance = gen.gen(leafProb=0)
+		instance = gen.gen()
 		length = NumTerms(instance)
 		maxval = max(length,maxval)
-	maxTerms = maxval+50
+	maxTerms = maxval
 	print("Estimated max term value of: " + str(maxTerms),flush=True)
 
 
