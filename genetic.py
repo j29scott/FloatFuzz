@@ -60,7 +60,7 @@ def main():
 	parser.add_argument('id', type=str)
 	
 
-	print ("Genetic Algorithm Fuzzer Start!")
+	print ("Genetic Algorithm Fuzzer Start!",flush=True)
 	maxTime=600
 	
 	rne = mk_fp_rne()
@@ -105,15 +105,14 @@ def main():
 	population = []
 	
 	#approximate char length upperbound
-	print("Approximating maximum chars in formula.")
+	print("Approximating maximum chars in formula.",flush=True)
 	maxval = 0
 	for i in range(1000):
 		instance = gen.gen(leafProb=0)
 		length = len(str(instance))
 		maxval = max(length,maxval)
-		#print(length)
 	maxChars = maxval+50
-	print("Estimated max char value of: " + str(maxChars))
+	print("Estimated max char value of: " + str(maxChars),flush=True)
 
 
 	#init pop
@@ -121,19 +120,19 @@ def main():
 		population.append(inst(gen.gen(),maxChars,maxTime))
 	##MAIN LOOP
 	for generation in range(nGener):
-		print("----------------------------------------------------")
-		print("Starting Generation #"+str(generation+1))
+		print("----------------------------------------------------",flush=True)
+		print("Starting Generation #"+str(generation+1),flush=True)
 		if generation != 0 and hardnessLog[-1] > 0.98:
-			print("Achieved expected score")
+			print("Achieved expected score",flush=True)
 			break
 	
 		for i in range(nPop):
 			population[i].Solve(gen.consts)
-			print("\t("+str(i+1)+"/"+str(nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tChars = "+str(population[i].numChars))
+			print("\t("+str(i+1)+"/"+str(nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tChars = "+str(population[i].numChars),flush=True)
 		population.sort()
 		nextGen = []
 		hardness = 0.0
-		print("Testing Finished, analyzing and creating next generation.")
+		print("Testing Finished, analyzing and creating next generation.",flush=True)
 		for i in range(nKeepBest):
 			hardness += population[-1-i].Score()
 			nextGen.append(population[-1-i])
@@ -141,14 +140,14 @@ def main():
 				nextGen.append(inst(gen.mutate(population[-1-i].val),maxChars,maxTime))
 		while len(nextGen) < nPop:
 			nextGen.append(inst(gen.gen(),maxChars,maxTime))
-		print(generation," Hardness = ", hardness/nKeepBest)
+		print(" Hardness = " + str( hardness/nKeepBest,flush=True))
 		hardnessLog.append(hardness/nKeepBest)
 		population = nextGen
 		log.write(str(hardness/nKeepBest)+"\n")
 		log.flush()
 
 	dir = "run"+str(time.time())
-	print("Finished. Logging Hardest in tmpdata/final/" + dir)
+	print("Finished. Logging Hardest in tmpdata/final/" + dir,flush=True)
 	os.makedirs("tmpdata/final/"+dir)
 	population.sort()
 	for i in range(nKeepBest):
@@ -161,4 +160,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
-	print("Termination.")
+	print("Termination.",flush=True)
