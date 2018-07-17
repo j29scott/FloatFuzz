@@ -65,56 +65,21 @@ class Generator:
 				formula.args = list(formula.args)
 			formula[branch] = self.mutate_core(formula.args[branch],depth+1, mutateProb, leafProb)
 			return formula
+	
 		
-# def genRandInstance(consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth,MaxDepth, leafProbability=0.5, unaryProb=0.5, ternaryProb = 0.1):
-	
-	# if depth >= MaxDepth:
-		# if len(unaryOps) != 0 and random() < unaryProb:
-			# return OPS[choice(unaryOps)]([choice(consts)])
-		# else:
-			# return choice(consts)
-	
-	
-	# lhs = None
-	# rhs = None
-	# if random() < leafProbability:
-		# if len(unaryOps) != 0 and random() < unaryProb:
-			# lhs = OPS[choice(unaryOps)]([choice(consts)])
-		# else:
-			# lhs = choice(consts)
-	# else:
-		# lhs = genRandInstance(consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth+1,MaxDepth)
+def NumTerms(inst,countRoundMode=False,depth=0):
+	if isinstance(inst,slap.theory.floatingpoint.RoundingMode):
+		if countRoundMode:
+			return 1
+		return 0
+	if not hasattr(inst, 'args'):
+		return 1
+	if isinstance(inst,slap.theory.floatingpoint.FloatingPointFuncApp) or isinstance(inst,slap.theory.core.BoolFuncApp):
+		ret = 1 #The operator
+		for i in range(len(inst.args)):
+			ret += NumTerms(inst.args[i])
+		return ret
+	assert False, "WTF"
 
-	# if random() < leafProbability:
-		# if len(unaryOps) != 0 and random() < unaryProb:
-			# rhs = OPS[choice(unaryOps)]([choice(consts)])
-		# else:
-			# rhs = choice(consts)
-	# else:
-		# rhs = genRandInstance(consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth+1,MaxDepth)
-	# if depth == 0:
-		# return OPS[choice(booleanOps)]([lhs,rhs])
-	# else:
-		# if random() < ternaryProb and len(ternaryOps) != 0:
-			# third = None
-			# if random() < leafProbability:
-				# if len(unaryOps) != 0 and random() < unaryProb:
-					# third = OPS[choice(unaryOps)]([choice(consts)])
-				# else:
-					# third = choice(consts)
-			# else:
-				# third = genRandInstance(consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth+1,MaxDepth)
-			# return OPS[choice(binaryOps)]([lhs,rhs,third])
-		# else:
-			# return OPS[choice(binaryOps)]([lhs,rhs])
-
-def mutate(inst,consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth,MaxDepth, mutateProb=0.33, leafProbability=0.5, unaryProb=0.5, ternaryProb = 0.1):
-	if depth == MaxDepth:
-		return genRandInstance(consts,unaryOps,binaryOps,ternaryOps,depth,MaxDepth,leafProbability,unaryProb,ternaryProb)
-	branch = choice(range(len(inst.args)))
-	if random() < mutateProb or isinstance(inst.args[branch],Int):
-		inst.args[branch] = genRandInstance(consts,unaryOps,binaryOps,ternaryOps,depth+1,MaxDepth,leafProbability,unaryProb,ternaryProb)
-		return inst
-	else:
-		inst[branch] = mutate(inst.args[branch],consts, unaryOps, binaryOps, ternaryOps, booleanOps,depth+1,MaxDepth, mutateProb, leafProbability, unaryProb, ternaryProb )
-		return inst
+		
+	

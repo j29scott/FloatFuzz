@@ -16,12 +16,12 @@ import argparse
 
 
 class inst:
-	def __init__(self, val ,maxChars,maxTime):
+	def __init__(self, val ,maxTerms,maxTime):
 		self.val = val
 		self.solved = False
 		self.time = -1
-		self.numChars = len(str(val))
-		self.maxChars = maxChars
+		self.numTerms = NumTerms(val)
+		self.maxTerms = maxTerms
 		self.maxTime = maxTime
 	def Solve(self,consts,saveIfHard=True,outFilePath="tmpdata/hard/"):
 		if self.solved:
@@ -36,13 +36,13 @@ class inst:
 		if self.time >= self.maxTime * 0.90:
 			out = open(outFilePath+str(time.time())+".smt2","w")
 			out.write(";  time  = "  + str(self.time) + "\n" )
-			out.write(";  chars = "  + str(self.numChars) + "\n" )
+			out.write(";  terms = "  + str(self.numTerms) + "\n" )
 			out.write(";  score = "  + str(self.Score()) + "\n")
 			out.write(self.ToString(consts))
 			out.close()
 		return
 	def Score(self):
-		return (self.time/self.maxTime) * (self.maxChars - self.numChars)/self.maxChars
+		return (self.time/self.maxTime) * max((self.maxTerms - self.numTerms)/self.numTerms,0.0)
 	def ToString(self,consts):
 		ast = [mk_set_logic("QF_FP")]
 		ast.append(mk_assert(self.val))
@@ -104,20 +104,20 @@ def main():
 	hardnessLog = []
 	population = []
 	
-	#approximate char length upperbound
-	print("Approximating maximum chars in formula.",flush=True)
+	#approximate term length upperbound
+	print("Approximating maximum terms in formula.",flush=True)
 	maxval = 0
 	for i in range(1000):
 		instance = gen.gen(leafProb=0)
-		length = len(str(instance))
+		length = NumTerms(instance)
 		maxval = max(length,maxval)
-	maxChars = maxval+50
-	print("Estimated max char value of: " + str(maxChars),flush=True)
+	maxTerms = maxval+50
+	print("Estimated max term value of: " + str(maxTerms),flush=True)
 
 
 	#init pop
 	for i in range(nPop):
-		population.append(inst(gen.gen(),maxChars,maxTime))
+		population.append(inst(gen.gen(),maxTerms,maxTime))
 	##MAIN LOOP
 	for generation in range(nGener):
 		print("----------------------------------------------------",flush=True)
@@ -128,7 +128,7 @@ def main():
 	
 		for i in range(nPop):
 			population[i].Solve(gen.consts)
-			print("\t("+str(i+1)+"/"+str(nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tChars = "+str(population[i].numChars),flush=True)
+			print("\t("+str(i+1)+"/"+str(nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tTerms = "+str(population[i].numTerms),flush=True)
 		population.sort()
 		nextGen = []
 		hardness = 0.0
@@ -137,9 +137,9 @@ def main():
 			hardness += population[-1-i].Score()
 			nextGen.append(population[-1-i])
 			for i in range(nMutations):
-				nextGen.append(inst(gen.mutate(population[-1-i].val),maxChars,maxTime))
+				nextGen.append(inst(gen.mutate(population[-1-i].val),maxTerms,maxTime))
 		while len(nextGen) < nPop:
-			nextGen.append(inst(gen.gen(),maxChars,maxTime))
+			nextGen.append(inst(gen.gen(),maxTerms,maxTime))
 		print(" Hardness = " + str( hardness/nKeepBest),flush=True)
 		hardnessLog.append(hardness/nKeepBest)
 		population = nextGen
@@ -153,7 +153,7 @@ def main():
 	for i in range(nKeepBest):
 		out = open("tmpdata/final/"+dir+"/inst" + str(i)+".smt2","w")
 		out.write(";  time  = " + str(population[-i-1].time)+ "\n" )
-		out.write(";  chars = " + str(population[-i-1].numChars)+ "\n" )
+		out.write(";  terms = " + str(population[-i-1].numTerms)+ "\n" )
 		out.write(";  score = " + str(population[-i-1].Score())+ "\n" )
 		out.write(population[-i-1].ToString(gen.consts))
 		out.close()

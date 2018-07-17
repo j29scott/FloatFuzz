@@ -10,3 +10,6 @@ venv
 build
 dist
 floatfuzz.egg-info
+out.txt
+err.txt
+tmpdata/*
