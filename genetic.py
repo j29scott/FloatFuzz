@@ -42,7 +42,7 @@ class inst:
 			out.close()
 		return
 	def Score(self):
-		return (self.time/self.maxTime) * max((self.maxTerms - self.numTerms)/self.numTerms,0.0)
+		return (self.time/self.maxTime) * max((self.maxTerms - self.numTerms)/self.maxTerms,0.0)
 	def ToString(self,consts):
 		ast = [mk_set_logic("QF_FP")]
 		ast.append(mk_assert(self.val))
