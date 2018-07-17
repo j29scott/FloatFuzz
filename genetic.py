@@ -89,7 +89,7 @@ def main():
 
 	
 	#Population sizeing
-	nGener = 5
+	nGener = 50	
 	nPop = 10
 	nKeepBest = 3
 	nMutations = 1
@@ -115,6 +115,10 @@ def main():
 		population.append(inst(gen.gen(),maxChars,maxTime))
 	##MAIN LOOP
 	for generation in range(nGener):
+		if generation != 0 and hardnessLog[-1] > 0.98:
+			print("Achieved expected score")
+			break
+	
 		for i in range(nPop):
 			population[i].Solve(gen.consts)
 			print("Score = " +str(population[i].Score()) + "\tTime = " + str(population[i].time) + "\tChars = "+str(population[i].numChars))
