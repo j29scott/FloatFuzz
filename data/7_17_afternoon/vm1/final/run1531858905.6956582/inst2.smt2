@@ -1,0 +1,21 @@
+;  time  = 600
+;  chars = 138
+;  score = 0.9806397306397306
+(set-logic QF_FP)
+(declare-const x0 (_ FloatingPoint 8 24))
+(declare-const x1 (_ FloatingPoint 8 24))
+(declare-const x2 (_ FloatingPoint 8 24))
+(declare-const x3 (_ FloatingPoint 8 24))
+(declare-const x4 (_ FloatingPoint 8 24))
+(declare-const x5 (_ FloatingPoint 8 24))
+(declare-const x6 (_ FloatingPoint 8 24))
+(declare-const x7 (_ FloatingPoint 8 24))
+(declare-const x8 (_ FloatingPoint 8 24))
+(declare-const x9 (_ FloatingPoint 8 24))
+(declare-const x10 (_ FloatingPoint 8 24))
+(declare-const x11 (_ FloatingPoint 8 24))
+(declare-const x12 (_ FloatingPoint 8 24))
+(declare-const x13 (_ FloatingPoint 8 24))
+(declare-const x14 (_ FloatingPoint 8 24))
+(assert (fp.isSubnormal (fp.neg (fp.abs (fp.sub RNE (fp.abs (fp.sub RNE (fp.abs (fp.abs x12)) (fp.sub RNE (fp.mul RNE (fp.abs (fp.abs x12)) (fp.abs (fp.add RNE x6 x14))) (fp.abs (fp.add RNE x12 (fp.abs x4)))))) (fp.add RNE (fp.sub RNE (fp.neg (fp.add RNE x13 (fp.sub RNE (fp.neg x8) x4))) x0) (fp.sub RNE x12 x8)))))))
+(check-sat)
