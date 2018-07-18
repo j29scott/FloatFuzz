@@ -13,6 +13,10 @@ import numpy as np
 
 epsilon = 0.20
 
+def sampleReward():
+	
+
+
 def main():
 	gen = mk_default_gen()
 	ops = []
@@ -27,7 +31,7 @@ def main():
 		T.append([[1]])
 		
 	
-	
+	nIterations = 5000
 	empiricalMeans = np.zeros(len(ops))
 	N = np.ones(self.mdp.nActions)
 	rewards = np.zeros(nIterations)

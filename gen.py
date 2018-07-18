@@ -63,6 +63,22 @@ class Generator:
 			args.append(self.gen_core(depth+1))
 		return op.operator(*args)
 		
+	def gen_core_new(self,depth=0):
+		if depth == self.maxDepth:
+			return choice(self.consts)
+		op = None
+		if depth == 0:
+			op = choice(self.boolean_ops)
+		else:
+			op = choice(self.ops)
+		if op.name == "const":
+			return choice(self.consts) 
+		args = []
+		if op.isrounded:
+			args.append(self.roundMode)
+		for i in range(op.nargs):
+			args.append(self.gen_core(depth+1))
+		return op.operator(*args)
 	def gen_fixed_terms(self,nTerms,boolean=True):
 		op = None
 		args = []
