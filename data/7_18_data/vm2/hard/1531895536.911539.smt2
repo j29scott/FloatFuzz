@@ -1,0 +1,21 @@
+;  time  = 600
+;  terms = 54
+;  score = 0.784
+(set-logic QF_FP)
+(declare-const x0 (_ FloatingPoint 8 24))
+(declare-const x1 (_ FloatingPoint 8 24))
+(declare-const x2 (_ FloatingPoint 8 24))
+(declare-const x3 (_ FloatingPoint 8 24))
+(declare-const x4 (_ FloatingPoint 8 24))
+(declare-const x5 (_ FloatingPoint 8 24))
+(declare-const x6 (_ FloatingPoint 8 24))
+(declare-const x7 (_ FloatingPoint 8 24))
+(declare-const x8 (_ FloatingPoint 8 24))
+(declare-const x9 (_ FloatingPoint 8 24))
+(declare-const x10 (_ FloatingPoint 8 24))
+(declare-const x11 (_ FloatingPoint 8 24))
+(declare-const x12 (_ FloatingPoint 8 24))
+(declare-const x13 (_ FloatingPoint 8 24))
+(declare-const x14 (_ FloatingPoint 8 24))
+(assert (fp.gt (fp.sub RNE (fp.mul RNE (fp.neg (fp.add RNE (fp.abs (fp.mul RNE x13 (fp.mul RNE (fp.mul RNE (fp.neg x2) (fp.neg x3)) (fp.add RNE (fp.mul RNE x1 x7) (fp.abs x7))))) (fp.neg (fp.neg (fp.neg (fp.neg (fp.mul RNE x10 x1))))))) x8) (fp.mul RNE (fp.neg x1) (fp.mul RNE (fp.neg (fp.sub RNE x13 x0)) (fp.neg (fp.sub RNE (fp.mul RNE x8 x0) (fp.neg (fp.mul RNE (fp.abs (fp.add RNE x0 x7)) (fp.add RNE x1 (fp.sub RNE x12 x0))))))))) (fp.neg (fp.sub RNE (fp.mul RNE (fp.sub RNE (fp.add RNE (fp.mul RNE (fp.mul RNE (fp.abs (fp.mul RNE x11 x5)) (fp.neg (fp.add RNE x13 x2))) x9) (fp.neg (fp.add RNE x4 x0))) (fp.neg (fp.neg x9))) (fp.neg (fp.sub RNE (fp.sub RNE (fp.sub RNE (fp.mul RNE (fp.mul RNE x14 x8) (fp.sub RNE x0 x9)) x11) x8) (fp.mul RNE (fp.sub RNE (fp.sub RNE (fp.abs x12) x5) (fp.sub RNE (fp.abs x5) x5)) (fp.mul RNE x13 (fp.sub RNE (fp.abs x1) (fp.add RNE x3 x1))))))) (fp.add RNE (fp.sub RNE x11 (fp.sub RNE (fp.add RNE (fp.abs (fp.abs (fp.sub RNE x14 x8))) (fp.mul RNE x6 x3)) (fp.add RNE (fp.mul RNE (fp.sub RNE (fp.mul RNE x4 x14) (fp.mul RNE x14 x8)) x4) x11))) (fp.add RNE (fp.mul RNE (fp.add RNE (fp.sub RNE (fp.neg (fp.sub RNE x12 x0)) (fp.mul RNE (fp.mul RNE x11 x2) (fp.add RNE x10 x0))) (fp.add RNE x8 (fp.add RNE x2 (fp.abs x9)))) x0) (fp.sub RNE (fp.sub RNE x2 (fp.add RNE (fp.sub RNE (fp.add RNE x2 x9) (fp.neg x6)) (fp.sub RNE (fp.add RNE x1 x13) (fp.mul RNE x6 x10)))) x11)))))))
+(check-sat)

@@ -1,0 +1,21 @@
+;  time  = 600
+;  terms = 215
+;  score = 0.0
+(set-logic QF_FP)
+(declare-const x0 (_ FloatingPoint 8 24))
+(declare-const x1 (_ FloatingPoint 8 24))
+(declare-const x2 (_ FloatingPoint 8 24))
+(declare-const x3 (_ FloatingPoint 8 24))
+(declare-const x4 (_ FloatingPoint 8 24))
+(declare-const x5 (_ FloatingPoint 8 24))
+(declare-const x6 (_ FloatingPoint 8 24))
+(declare-const x7 (_ FloatingPoint 8 24))
+(declare-const x8 (_ FloatingPoint 8 24))
+(declare-const x9 (_ FloatingPoint 8 24))
+(declare-const x10 (_ FloatingPoint 8 24))
+(declare-const x11 (_ FloatingPoint 8 24))
+(declare-const x12 (_ FloatingPoint 8 24))
+(declare-const x13 (_ FloatingPoint 8 24))
+(declare-const x14 (_ FloatingPoint 8 24))
+(assert (fp.geq (fp.neg (fp.sub RNE x2 (fp.sub RNE (fp.abs (fp.neg (fp.mul RNE (fp.sub RNE (fp.add RNE (fp.abs x13) x6) (fp.add RNE (fp.abs x11) (fp.sub RNE x8 x9))) (fp.abs x2)))) (fp.add RNE x2 (fp.add RNE (fp.sub RNE (fp.sub RNE (fp.add RNE (fp.add RNE x5 x13) (fp.abs x5)) (fp.neg (fp.mul RNE x0 x0))) (fp.neg x6)) (fp.add RNE x14 x11)))))) (fp.sub RNE (fp.mul RNE (fp.add RNE (fp.sub RNE (fp.sub RNE (fp.mul RNE (fp.add RNE x11 (fp.mul RNE (fp.neg x6) (fp.sub RNE x13 x14))) x6) (fp.mul RNE (fp.neg x0) (fp.add RNE (fp.sub RNE x6 (fp.abs x1)) (fp.abs (fp.add RNE x2 x3))))) (fp.abs (fp.sub RNE (fp.sub RNE (fp.abs (fp.sub RNE x6 x11)) x5) (fp.mul RNE (fp.abs (fp.add RNE x4 x5)) (fp.abs x14))))) (fp.mul RNE (fp.mul RNE (fp.sub RNE (fp.mul RNE (fp.sub RNE x11 (fp.mul RNE x14 x14)) (fp.abs (fp.neg x9))) (fp.mul RNE x2 x4)) (fp.sub RNE (fp.add RNE (fp.mul RNE (fp.sub RNE x13 x2) x8) (fp.mul RNE (fp.add RNE x9 x10) x4)) x0)) (fp.add RNE (fp.abs (fp.mul RNE (fp.abs (fp.neg x7)) (fp.add RNE (fp.add RNE x10 x12) (fp.add RNE x12 x14)))) x7))) x6) (fp.add RNE (fp.mul RNE (fp.mul RNE (fp.abs (fp.abs (fp.neg (fp.sub RNE (fp.add RNE x13 x4) (fp.add RNE x1 x8))))) (fp.mul RNE (fp.mul RNE (fp.neg x2) (fp.sub RNE (fp.mul RNE (fp.abs x6) (fp.add RNE x2 x4)) (fp.add RNE x13 (fp.sub RNE x3 x7)))) (fp.sub RNE (fp.mul RNE x14 (fp.abs x7)) x14))) (fp.neg (fp.sub RNE (fp.mul RNE (fp.neg x9) (fp.mul RNE (fp.mul RNE (fp.add RNE x8 x14) (fp.sub RNE x9 x3)) (fp.add RNE (fp.add RNE x2 x4) (fp.sub RNE x13 x1)))) (fp.add RNE x0 (fp.abs x3))))) (fp.mul RNE (fp.mul RNE (fp.mul RNE (fp.abs (fp.add RNE (fp.neg x5) (fp.neg (fp.mul RNE x14 x8)))) (fp.sub RNE (fp.neg (fp.sub RNE x5 x10)) (fp.neg (fp.sub RNE (fp.neg x10) (fp.add RNE x9 x8))))) (fp.neg (fp.mul RNE x3 x5))) (fp.neg (fp.neg x0)))))))
+(check-sat)
