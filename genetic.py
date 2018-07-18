@@ -133,7 +133,7 @@ def main():
 			hardness += population[-1-i].Score()
 			nextGen.append(population[-1-i])
 			for i in range(nMutations):
-				nextGen.append(inst(gen.mutate(population[-1-i].val),maxTerms,maxTime))
+				nextGen.append(inst(gen.mutate(population[-1-i].val),maxTime))
 		while len(nextGen) < nPop:
 			nextGen.append(inst(gen.gen(),maxTime))
 		print(" Hardness = " + str( hardness/nKeepBest),flush=True)
