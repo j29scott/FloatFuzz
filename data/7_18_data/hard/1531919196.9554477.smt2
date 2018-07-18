@@ -1,0 +1,21 @@
+;  time  = 600
+;  terms = 88
+;  score = 0.6422764227642277
+(set-logic QF_FP)
+(declare-const x0 (_ FloatingPoint 8 24))
+(declare-const x1 (_ FloatingPoint 8 24))
+(declare-const x2 (_ FloatingPoint 8 24))
+(declare-const x3 (_ FloatingPoint 8 24))
+(declare-const x4 (_ FloatingPoint 8 24))
+(declare-const x5 (_ FloatingPoint 8 24))
+(declare-const x6 (_ FloatingPoint 8 24))
+(declare-const x7 (_ FloatingPoint 8 24))
+(declare-const x8 (_ FloatingPoint 8 24))
+(declare-const x9 (_ FloatingPoint 8 24))
+(declare-const x10 (_ FloatingPoint 8 24))
+(declare-const x11 (_ FloatingPoint 8 24))
+(declare-const x12 (_ FloatingPoint 8 24))
+(declare-const x13 (_ FloatingPoint 8 24))
+(declare-const x14 (_ FloatingPoint 8 24))
+(assert (fp.isSubnormal (fp.mul RNE (fp.mul RNE x8 (fp.abs (fp.neg x6))) (fp.add RNE (fp.neg (fp.sub RNE (fp.mul RNE (fp.abs (fp.neg (fp.sub RNE x7 (fp.neg x6)))) (fp.sub RNE (fp.sub RNE (fp.sub RNE x11 (fp.mul RNE x12 x6)) (fp.neg x7)) (fp.neg (fp.add RNE (fp.neg x9) (fp.abs x8))))) (fp.mul RNE (fp.neg x5) (fp.sub RNE (fp.mul RNE (fp.mul RNE (fp.neg x11) (fp.mul RNE x9 x2)) (fp.abs x1)) (fp.mul RNE (fp.sub RNE (fp.neg x14) (fp.neg x14)) (fp.mul RNE (fp.add RNE x12 x13) (fp.mul RNE x8 x5))))))) (fp.mul RNE (fp.mul RNE (fp.abs (fp.mul RNE (fp.sub RNE (fp.neg (fp.abs x2)) x8) (fp.mul RNE (fp.sub RNE x10 (fp.sub RNE x3 x10)) x3))) x8) (fp.abs (fp.neg (fp.add RNE (fp.neg (fp.abs (fp.sub RNE x0 x12))) (fp.neg (fp.mul RNE (fp.abs x12) x0))))))))))
+(check-sat)
