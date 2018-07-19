@@ -44,7 +44,7 @@ class Generator:
 		ops.append(operator(None,0,False,False,weight = const_weight,name = "const"))
 				
 	def gen(self):
-		return self.gen_core_new()
+		return self.gen_core()
 		
 	def gen_core(self,depth=0):
 		if depth == self.maxDepth:
