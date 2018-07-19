@@ -18,10 +18,10 @@ import argparse
 
 
 class operator:
-	def __init__(self, operator, nargs, isrounded,isBoolean,weight=1,name = ""):
+	def __init__(self, operator, nargs, isRounded,isBoolean,weight=1,name = ""):
 		self.operator = operator
 		self.nargs = nargs
-		self.isrounded = isrounded
+		self.isRounded = isRounded
 		self.isBoolean = isBoolean
 		self.weight = weight
 		self.name = name
@@ -44,7 +44,7 @@ class Generator:
 		ops.append(operator(None,0,False,False,weight = const_weight,name = "const"))
 				
 	def gen(self):
-		return self.gen_core()
+		return self.gen_core_new()
 		
 	def gen_core(self,depth=0):
 		if depth == self.maxDepth:
@@ -57,7 +57,7 @@ class Generator:
 		if op.name == "const":
 			return choice(self.consts) 
 		args = []
-		if op.isrounded:
+		if op.isRounded:
 			args.append(self.roundMode)
 		for i in range(op.nargs):
 			args.append(self.gen_core(depth+1))
@@ -65,20 +65,20 @@ class Generator:
 		
 	def gen_core_new(self,depth=0):
 		if depth == self.maxDepth:
-			return choice(self.consts)
+			return [choice(self.consts)]
 		op = None
 		if depth == 0:
 			op = choice(self.boolean_ops)
 		else:
 			op = choice(self.ops)
 		if op.name == "const":
-			return choice(self.consts) 
-		args = []
-		if op.isrounded:
-			args.append(self.roundMode)
+			return [choice(self.consts)] 
+		ret = [op]
+		if op.isRounded:
+			ret.append(self.roundMode)
 		for i in range(op.nargs):
-			args.append(self.gen_core(depth+1))
-		return op.operator(*args)
+			ret.append(self.gen_core_new(depth+1))
+		return ret
 	def gen_fixed_terms(self,nTerms,boolean=True):
 		op = None
 		args = []
@@ -97,7 +97,7 @@ class Generator:
 				op = choice(valid_ops)
 		nTerms -= 1
 		argTerms = []
-		if op.isrounded:
+		if op.isRounded:
 			args.append(self.roundMode)
 		for i in range(op.nargs):
 			argTerms.append(1)
@@ -127,6 +127,9 @@ class Generator:
 				formula.args = list(formula.args)
 			formula[branch] = self.mutate_core(formula.args[branch],depth+1, mutateProb, leafProb)
 			return formula
+			
+	def mutate_core_new(self,formula, depth,mutateProb):
+		return NotImplementedError
 	
 		
 def NumTerms(inst,countRoundMode=False,depth=10):
@@ -143,7 +146,7 @@ def NumTerms(inst,countRoundMode=False,depth=10):
 		return ret
 	assert False, "WTF"
 
-def mk_default_gen(numConsts = 5,width = 32, maxDepth = 3):
+def mk_default_gen(numConsts = 7,width = 32, maxDepth = 5):
 
 	ne = 0
 	ns=0
@@ -170,29 +173,29 @@ def mk_default_gen(numConsts = 5,width = 32, maxDepth = 3):
 
 	rne = mk_fp_rne()
 	ops = []
-	ops.append(operator(mk_fp_abs,				nargs=1,isrounded=False,isBoolean=False	,name="abs"))
-	ops.append(operator(mk_fp_neg,				nargs=1,isrounded=False,isBoolean=False	,name="neg"))
-	ops.append(operator(mk_fp_add,				nargs=2,isrounded=True,	isBoolean=False	,name="add"))
-	ops.append(operator(mk_fp_sub,				nargs=2,isrounded=True,	isBoolean=False	,name="sub"))
-	ops.append(operator(mk_fp_mul,				nargs=2,isrounded=True,	isBoolean=False	,name="mul"))
-	ops.append(operator(mk_fp_div,				nargs=2,isrounded=True,	isBoolean=False	,name="div"))
-	ops.append(operator(mk_fp_fma,				nargs=3,isrounded=True,	isBoolean=False	,name="fma"))
-	ops.append(operator(mk_fp_rem,				nargs=2,isrounded=False,isBoolean=False	,name="rem"))
-	ops.append(operator(mk_fp_roundToIntegral,	nargs=1,isrounded=True,	isBoolean=False	,name="roundToIntegral"))
-	ops.append(operator(mk_fp_sqrt,				nargs=1,isrounded=True,	isBoolean=False	,name="sqrt"))
-	ops.append(operator(mk_fp_min,				nargs=2,isrounded=False,isBoolean=False	,name="min"))
-	ops.append(operator(mk_fp_max,				nargs=2,isrounded=False,isBoolean=False	,name="max"))
-	ops.append(operator(mk_fp_leq,				nargs=2,isrounded=False,isBoolean=True	,name="leq"))
-	ops.append(operator(mk_fp_lt,				nargs=2,isrounded=False,isBoolean=True	,name="lt"))
-	ops.append(operator(mk_fp_geq,				nargs=2,isrounded=False,isBoolean=True	,name="geq"))
-	ops.append(operator(mk_fp_gt,				nargs=2,isrounded=False,isBoolean=True	,name="gt"))
-	ops.append(operator(mk_fp_eq,				nargs=2,isrounded=False,isBoolean=True	,name="eq"))
-	ops.append(operator(mk_fp_isNormal,			nargs=1,isrounded=False,isBoolean=True	,name="isNormal"))
-	ops.append(operator(mk_fp_isSubnormal,		nargs=1,isrounded=False,isBoolean=True	,name="isSubnormal"))
-	ops.append(operator(mk_fp_isZero,			nargs=1,isrounded=False,isBoolean=True	,name="isZero"))
-	ops.append(operator(mk_fp_isNan,			nargs=1,isrounded=False,isBoolean=True	,name="isNan"))
-	ops.append(operator(mk_fp_isNegative,		nargs=1,isrounded=False,isBoolean=True	,name="isNegative"))
-	ops.append(operator(mk_fp_isPositive,		nargs=1,isrounded=False,isBoolean=True	,name="isPositive"))
+	ops.append(operator(mk_fp_abs,				nargs=1,isRounded=False,isBoolean=False	,name="abs"))
+	ops.append(operator(mk_fp_neg,				nargs=1,isRounded=False,isBoolean=False	,name="neg"))
+	ops.append(operator(mk_fp_add,				nargs=2,isRounded=True,	isBoolean=False	,name="add"))
+	ops.append(operator(mk_fp_sub,				nargs=2,isRounded=True,	isBoolean=False	,name="sub"))
+	ops.append(operator(mk_fp_mul,				nargs=2,isRounded=True,	isBoolean=False	,name="mul"))
+	ops.append(operator(mk_fp_div,				nargs=2,isRounded=True,	isBoolean=False	,name="div"))
+	ops.append(operator(mk_fp_fma,				nargs=3,isRounded=True,	isBoolean=False	,name="fma"))
+	ops.append(operator(mk_fp_rem,				nargs=2,isRounded=False,isBoolean=False	,name="rem"))
+	ops.append(operator(mk_fp_roundToIntegral,	nargs=1,isRounded=True,	isBoolean=False	,name="roundToIntegral"))
+	ops.append(operator(mk_fp_sqrt,				nargs=1,isRounded=True,	isBoolean=False	,name="sqrt"))
+	ops.append(operator(mk_fp_min,				nargs=2,isRounded=False,isBoolean=False	,name="min"))
+	ops.append(operator(mk_fp_max,				nargs=2,isRounded=False,isBoolean=False	,name="max"))
+	ops.append(operator(mk_fp_leq,				nargs=2,isRounded=False,isBoolean=True	,name="leq"))
+	ops.append(operator(mk_fp_lt,				nargs=2,isRounded=False,isBoolean=True	,name="lt"))
+	ops.append(operator(mk_fp_geq,				nargs=2,isRounded=False,isBoolean=True	,name="geq"))
+	ops.append(operator(mk_fp_gt,				nargs=2,isRounded=False,isBoolean=True	,name="gt"))
+	ops.append(operator(mk_fp_eq,				nargs=2,isRounded=False,isBoolean=True	,name="eq"))
+	ops.append(operator(mk_fp_isNormal,			nargs=1,isRounded=False,isBoolean=True	,name="isNormal"))
+	ops.append(operator(mk_fp_isSubnormal,		nargs=1,isRounded=False,isBoolean=True	,name="isSubnormal"))
+	ops.append(operator(mk_fp_isZero,			nargs=1,isRounded=False,isBoolean=True	,name="isZero"))
+	ops.append(operator(mk_fp_isNan,			nargs=1,isRounded=False,isBoolean=True	,name="isNan"))
+	ops.append(operator(mk_fp_isNegative,		nargs=1,isRounded=False,isBoolean=True	,name="isNegative"))
+	ops.append(operator(mk_fp_isPositive,		nargs=1,isRounded=False,isBoolean=True	,name="isPositive"))
 	
 	return Generator(numConsts=numConsts,ops=ops,exponent=ne,mantisa=ns,roundMode=rne,maxDepth=maxDepth)
 		

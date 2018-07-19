@@ -4,7 +4,11 @@ from slap.theory.floatingpoint import *
 import argparse
 import random
 from gen import *
+from inst2 import *
 
 #seed(0)
 gen = mk_default_gen()
-print(gen.gen_fixed_terms(nTerms=5))
+x = inst(gen.gen(),600)
+print (x.val)
+print (x.ConvertList())
+print (x.NumTerms())
