@@ -1,0 +1,2765 @@
+---------------------------------------------
+	abs	0.0
+	neg	0.0
+	add	0.0
+	sub	0.0
+	mul	0.0
+	div	0.0
+	fma	0.0
+	rem	0.0
+	roundToIntegral	0.0
+	sqrt	0.0
+	min	0.0
+	max	0.0
+0.0
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.03184521198272705
+	neg	-0.08313071727752686
+	add	0.0
+	sub	0.0
+	mul	0.1575411856174469
+	div	0.0
+	fma	0.0
+	rem	0.0
+	roundToIntegral	0.0
+	sqrt	0.0
+	min	0.0
+	max	-0.002050161361694336
+0.02
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',21,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.03184521198272705
+	neg	-0.08313071727752686
+	add	0.0
+	sub	0.0
+	mul	0.04436659812927246
+	div	0.0
+	fma	-2.8604214191436768
+	rem	0.0
+	roundToIntegral	0.0
+	sqrt	0.0
+	min	0.0
+	max	-0.002050161361694336
+0.04
+---------------------------------------------
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',45,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',51,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',53,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.03184521198272705
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-4.982558846473694
+	mul	-0.3404111109281841
+	div	0.430560827255249
+	fma	-2.8604214191436768
+	rem	0.0
+	roundToIntegral	0.0
+	sqrt	-4.933777332305908
+	min	0.0
+	max	-0.002050161361694336
+0.06
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',61,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.03184521198272705
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-4.982558846473694
+	mul	-0.3293303608894348
+	div	-1.4606830596923828
+	fma	-2.8604214191436768
+	rem	4.940110301971435
+	roundToIntegral	-0.4740978479385376
+	sqrt	-2.447598099708557
+	min	0.06536734104156494
+	max	-0.002050161361694336
+0.08
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',88,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',90,0)
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',92,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',98,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.03184521198272705
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-0.042724053064982094
+	mul	-0.6909924234662738
+	div	-1.4606830596923828
+	fma	-2.8604214191436768
+	rem	6.9634228282504615
+	roundToIntegral	-0.310349702835083
+	sqrt	-1.9445912837982178
+	min	0.06536734104156494
+	max	0.2083842158317566
+0.1
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',102,0)
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',118,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02253127098083496
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-0.042724053064982094
+	mul	-0.6642033620314165
+	div	-1.4606830596923828
+	fma	-2.8604214191436768
+	rem	7.30848477436946
+	roundToIntegral	-0.3040779113769531
+	sqrt	-1.5996421972910564
+	min	0.06536734104156494
+	max	-0.03652944564819336
+0.12
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',126,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',127,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',128,0)
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',134,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',136,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',138,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02253127098083496
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-0.042724053064982094
+	mul	-0.6642033620314165
+	div	-1.4606830596923828
+	fma	-2.8604214191436768
+	rem	7.538963115215301
+	roundToIntegral	-0.3040779113769531
+	sqrt	-1.3556097916194372
+	min	-0.011764764785766602
+	max	-0.17274645964304605
+0.13999999999999999
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',146,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',150,0)
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',156,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',158,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',160,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02253127098083496
+	neg	-0.3660729726155599
+	add	-4.454224944114685
+	sub	-0.042724053064982094
+	mul	-0.6544659656027089
+	div	-1.4606830596923828
+	fma	-1.9628068804740906
+	rem	7.973106714395376
+	roundToIntegral	-0.25749897956848145
+	sqrt	-1.3556097916194372
+	min	-0.011764764785766602
+	max	-0.16581572805132186
+0.16
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',162,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',166,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',167,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',168,0)
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',172,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',174,0)
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02253127098083496
+	neg	-0.3660729726155599
+	add	-2.976850748062134
+	sub	-0.042724053064982094
+	mul	-0.6544659656027089
+	div	-1.0709922313690186
+	fma	-1.9628068804740906
+	rem	7.937689237296581
+	roundToIntegral	-0.25749897956848145
+	sqrt	-1.3556097916194372
+	min	0.0005965828895568848
+	max	-0.1556513011455536
+0.18
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',182,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',186,0)
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',189,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',190,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',192,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',195,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',196,0)
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02253127098083496
+	neg	-0.2743110656738281
+	add	-2.976850748062134
+	sub	-0.2259710431098938
+	mul	-0.6544659656027089
+	div	-1.0709922313690186
+	fma	-1.9628068804740906
+	rem	7.672728673831837
+	roundToIntegral	-0.21754111562456405
+	sqrt	-1.3556097916194372
+	min	0.0005965828895568848
+	max	-0.1388982137044271
+0.2
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',204,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',206,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',208,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',210,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',218,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.020246565341949463
+	neg	-0.2743110656738281
+	add	-2.976850748062134
+	sub	-0.20036664009094238
+	mul	-0.6544659656027089
+	div	-1.0709922313690186
+	fma	-1.9628068804740906
+	rem	7.841995754025199
+	roundToIntegral	-0.21754111562456405
+	sqrt	-1.3556097916194372
+	min	0.0005965828895568848
+	max	-0.13719520568847657
+0.22
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',222,0)
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',228,0)
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',238,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',240,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02789310614267985
+	neg	-0.2743110656738281
+	add	-2.976850748062134
+	sub	-0.1810908317565918
+	mul	-0.6544659656027089
+	div	-1.0709922313690186
+	fma	-1.541341495513916
+	rem	7.963715684657195
+	roundToIntegral	-0.21754111562456405
+	sqrt	-1.1848011910915375
+	min	0.0005965828895568848
+	max	-0.13719520568847657
+0.24
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',244,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',246,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',248,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',250,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',252,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',254,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',256,0)
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.02789310614267985
+	neg	-0.23772597312927246
+	add	-2.976850748062134
+	sub	-0.1810908317565918
+	mul	-0.6544659656027089
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	8.193779464278904
+	roundToIntegral	-0.21754111562456405
+	sqrt	-1.1848011910915375
+	min	0.0005317211151123046
+	max	-0.13719520568847657
+0.26
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',266,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',271,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',273,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',279,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.1508955955505371
+	neg	-0.2592862674168178
+	add	-2.976850748062134
+	sub	-0.1810908317565918
+	mul	-0.6544659656027089
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	-51.93125696579615
+	roundToIntegral	-1.4344390332698822
+	sqrt	-1.1848011910915375
+	min	-1.6637755632400513
+	max	-0.20895479122797647
+0.27999999999999997
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.19872074127197265
+	neg	-0.2592862674168178
+	add	-2.976850748062134
+	sub	-1.0058802843093873
+	mul	-0.6544659656027089
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	-51.93125696579615
+	roundToIntegral	-1.4344390332698822
+	sqrt	-0.9344572305679322
+	min	-1.5463308266230993
+	max	-0.20895479122797647
+0.3
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',309,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',310,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.6648415051973783
+	neg	-0.16534365307201038
+	add	-2.976850748062134
+	sub	-1.0058802843093873
+	mul	-0.6544659656027089
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	-51.93125696579615
+	roundToIntegral	-1.2680560217963324
+	sqrt	-0.9344572305679322
+	min	-1.5463308266230993
+	max	-0.24375181538718088
+0.32
+---------------------------------------------
+		 selected neg
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',321,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',323,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',331,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',336,0)
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.9097004303565392
+	add	-2.1097118258476257
+	sub	-0.7074215628884055
+	mul	-0.6544659656027089
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	-51.203386595991795
+	roundToIntegral	-1.2680560217963324
+	sqrt	-0.9344572305679322
+	min	-1.5463308266230993
+	max	-0.84149070084095
+0.33999999999999997
+---------------------------------------------
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',346,0)
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',357,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.7947368621826172
+	add	-2.1097118258476257
+	sub	-0.7074215628884055
+	mul	-0.8540932638891812
+	div	-0.7838022708892822
+	fma	-1.541341495513916
+	rem	-50.21647183356747
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.9344572305679322
+	min	-1.5463308266230993
+	max	-0.84149070084095
+0.36
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',369,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',373,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.6728054285049438
+	add	-3.6548057556152345
+	sub	-1.1085611581802368
+	mul	-0.8540932638891812
+	div	-0.6717009544372559
+	fma	-1.541341495513916
+	rem	-50.21647183356747
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.9344572305679322
+	min	-1.5463308266230993
+	max	-0.84149070084095
+0.38
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',394,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.6728054285049438
+	add	-3.6548057556152345
+	sub	-1.1085611581802368
+	mul	-0.7939409902018886
+	div	-0.03364619186946327
+	fma	-1.541341495513916
+	rem	-49.26108017043462
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.8506199446591464
+	min	-1.5463308266230993
+	max	-0.84149070084095
+0.4
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.6728054285049438
+	add	-3.6548057556152345
+	sub	-1.0474916065440458
+	mul	-0.7939409902018886
+	div	-0.24485601078380237
+	fma	-1.541341495513916
+	rem	-49.26108017043462
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.8506199446591464
+	min	-1.3531343042850494
+	max	-0.84149070084095
+0.42
+---------------------------------------------
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',430,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',436,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',440,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.0785100311040878
+	neg	-0.6728054285049438
+	add	-3.046681841214498
+	sub	-1.0474916065440458
+	mul	-0.7939409902018886
+	div	0.07327873131324508
+	fma	-1.541341495513916
+	rem	-48.33603097125888
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.8506199446591464
+	min	-1.2070398065778944
+	max	-0.84149070084095
+0.44
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',441,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-1.015810587826897
+	neg	-0.6438328466917339
+	add	-3.046681841214498
+	sub	-1.0474916065440458
+	mul	-0.7939409902018886
+	div	-0.10784685952322821
+	fma	-1.541341495513916
+	rem	-48.33603097125888
+	roundToIntegral	-1.2468094110488892
+	sqrt	-0.8506199446591464
+	min	-1.0873726606369019
+	max	-0.7918985030230354
+0.45999999999999996
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.9668280813429091
+	neg	-0.6438328466917339
+	add	-3.046681841214498
+	sub	-1.0474916065440458
+	mul	-0.7939409902018886
+	div	0.050035598801403534
+	fma	-1.541341495513916
+	rem	-48.33603097125888
+	roundToIntegral	-1.1339205611835828
+	sqrt	-0.7794950207074484
+	min	-0.9857659123160623
+	max	-0.7918985030230354
+0.48
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',495,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',496,0)
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',499,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',500,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.9668280813429091
+	neg	-0.6438328466917339
+	add	-2.4593042646135603
+	sub	-0.9943154652913412
+	mul	-0.7939409902018886
+	div	0.21401816109816232
+	fma	-1.541341495513916
+	rem	-47.5923997255472
+	roundToIntegral	-1.1339205611835828
+	sqrt	-0.7794950207074484
+	min	-0.9857659123160623
+	max	-0.7918985030230354
+0.5
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',508,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.9668280813429091
+	neg	-0.6438328466917339
+	add	-2.4593042646135603
+	sub	-0.9472908095309609
+	mul	-0.7939409902018886
+	div	0.47271690103742814
+	fma	-1.541341495513916
+	rem	-46.0336017252794
+	roundToIntegral	-1.0393048922220867
+	sqrt	-0.7794950207074484
+	min	-0.9857659123160623
+	max	-0.7918985030230354
+0.52
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',524,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',529,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',539,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.9668280813429091
+	neg	-0.6438328466917339
+	add	-2.4593042646135603
+	sub	-0.899831223487854
+	mul	-0.7939409902018886
+	div	0.46889642537650417
+	fma	-1.2106213967005413
+	rem	-45.209914929726544
+	roundToIntegral	-1.0393048922220867
+	sqrt	-0.7794950207074484
+	min	-1.7353329261144002
+	max	-0.7475034528308444
+0.54
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',559,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.9158773673208136
+	neg	-0.5830404644920713
+	add	-2.1575436890125275
+	sub	-0.899831223487854
+	mul	-0.7939409902018886
+	div	0.49479242733546663
+	fma	-1.2106213967005413
+	rem	-45.209914929726544
+	roundToIntegral	-1.6002002954483032
+	sqrt	-0.7794950207074484
+	min	-1.7353329261144002
+	max	-0.7475034528308444
+0.5599999999999999
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',574,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8701724529266357
+	neg	-0.5830404644920713
+	add	-2.1575436890125275
+	sub	-0.899831223487854
+	mul	-0.7939409902018886
+	div	0.5056692572200999
+	fma	-1.2106213967005413
+	rem	-45.209914929726544
+	roundToIntegral	-1.4941617806752523
+	sqrt	-0.711975464454064
+	min	-1.499258347920009
+	max	-0.7475034528308444
+0.58
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8701724529266357
+	neg	-0.5830404644920713
+	add	-2.1575436890125275
+	sub	-0.899831223487854
+	mul	-0.7939409902018886
+	div	0.5053160033727947
+	fma	-1.2106213967005413
+	rem	-45.209914929726544
+	roundToIntegral	-1.4941617806752523
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7475034528308444
+0.6
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',611,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',612,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',620,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8701724529266357
+	neg	-0.5830404644920713
+	add	-2.1575436890125275
+	sub	-0.899831223487854
+	mul	-0.7939409902018886
+	div	0.6363185854519114
+	fma	-1.2106213967005413
+	rem	-45.209914929726544
+	roundToIntegral	-1.4941617806752523
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7081854217930844
+0.62
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8701724529266357
+	neg	-0.5569015849720348
+	add	-2.1575436890125275
+	sub	-0.8603281066531226
+	mul	-0.769143246114254
+	div	0.6378133506565303
+	fma	-0.9971932683672223
+	rem	-45.209914929726544
+	roundToIntegral	-1.4941617806752523
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7081854217930844
+0.64
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8749383858272007
+	neg	-0.5569015849720348
+	add	-2.1575436890125275
+	sub	-0.8603281066531226
+	mul	-0.769143246114254
+	div	0.655173768802565
+	fma	-0.9971932683672223
+	rem	-44.51520146839861
+	roundToIntegral	-1.3994574397802353
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7081854217930844
+0.66
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',663,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8366322083906694
+	neg	-0.5112664798895518
+	add	-2.1575436890125275
+	sub	-0.822210431098938
+	mul	-0.7451230829412286
+	div	0.5717308359238708
+	fma	-0.9971932683672223
+	rem	-44.51520146839861
+	roundToIntegral	-1.3994574397802353
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7081854217930844
+0.6799999999999999
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',694,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-0.8366322083906694
+	neg	-0.5112664798895518
+	add	-1.9245204395718045
+	sub	-0.822210431098938
+	mul	-0.7451230829412286
+	div	0.6017359993674538
+	fma	-0.8107775449752808
+	rem	-43.73660116876874
+	roundToIntegral	-1.3994574397802353
+	sqrt	-0.6507272379738944
+	min	-1.3986493269602458
+	max	-0.7081854217930844
+0.7000000000000001
+---------------------------------------------
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2

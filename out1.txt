@@ -1,0 +1,5378 @@
+---------------------------------------------
+	leq	0.0
+	lt	0.0
+	geq	0.0
+	gt	0.0
+	eq	0.0
+	isNormal	0.0
+	isSubnormal	0.0
+	isZero	0.0
+	isNan	0.0
+	isNegative	0.0
+	isPositive	0.0
+0.0
+---------------------------------------------
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',7,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',17,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',18,0)
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	-0.5379816889762878
+	lt	0.021971901257832844
+	geq	0.0
+	gt	0.0
+	eq	0.0
+	isNormal	0.0
+	isSubnormal	-0.020648837089538574
+	isZero	0.0
+	isNan	-0.019392013549804688
+	isNegative	0.0
+	isPositive	0.0
+0.02
+---------------------------------------------
+		 selected isZero
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',34,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',36,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.5663818359375
+	lt	0.021971901257832844
+	geq	-0.0001952648162841797
+	gt	0.029026603698730467
+	eq	2.5373993515968323
+	isNormal	0.0
+	isSubnormal	-0.020648837089538574
+	isZero	-0.0001741647720336914
+	isNan	-0.019392013549804688
+	isNegative	0.0
+	isPositive	0.0
+0.04
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',42,0)
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',52,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',56,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',60,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.5663818359375
+	lt	0.021971901257832844
+	geq	-0.0001952648162841797
+	gt	0.029698888460795086
+	eq	3.19400295344266
+	isNormal	0.0
+	isSubnormal	-0.020648837089538574
+	isZero	0.6141961415608724
+	isNan	-0.019392013549804688
+	isNegative	0.0
+	isPositive	0.008741974830627441
+0.06
+---------------------------------------------
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',65,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',66,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',68,0)
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',75,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',76,0)
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.3009170691172283
+	lt	0.021971901257832844
+	geq	-0.0001952648162841797
+	gt	0.029698888460795086
+	eq	2.584587938645307
+	isNormal	0.0
+	isSubnormal	-0.020648837089538574
+	isZero	0.6141961415608724
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	0.005827983220418294
+0.08
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',93,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',94,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.3009170691172283
+	lt	0.021971901257832844
+	geq	-0.0001952648162841797
+	gt	0.029698888460795086
+	eq	1.7927702236175538
+	isNormal	0.0
+	isSubnormal	-0.01630711555480957
+	isZero	0.6141961415608724
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	0.005827983220418294
+0.1
+---------------------------------------------
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',103,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',104,0)
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.3009170691172283
+	lt	0.019492455891200473
+	geq	-0.0001952648162841797
+	gt	0.029698888460795086
+	eq	1.5019267797470093
+	isNormal	0.0
+	isSubnormal	-0.22324657440185547
+	isZero	0.46712785959243774
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	0.004370987415313721
+0.12
+---------------------------------------------
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',122,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.3009170691172283
+	lt	0.019492455891200473
+	geq	-0.0001952648162841797
+	gt	0.03016972541809082
+	eq	1.5190280128169704
+	isNormal	0.008490562438964844
+	isSubnormal	-0.22324657440185547
+	isZero	0.7063897132873536
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	0.004370987415313721
+0.13999999999999999
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',153,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',154,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',159,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.1150047779083252
+	lt	0.019492455891200473
+	geq	-0.0001952648162841797
+	gt	0.03016972541809082
+	eq	1.2149883906046548
+	isNormal	0.008490562438964844
+	isSubnormal	-0.1914335091908773
+	isZero	0.7063897132873536
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	0.004370987415313721
+0.16
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',167,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',177,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',178,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.7730752891964383
+	lt	0.019492455891200473
+	geq	0.004145383834838867
+	gt	0.03016972541809082
+	eq	0.9610421754875962
+	isNormal	0.0019763708114624023
+	isSubnormal	-0.1914335091908773
+	isZero	0.7063897132873536
+	isNan	-0.009956657886505127
+	isNegative	0.0
+	isPositive	-0.03809967041015625
+0.18
+---------------------------------------------
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.7730752891964383
+	lt	0.019492455891200473
+	geq	0.004145383834838867
+	gt	0.03016972541809082
+	eq	0.8931711868003562
+	isNormal	-0.018421173095703125
+	isSubnormal	-0.1301283836364746
+	isZero	0.5783092578252157
+	isNan	-0.009956657886505127
+	isNegative	-0.0007549524307250977
+	isPositive	-0.03809967041015625
+0.2
+---------------------------------------------
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',213,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',214,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.7730752891964383
+	lt	0.04782673716545105
+	geq	0.004145383834838867
+	gt	0.03016972541809082
+	eq	0.7917758402277212
+	isNormal	-0.010557134946187338
+	isSubnormal	-0.1301283836364746
+	isZero	0.5783092578252157
+	isNan	-0.009956657886505127
+	isNegative	-0.0009690125783284506
+	isPositive	-0.03809967041015625
+0.22
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',224,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',237,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',238,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.7730752891964383
+	lt	0.04782673716545105
+	geq	0.004145383834838867
+	gt	0.012711256742477417
+	eq	0.8443335430962698
+	isNormal	-0.010557134946187338
+	isSubnormal	-0.1301283836364746
+	isZero	0.5783092578252157
+	isNan	-0.009956657886505127
+	isNegative	-0.0009690125783284506
+	isPositive	-0.03809967041015625
+0.24
+---------------------------------------------
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',243,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',244,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',251,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',252,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',260,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	1.5264520211653276
+	lt	0.04782673716545105
+	geq	0.0037270069122314455
+	gt	0.012711256742477417
+	eq	0.7668285865288276
+	isNormal	-0.010557134946187338
+	isSubnormal	-0.1301283836364746
+	isZero	0.5783092578252157
+	isNan	-0.009956657886505127
+	isNegative	-0.0009690125783284506
+	isPositive	-0.03809967041015625
+0.26
+---------------------------------------------
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',279,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',280,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.9968766044167912
+	lt	0.04782673716545105
+	geq	0.0037270069122314455
+	gt	0.012711256742477417
+	eq	0.7668285865288276
+	isNormal	-0.010557134946187338
+	isSubnormal	-0.10412635803222656
+	isZero	0.44526830315589905
+	isNan	-0.009956657886505127
+	isNegative	-0.0009690125783284506
+	isPositive	-0.03809967041015625
+0.27999999999999997
+---------------------------------------------
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',299,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.430024959824302
+	lt	0.04782673716545105
+	geq	0.0037270069122314455
+	gt	0.012979295518663194
+	eq	0.7668285865288276
+	isNormal	-0.018563151359558105
+	isSubnormal	-0.10412635803222656
+	isZero	0.44526830315589905
+	isNan	-0.008162355422973633
+	isNegative	-0.0009690125783284506
+	isPositive	-0.031609574953715004
+0.3
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',311,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',312,0)
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',318,0)
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',319,0)
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.4137562254200811
+	lt	0.04251265525817871
+	geq	0.0037270069122314455
+	gt	0.012979295518663194
+	eq	0.8330534251339464
+	isNormal	-0.018563151359558105
+	isSubnormal	-0.09489714015613902
+	isZero	-0.70918869972229
+	isNan	-0.008162355422973633
+	isNegative	-0.0009690125783284506
+	isPositive	-0.031609574953715004
+0.32
+---------------------------------------------
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',321,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',322,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',325,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',326,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.4137562254200811
+	lt	0.03725912570953369
+	geq	0.0037270069122314455
+	gt	0.011681365966796874
+	eq	0.9034564177195231
+	isNormal	-0.018563151359558105
+	isSubnormal	-0.08698904514312744
+	isZero	-0.70918869972229
+	isNan	-0.008162355422973633
+	isNegative	-0.0009690125783284506
+	isPositive	-0.031609574953715004
+0.33999999999999997
+---------------------------------------------
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.4137562254200811
+	lt	0.03725912570953369
+	geq	0.0037270069122314455
+	gt	0.02047311175953258
+	eq	0.8312044411289449
+	isNormal	-0.018563151359558105
+	isSubnormal	-0.08698904514312744
+	isZero	-0.70918869972229
+	isNan	-0.0106735626856486
+	isNegative	-0.0009690125783284506
+	isPositive	-0.031609574953715004
+0.36
+---------------------------------------------
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',369,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',370,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.39656103650728863
+	lt	0.03725912570953369
+	geq	0.0037270069122314455
+	gt	0.02047311175953258
+	eq	0.7937376105669632
+	isNormal	-0.013027164671156142
+	isSubnormal	-0.10350313553443322
+	isZero	-0.70918869972229
+	isNan	-0.0106735626856486
+	isNegative	-0.0006876587867736816
+	isPositive	-0.02706711632864816
+0.38
+---------------------------------------------
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',382,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',383,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',399,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',400,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.39656103650728863
+	lt	0.03725912570953369
+	geq	0.0037270069122314455
+	gt	0.02047311175953258
+	eq	0.7551646700927189
+	isNormal	-0.013027164671156142
+	isSubnormal	-0.10350313553443322
+	isZero	-0.70918869972229
+	isNan	-0.10995360783168248
+	isNegative	-0.0006876587867736816
+	isPositive	-0.02706711632864816
+0.4
+---------------------------------------------
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',401,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',402,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',403,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',404,0)
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',419,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',420,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.33989634684153963
+	lt	0.033945473757657135
+	geq	0.0031058390935262046
+	gt	0.02047311175953258
+	eq	-30.725533437310602
+	isNormal	-0.013027164671156142
+	isSubnormal	-0.10350313553443322
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.02706711632864816
+0.42
+---------------------------------------------
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.27475134304591586
+	lt	0.02945961554845174
+	geq	0.0026400089263916016
+	gt	0.02047311175953258
+	eq	-30.725533437310602
+	isNormal	-0.013027164671156142
+	isSubnormal	-0.09662422112056188
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.02706711632864816
+0.44
+---------------------------------------------
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',446,0)
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',455,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.27475134304591586
+	lt	0.02945961554845174
+	geq	0.5789846640366775
+	gt	0.0183713436126709
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.09025370279947917
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.0371783971786499
+0.45999999999999996
+---------------------------------------------
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',461,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',462,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',465,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',466,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.27475134304591586
+	lt	0.02945961554845174
+	geq	0.7820249852680025
+	gt	0.0183713436126709
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.08461284637451172
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.03047400050693088
+0.48
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	0.025252631732395718
+	geq	0.45157383169446674
+	gt	0.0183713436126709
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.08461284637451172
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.03047400050693088
+0.5
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',501,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',502,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',505,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',506,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',510,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',517,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.4159328043460846
+	geq	0.564661352975028
+	gt	0.01722401839036208
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.08461284637451172
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.0006654262542724609
+	isPositive	-0.03047400050693088
+0.52
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',527,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',528,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3789813378277947
+	geq	0.4649547199870265
+	gt	0.01722401839036208
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.08461284637451172
+	isZero	-0.70918869972229
+	isNan	-0.09620940685272217
+	isNegative	-0.1622235377629598
+	isPositive	-0.03047400050693088
+0.54
+---------------------------------------------
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3789813378277947
+	geq	0.4533951332171758
+	gt	0.01722401839036208
+	eq	-30.725533437310602
+	isNormal	-0.00927281379699707
+	isSubnormal	-0.07960203114677877
+	isZero	-0.5889974724162709
+	isNan	-0.1938063383102417
+	isNegative	-0.1622235377629598
+	isPositive	-0.03047400050693088
+0.5599999999999999
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3789813378277947
+	geq	0.4144115958895002
+	gt	0.01722401839036208
+	eq	-30.725533437310602
+	isNormal	-0.008311293341896751
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.1938063383102417
+	isNegative	-0.1622235377629598
+	isPositive	-0.03047400050693088
+0.58
+---------------------------------------------
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3789813378277947
+	geq	0.3727695828392392
+	gt	0.014195076624552409
+	eq	-30.725533437310602
+	isNormal	-0.008311293341896751
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.17885203794999557
+	isNegative	-0.1622235377629598
+	isPositive	-0.03047400050693088
+0.6
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3592703872256809
+	geq	0.558552850995745
+	gt	0.014195076624552409
+	eq	-30.725533437310602
+	isNormal	-0.008311293341896751
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.17885203794999557
+	isNegative	-0.1622235377629598
+	isPositive	-0.0603379336270419
+0.62
+---------------------------------------------
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2675299909379747
+	lt	-0.3592703872256809
+	geq	0.5119753940195977
+	gt	0.014195076624552409
+	eq	-30.725533437310602
+	isNormal	-0.008311293341896751
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.16229559977849325
+	isNegative	-0.1622235377629598
+	isPositive	-0.0603379336270419
+0.64
+---------------------------------------------
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',644,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.26032738427858093
+	lt	-0.3592703872256809
+	geq	0.6829144187357233
+	gt	0.014195076624552409
+	eq	-30.725533437310602
+	isNormal	-0.008311293341896751
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.16229559977849325
+	isNegative	-0.13914339882986887
+	isPositive	-0.0603379336270419
+0.66
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.26032738427858093
+	lt	-0.32224451303482055
+	geq	0.6902129385206432
+	gt	0.014195076624552409
+	eq	-30.725533437310602
+	isNormal	0.05435882012049357
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.16229559977849325
+	isNegative	-0.10817766189575195
+	isPositive	-0.055522808661827676
+0.6799999999999999
+---------------------------------------------
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',684,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNegative
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.26032738427858093
+	lt	-0.32224451303482055
+	geq	0.7676086248235499
+	gt	0.014195076624552409
+	eq	-30.45835406469262
+	isNormal	0.05435882012049357
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.14490468161446707
+	isNegative	-0.08756050196560947
+	isPositive	-0.059107797486441474
+0.7000000000000001
+---------------------------------------------
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected gt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',704,0)
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',709,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',710,0)
+			 2/2
+		 solving complete
+		 selected gt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',714,0)
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',715,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.26032738427858093
+	lt	-0.32224451303482055
+	geq	0.7365834445369486
+	gt	0.5717391040590074
+	eq	-30.109858743075666
+	isNormal	0.05435882012049357
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.20138096809387207
+	isNegative	-0.08756050196560947
+	isPositive	-0.0556251843770345
+0.72
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',724,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.32224451303482055
+	geq	0.7746705221679974
+	gt	0.5717391040590074
+	eq	-30.109858743075666
+	isNormal	0.05435882012049357
+	isSubnormal	-0.028830607732137043
+	isZero	-0.5889974724162709
+	isNan	-0.20138096809387207
+	isNegative	-0.08756050196560947
+	isPositive	-0.0556251843770345
+0.74
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',747,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',748,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.32224451303482055
+	geq	0.7344632680927002
+	gt	0.5717391040590074
+	eq	-29.852967527177597
+	isNormal	0.05435882012049357
+	isSubnormal	-0.02763416892603824
+	isZero	-0.5889974724162709
+	isNan	-0.19054973125457764
+	isNegative	-0.08756050196560947
+	isPositive	-0.052113696932792664
+0.76
+---------------------------------------------
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.3418745313371931
+	geq	0.6981082225249984
+	gt	0.5717391040590074
+	eq	-29.599267826241963
+	isNormal	0.05435882012049357
+	isSubnormal	-0.02763416892603824
+	isZero	-0.5889974724162709
+	isNan	-0.1692958010567559
+	isNegative	-0.08756050196560947
+	isPositive	-0.052113696932792664
+0.7799999999999999
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',788,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',790,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',793,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',794,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',797,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',798,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.3263347799127752
+	geq	0.7559836342578796
+	gt	0.5717391040590074
+	eq	-29.599267826241963
+	isNormal	0.05435882012049357
+	isSubnormal	-0.02763416892603824
+	isZero	-0.5889974724162709
+	isNan	-0.1692958010567559
+	isNegative	-0.08756050196560947
+	isPositive	-0.052113696932792664
+0.8
+---------------------------------------------
+		 selected isSubnormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected lt
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',811,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',812,0)
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected eq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.31087217123612115
+	geq	0.7940045890951514
+	gt	0.5717391040590074
+	eq	-29.350431734774293
+	isNormal	0.05435882012049357
+	isSubnormal	-0.026433467864990234
+	isZero	-0.5302391846974691
+	isNan	-0.1692958010567559
+	isNegative	-0.08756050196560947
+	isPositive	-0.052113696932792664
+0.8200000000000001
+---------------------------------------------
+		 selected isPositive
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.2678981927724985
+	lt	-0.31087217123612115
+	geq	0.7507857211092684
+	gt	0.5717391040590074
+	eq	-29.350431734774293
+	isNormal	0.11174909885113056
+	isSubnormal	-0.026433467864990234
+	isZero	-0.5302391846974691
+	isNan	-0.1692958010567559
+	isNegative	-0.08756050196560947
+	isPositive	-0.05538801585926729
+0.84
+---------------------------------------------
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',853,0)
+			 1/2
+			 2/2
+		 solving complete
+		 selected leq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.23946831822395326
+	lt	-0.31087217123612115
+	geq	0.6766134549493658
+	gt	0.5717391040590074
+	eq	-29.350431734774293
+	isNormal	0.09373064041137695
+	isSubnormal	-0.026433467864990234
+	isZero	-0.4893324008354774
+	isNan	-0.20921229061327482
+	isNegative	-0.08756050196560947
+	isPositive	-0.05538801585926729
+0.86
+---------------------------------------------
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+				added one
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNan
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isNormal
+start
+			finished adding
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected isZero
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',877,0)
+			 1/2
+error : LexToken(SIMPLE_SYMBOL,'timeout',878,0)
+			 2/2
+		 solving complete
+		 selected isSubnormal
+start
+			finished adding
+				removed one
+			finished removing
+			nargs 1 has 2
+		 finished inst generation
+		 solving 
+			 1/2
+			 2/2
+		 solving complete
+---------------------------------------------
+	leq	0.23946831822395326
+	lt	-0.31087217123612115
+	geq	0.6496473033177225
+	gt	0.5717391040590074
+	eq	-29.350431734774293
+	isNormal	0.08787420392036438
+	isSubnormal	-0.030034326371692475
+	isZero	-0.45577153137751986
+	isNan	-0.20365421772003173
+	isNegative	-0.08756050196560947
+	isPositive	-0.05538801585926729
+0.88
+---------------------------------------------
+		 selected geq
+start
+			finished adding
+			finished removing
+			nargs 2 has 3
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',881,0)
+			 1/2

@@ -114,8 +114,8 @@ def main():
 	R = []
 	epsilonIsOneDividedByCurIter = False
 	epsilon = .4
-	for i in range(len(gen.ops)):
-		ops.append(gen.ops[i])
+#	for i in range(len(gen.ops)):
+#		ops.append(gen.ops[i])
 	for i in range(len(gen.boolean_ops)):
 		ops.append(gen.boolean_ops[i])
 	

@@ -12,7 +12,7 @@ from slap.interface.printer import smtlib_string
 
 # Format: for each solver, the name of the executable and the options.
 SOLVERS = {
-    'z3': ('z3', '-T:600 -smt2'),
+    'z3': ('z3', '-T:10 -smt2'),
     'z3online': ('z3', '-in'),
     'cvc4': ('cvc4', '')
 }

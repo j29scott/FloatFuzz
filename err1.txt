@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "bandit_fpops.py", line 156, in <module>
+    main()
+  File "bandit_fpops.py", line 149, in main
+    rewards[n] = sampleReward(ops[action])
+  File "bandit_fpops.py", line 105, in sampleReward
+    ins2.Solve(gen.consts,saveIfHard=False)
+  File "/mnt/d/dropbox/FloatFuzz/inst2.py", line 29, in Solve
+    res = solve(ast,consts)
+  File "/mnt/d/dropbox/FloatFuzz/slap/interface/solver.py", line 43, in solve
+    subprocess.call([SOLVERS[solver][0], SOLVERS[solver][1], tmp_filename], stdout=f2)
+  File "/usr/lib/python3.5/subprocess.py", line 559, in call
+    return p.wait(timeout=timeout)
+  File "/usr/lib/python3.5/subprocess.py", line 1658, in wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/lib/python3.5/subprocess.py", line 1608, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt
