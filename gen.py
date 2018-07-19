@@ -146,7 +146,7 @@ def NumTerms(inst,countRoundMode=False,depth=10):
 		return ret
 	assert False, "WTF"
 
-def mk_default_gen(numConsts = 7,width = 32, maxDepth = 5):
+def mk_default_gen(numConsts = 6,width = 32, maxDepth = 4):
 
 	ne = 0
 	ns=0
@@ -168,7 +168,6 @@ def mk_default_gen(numConsts = 7,width = 32, maxDepth = 5):
 	else:
 		ne = round(0.33 * width)
 		ns = width - ne
-		
 
 
 	rne = mk_fp_rne()
@@ -196,7 +195,5 @@ def mk_default_gen(numConsts = 7,width = 32, maxDepth = 5):
 	ops.append(operator(mk_fp_isNan,			nargs=1,isRounded=False,isBoolean=True	,name="isNan"))
 	ops.append(operator(mk_fp_isNegative,		nargs=1,isRounded=False,isBoolean=True	,name="isNegative"))
 	ops.append(operator(mk_fp_isPositive,		nargs=1,isRounded=False,isBoolean=True	,name="isPositive"))
-	
+
 	return Generator(numConsts=numConsts,ops=ops,exponent=ne,mantisa=ns,roundMode=rne,maxDepth=maxDepth)
-		
-	
