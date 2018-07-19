@@ -31,7 +31,7 @@ def main():
 
 	
 	#Population sizeing
-	nGener = 25	
+	nGener = 100
 	nPop = 5
 	nKeepBest = 1
 	nMutations = 2
