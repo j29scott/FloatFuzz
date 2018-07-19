@@ -1,4 +1,5 @@
 import sys
+import time
 import os
 from slap.mk import *
 from slap.interface.solver import solve
