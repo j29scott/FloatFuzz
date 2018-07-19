@@ -31,10 +31,10 @@ def main():
 
 	
 	#Population sizeing
-	nGener = 100
+	nGener = 25
 	nPop = 5
 	nKeepBest = 1
-	nMutations = 2
+	nMutations = 1
 	nRandom = nPop - nKeepBest - nKeepBest * nMutations 
 
 	hardnessLog = []

@@ -146,7 +146,7 @@ def NumTerms(inst,countRoundMode=False,depth=10):
 		return ret
 	assert False, "WTF"
 
-def mk_default_gen(numConsts = 5,width = 32, maxDepth = 3):
+def mk_default_gen(numConsts = 4,width = 32, maxDepth = 4):
 
 	ne = 0
 	ns=0
