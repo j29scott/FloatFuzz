@@ -113,7 +113,7 @@ def main():
 	T = []
 	R = []
 	epsilonIsOneDividedByCurIter = False
-	epsilon = .4
+	epsilon = .33
 	for i in range(len(gen.ops)):
 		ops.append(gen.ops[i])
 #	for i in range(len(gen.boolean_ops)):

@@ -214,22 +214,8 @@ class Generator:
 		return NotImplementedError
 	def mutate_fixed_terms(self,formula, depth,mutateProb):
 		return NotImplementedError
-		
-def NumTerms(inst,countRoundMode=False,depth=10):
-	if isinstance(inst,slap.theory.floatingpoint.RoundingMode):
-		if countRoundMode:
-			return 1
-		return 0
-	if not hasattr(inst, 'args'):
-		return 1
-	if isinstance(inst,slap.theory.floatingpoint.FloatingPointFuncApp) or isinstance(inst,slap.theory.core.BoolFuncApp):
-		ret = 1 #The operator
-		for i in range(len(inst.args)):
-			ret += NumTerms(inst.args[i])
-		return ret
-	assert False, "WTF"
 
-def mk_default_gen(numConsts = 4,width = 32, maxDepth = 2):
+def mk_default_gen(numConsts = 4,width = 32, maxDepth = 4):
 
 	ne = 0
 	ns=0

@@ -13,7 +13,7 @@ nonSubNormalTerms = False
 
 
 class inst:
-	def __init__(self, val ,maxTime=10,maxTerms = 100):
+	def __init__(self, val ,maxTime=600,maxTerms = 100):
 		self.val = val
 		self.solved = False
 		self.time = -1
