@@ -101,7 +101,7 @@ def sampleReward(op):
 	#sys.exit(1)
 	print("\t\t solving ",flush=True)
 	ins1.Solve(gen.consts,saveIfHard=False)
-	print("\t\t\t 1/2",flush=True)
+	print("\t\t\t 1/2 " + str(ins1.time),flush=True)
 	ins2.Solve(gen.consts,saveIfHard=False)
 	print("\t\t\t 2/2",flush=True)
 	print("\t\t solving complete",flush=True)
@@ -114,25 +114,25 @@ def main():
 	R = []
 	epsilonIsOneDividedByCurIter = False
 	epsilon = .33
-#	for i in range(len(gen.ops)):
-#		ops.append(gen.ops[i])
-	for i in range(len(gen.boolean_ops)):
-		ops.append(gen.boolean_ops[i])
+	for i in range(len(gen.ops)):
+		ops.append(gen.ops[i])
+#	for i in range(len(gen.boolean_ops)):
+#		ops.append(gen.boolean_ops[i])
 	
 	
 	nActions = len(ops)
 	
-	nIterations = 50000
 	empiricalMeans = np.zeros(len(ops))
 	N = np.ones(nActions)
-	rewards = np.zeros(nIterations)
-	for n in range(nIterations):
+	reward = 0
+	n = 0
+	while True:
 	
 		if n % 10 == 0:
 			print("---------------------------------------------",flush=True)
 			for i in range(len(ops)):
 				print("\t" + ops[i].name + "\t" + str(empiricalMeans[i]),flush=True)
-			print(n/nIterations * 100.0,flush=True)
+			print("Finished " + str(n) + " iterations.",flush=True)
 			print("---------------------------------------------",flush=True)
 	
 		if epsilonIsOneDividedByCurIter:
@@ -146,9 +146,10 @@ def main():
 			for a in range(nActions):
 				if empiricalMeans[a] > val:
 					action , val = a, empiricalMeans[a]	
-		rewards[n] = sampleReward(ops[action])
-		empiricalMeans[action] = (N[action] * empiricalMeans[action] + rewards[n]) / (N[action] + 1)
+		reward = sampleReward(ops[action])
+		empiricalMeans[action] = (N[action] * empiricalMeans[action] + reward) / (N[action] + 1)
 		N[action] += 1
+		n += 1
 		
 
 
