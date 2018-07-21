@@ -1,4 +1,7 @@
+import sys
 import logging
+sys.path.append('../../../')
+import Settings
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.ERROR)
 
@@ -13,6 +16,7 @@ from slap.interface.printer import smtlib_string
 # Format: for each solver, the name of the executable and the options.
 SOLVERS = {
     'z3': ('z3', '-T:600 -smt2'),
+	'z3': ('z3', '-T:' + str(Settings.SolverTimeout) + ' -smt2'),
     'z3online': ('z3', '-in'),
     'cvc4': ('cvc4', '')
 }

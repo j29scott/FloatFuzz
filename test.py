@@ -1,14 +1,17 @@
-from random import randint, random, choice,seed
-from slap.mk import *
-from slap.theory.floatingpoint import *
-import argparse
-import random
+from mutater import *
 from gen import *
-from inst2 import *
+from random import seed,randrange,Random
+import sys
+import pickle
+import json
+from Fuzz import *
+rng = randrange(sys.maxsize)
+seed(rng)
+print("Seed was:", rng)
 
-#seed(0)
-gen = mk_default_gen()
-x = inst(gen.gen(),600)
-print (x.val)
-print (x.ConvertList())
-print (x.NumTerms())
+
+
+#seed(6446321609587222541)
+
+fuzzer = Fuzzer(EpsilonBandit)
+fuzzer.Fuzz()

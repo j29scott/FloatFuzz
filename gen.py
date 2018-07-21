@@ -2,9 +2,10 @@ from random import randint, random, choice
 from slap.mk import *
 from slap.theory.floatingpoint import *
 import argparse
-from inst2 import *
+from inst import *
 from copy import copy,deepcopy
-
+import Settings as settings
+import Settings
 
 class operator:
 	def __init__(self, operator, nargs, isRounded,isBoolean,weight=1,name = ""):
@@ -15,28 +16,34 @@ class operator:
 		self.weight = weight
 		self.name = name
 		
-		
-		
 class Generator:
-	def __init__(self, numConsts, ops, exponent,mantisa,roundMode,maxDepth,const_weight = 1):
+	def __init__(self,  ops,exponent,mantisa,roundMode=mk_fp_rne()):
 		self.consts = []
-		for i in range(numConsts):
+		for i in range(Settings.GeneratorNumConst):
 			self.consts.append(mk_float("x"+str(i), exponent, mantisa))
 		self.boolean_ops = []
 		self.ops = []
 		self.roundMode = roundMode
-		self.maxDepth = maxDepth
-		self.const_weight = const_weight
+		self.maxDepth = Settings.GeneratorMaxDepth
 		for i in range(len(ops)):
 			if ops[i].isBoolean:
 				self.boolean_ops.append(ops[i])
 			else:
 				self.ops.append(ops[i])
-		ops.append(operator(None,0,False,False,weight = const_weight,name = "const"))
+		ops.append(operator(None,0,False,False,weight = Settings.GeneratorConstWeight ,name = "const"))
 				
-	def gen(self):
-		return inst(self.gen_list())
-		
+	def gen(self,depth=0):
+		return inst(self.gen_list(depth))
+	
+	def BooleanOps(self):
+		return self.boolean_ops
+	def FloatOps(self):
+		ret = []
+		for i in range(len(self.ops)):
+			if not self.ops[i].isBoolean and self.ops[i].name != "const":
+				ret.append(self.ops[i])
+		return ret
+	
 	def gen_ast(self,depth=0):
 		if depth == self.maxDepth:
 			return choice(self.consts)
@@ -101,124 +108,91 @@ class Generator:
 			args.append(self.gen_fixed_terms(argTerms[i],False))
 		return op.operator(*args)
 
-	def replace(self,instance,op):
-		return self.replace_list(instance,op)
-	def replace_list(self,instance,op):
-		if op.isBoolean:
-			ret = deepcopy(instance)
-			ret.val[0] = op
-			print("start")
-			while len(ret.val) < ret.val[0].nargs + 1:
-				ret.val.append(self.gen_list(1))
-				print("\t\t\t\tadded one")
-			print("\t\t\tfinished adding")
-			while len(ret.val) > ret.val[0].nargs + 1:
-				ret.val.pop()
-				print("\t\t\t\tremoved one")
-			print("\t\t\tfinished removing")
-			print("\t\t\tnargs "+str(ret.val[0].nargs) + " has " + str(len(ret.val)))
-			#print("\t\t\t" + str(ret.val))
-			ret.val[0] = op
-			return ret
-		if op.name == "const":
-			N = instance.NumConsts()
-			indx = randint(0,N-1)
-			ret = deepcopy(instance)
-			ret.val = self.replace_list_const(ret.val,indx)
-			return ret
-		else: #op is nonboolean fp op
-			N = instance.NumFloatOps()
-			indx = randint(0,N-1)
-			ret = deepcopy(instance)
-			[ret.val,indx,finished] = self.replace_list_fpop(ret.val,indx,op,0,0)
-			assert finished
-			#ret.val = Generator(self,ret.val,indx,op,0,0)
-			return ret
+	# def replace(self,instance,op):
+		# return self.replace_list(instance,op)
+	# def replace_list(self,instance,op):
+		# if op.isBoolean:
+			# ret = deepcopy(instance)
+			# ret.val[0] = op
+			# while len(ret.val) < ret.val[0].nargs + 1:
+				# ret.val.append(self.gen_list(1))
+			# while len(ret.val) > ret.val[0].nargs + 1:
+				# ret.val.pop()
+			# ret.val[0] = op
+			# return ret
+		# if op.name == "const":
+			# N = instance.NumConsts()
+			# indx = randint(0,N-1)
+			# ret = deepcopy(instance)
+			# ret.val = self.replace_list_const(ret.val,indx)
+			# return ret
+		# else: #op is nonboolean fp op
+			# N = instance.NumFloatOps()
+			# indx = randint(0,N-1)
+			# ret = deepcopy(instance)
+			# [ret.val,indx,finished] = self.replace_list_fpop(ret.val,indx,op,0,0)
+			# assert finished
+			# #ret.val = Generator(self,ret.val,indx,op,0,0)
+			# return ret
 			
 			
-	def replace_list_const(self,ast_list,n,const,indx=0):
-		#single float
-		if len(ast_list) == 1:
-			if indx == n:
-				return [[const],indx+1,True]
-			else:
-				return [ast_list,indx+1,False]
-		else:
-			op = ast_list[0]
-			start = 1
-			if op.isRounded:
-				start = 2
-			for i in range(start,len(ast_list)):
-				[ast_list[i], indx, done] = self.replace_list_const(ast_list,n,const,indx)
-				if done:
-					break
-			return [ast_list,indx,done]
+	# def replace_list_const(self,ast_list,n,const,indx=0):
+		# #single float
+		# if len(ast_list) == 1:
+			# if indx == n:
+				# return [[const],indx+1,True]
+			# else:
+				# return [ast_list,indx+1,False]
+		# else:
+			# op = ast_list[0]
+			# start = 1
+			# if op.isRounded:
+				# start = 2
+			# for i in range(start,len(ast_list)):
+				# [ast_list[i], indx, done] = self.replace_list_const(ast_list,n,const,indx)
+				# if done:
+					# break
+			# return [ast_list,indx,done]
 		
-	def replace_list_fpop(self,ast_list,n,oper,indx=0,depth=0):
-		#single float
-		#print(ast_list,n,indx,depth)
-		if len(ast_list) == 1:
-			return [ast_list,indx,False]
-		else:
-			op = ast_list[0]
-			if not op.isBoolean:
-				if indx == n:
-					retForm = []
-					retForm.append(oper)
-					if oper.isRounded:
-						retForm.append(self.roundMode)
-					start = 1
-					if op.isRounded:
-						start = 2	
-					oper_indx = 0
-					for i in range(oper.nargs):
-						if oper_indx < op.nargs:
-							retForm.append(ast_list[start])
-							start += 1
-							oper_indx += 1
-						else:
-							retForm.append(self.gen_list(depth))
-					return [retForm,indx,True]
-				else:
-					indx +=1
-			start = 1
-			if op.isRounded:
-				start = 2
-			for i in range(start,len(ast_list)):
-				[ast_list[i], indx, done] = self.replace_list_fpop(ast_list[i],n,oper,indx,depth+1)
-				if done:
-					break
-			return [ast_list,indx,done]
-		
-	
-	def mutate(self,formula,mutateProb=0.10):
-		return inst(self.mutate_ast(formula.val,0,mutateProb))
-	
-	def mutate_ast(self,formula, depth,mutateProb):
-		if depth == self.maxDepth or  (random() < mutateProb and depth != 0):
-			return self.gen_core(depth)
-		branch = choice(range(len(formula.args)))
-		if random() < mutateProb or isinstance(formula.args[branch],FloatingPoint):
-			if isinstance(formula.args,tuple):
-				formula.args = list(formula.args)
-			ret = self.gen_core(depth+1)
-			formula.args[branch] = ret
-			return formula
-		else:
-			if isinstance(formula.args,tuple):
-				formula.args = list(formula.args)
-			formula[branch] = self.mutate_core(formula.args[branch],depth+1, mutateProb, leafProb)
-			return formula
-			
-	def mutate_list(self,formula, depth,mutateProb):
-		return NotImplementedError
-	def mutate_fixed_terms(self,formula, depth,mutateProb):
-		return NotImplementedError
+	# def replace_list_fpop(self,ast_list,n,oper,indx=0,depth=0):
+		# #single float
+		# #print(ast_list,n,indx,depth)
+		# if len(ast_list) == 1:
+			# return [ast_list,indx,False]
+		# else:
+			# op = ast_list[0]
+			# if not op.isBoolean:
+				# if indx == n:
+					# retForm = []
+					# retForm.append(oper)
+					# if oper.isRounded:
+						# retForm.append(self.roundMode)
+					# start = 1
+					# if op.isRounded:
+						# start = 2	
+					# oper_indx = 0
+					# for i in range(oper.nargs):
+						# if oper_indx < op.nargs:
+							# retForm.append(ast_list[start])
+							# start += 1
+							# oper_indx += 1
+						# else:
+							# retForm.append(self.gen_list(depth))
+					# return [retForm,indx,True]
+				# else:
+					# indx +=1
+			# start = 1
+			# if op.isRounded:
+				# start = 2
+			# for i in range(start,len(ast_list)):
+				# [ast_list[i], indx, done] = self.replace_list_fpop(ast_list[i],n,oper,indx,depth+1)
+				# if done:
+					# break
+			# return [ast_list,indx,done]
 
-def mk_default_gen(numConsts = 4,width = 32, maxDepth = 4):
-
+def mk_gen(numConsts = Settings.GeneratorNumConst ,width = Settings.FloatWidth, maxDepth = Settings.GeneratorMaxDepth):
 	ne = 0
-	ns=0
+	ns = 0
 	if width == 5:
 		ne = 2
 		ns = 3
@@ -265,4 +239,4 @@ def mk_default_gen(numConsts = 4,width = 32, maxDepth = 4):
 	ops.append(operator(mk_fp_isNegative,		nargs=1,isRounded=False,isBoolean=True	,name="isNegative"))
 	ops.append(operator(mk_fp_isPositive,		nargs=1,isRounded=False,isBoolean=True	,name="isPositive"))
 
-	return Generator(numConsts=numConsts,ops=ops,exponent=ne,mantisa=ns,roundMode=rne,maxDepth=maxDepth)
+	return Generator(ops=ops,exponent=ne,mantisa=ns)

@@ -22,6 +22,9 @@ clean:
 	find . -name '*.pyo' -exec rm --force {} +
 	find . -name '__pycache__' -exec rm --force --recursive {} +
 	rm -rf venv build dist floatfuzz.egg-info
+cleanmodels:
+	rm -rf models/*
+
 cleandata:
 	rm -rf tmpdata/*
 	mkdir tmpdata/hard
