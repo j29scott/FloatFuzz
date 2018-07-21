@@ -1,5 +1,5 @@
 ## Fuzzer Settings
-FuzzerNumberOfIterations = 25
+FuzzerNumberOfIterations = 5
 FuzzerPopulation = 5
 FuzzerNumberOfMutations = 2
 FuzzerNumberOfHardestKept = 1
@@ -7,7 +7,7 @@ FuzzerOverrideTerminationOnMaxScore = True
 
 
 ## Solver Settings
-SolverTimeout = 0.5
+SolverTimeout = 30
 SolverMemoryLimit = None
 
 ## Generator Settings

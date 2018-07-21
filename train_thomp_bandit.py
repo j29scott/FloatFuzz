@@ -12,6 +12,6 @@ print("Seed was:", rng)
 
 
 #seed(6446321609587222541)
-
-fuzzer = Fuzzer(EpsilonBandit)
-fuzzer.Fuzz()
+for i in range(1000):
+	fuzzer = Fuzzer(ThompsonBandit)
+	fuzzer.Fuzz()
