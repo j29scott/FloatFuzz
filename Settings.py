@@ -3,7 +3,7 @@ FuzzerNumberOfIterations = 5
 FuzzerPopulation = 5
 FuzzerNumberOfMutations = 2
 FuzzerNumberOfHardestKept = 1
-FuzzerOverrideTerminationOnMaxScore = True
+FuzzerOverrideTerminationOnMaxScore = False
 
 
 ## Solver Settings
