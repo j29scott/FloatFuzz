@@ -1,0 +1,7758 @@
+---------------------------------------------
+	abs	0.0
+	neg	0.0
+	add	0.0
+	sub	0.0
+	mul	0.0
+	div	0.0
+	fma	0.0
+	rem	0.0
+	roundToIntegral	0.0
+	sqrt	0.0
+	min	0.0
+	max	0.0
+Finished 0 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 256.58321619033813
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 3.0160489082336426
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 12.56590747833252
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 0.9064474105834961
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 544.2821795940399
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 109.13201665878296
+error : LexToken(SIMPLE_SYMBOL,'timeout',12,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 4.638802528381348
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 64.99097895622253
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 4.173515796661377
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 1.8004424571990967
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-89.94202931722005
+	neg	-1.0189200639724731
+	add	-0.0145263671875
+	sub	0.0
+	mul	0.0
+	div	-0.07696938514709473
+	fma	0.0
+	rem	0.0
+	roundToIntegral	96.91209316253662
+	sqrt	0.0
+	min	0.0
+	max	-3.068771004676819
+Finished 10 iterations.
+---------------------------------------------
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.9931578636169434
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 33.02483940124512
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.386927843093872
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.4258880615234375
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.5051522254943848
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 17.597445726394653
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.7945005893707275
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.2377607822418213
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 1.5913035869598389
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',39,0)
+			 1/2 600
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-89.94202931722005
+	neg	-136.2724153995514
+	add	-0.4951786994934082
+	sub	0.0
+	mul	0.0
+	div	-0.07696938514709473
+	fma	0.0
+	rem	0.0
+	roundToIntegral	39.94957168896993
+	sqrt	3.393176555633545
+	min	0.0
+	max	-3.068771004676819
+Finished 20 iterations.
+---------------------------------------------
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 22.09536647796631
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 0.5613255500793457
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 27.37614941596985
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 5.482938051223755
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 282.78805780410767
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.3174195289611816
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 10.729055643081665
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.2708780765533447
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.37027859687805176
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 20.424920558929443
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-70.13121831417084
+	neg	-136.2724153995514
+	add	-0.4951786994934082
+	sub	0.0
+	mul	0.0
+	div	-0.07696938514709473
+	fma	0.0
+	rem	0.0
+	roundToIntegral	11.56096832752228
+	sqrt	3.393176555633545
+	min	0.0
+	max	-2.054198662439982
+Finished 30 iterations.
+---------------------------------------------
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 14.463686227798462
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 32.197709798812866
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 3.6087286472320557
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 19.189342737197876
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 53.426947593688965
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 31.38245391845703
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',73,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',74,0)
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 3.0393731594085693
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',77,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',78,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.045849561691284
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-56.10497465133667
+	neg	-136.2724153995514
+	add	-0.4951786994934082
+	sub	-0.0399547815322876
+	mul	0.0
+	div	-0.051312923431396484
+	fma	0.0
+	rem	59.662354469299316
+	roundToIntegral	9.717721711034363
+	sqrt	3.393176555633545
+	min	0.0
+	max	-5.43377810716629
+Finished 40 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 183.2125961780548
+error : LexToken(SIMPLE_SYMBOL,'timeout',82,0)
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 0.018934011459350586
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 173.2960910797119
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.1845293045043945
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 25.087636709213257
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9349133968353271
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',93,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',94,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.353301525115967
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8388311862945557
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 54.80664920806885
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-56.10497465133667
+	neg	-136.2724153995514
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	0.0
+	div	-0.051312923431396484
+	fma	0.0
+	rem	80.82932734489441
+	roundToIntegral	9.717721711034363
+	sqrt	3.393176555633545
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 50 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 48.253886461257935
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 2.1609859466552734
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.6511390209198
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.982051849365234
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',109,0)
+			 1/2 600
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3830375671386719
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 91.8730161190033
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 3.377370834350586
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 15.34956693649292
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 65.7895758152008
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-136.2724153995514
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	0.0
+	div	-0.051312923431396484
+	fma	115.0573395729065
+	rem	83.65499830245972
+	roundToIntegral	9.717721711034363
+	sqrt	2.2826147079467773
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 60 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 1.4561476707458496
+error : LexToken(SIMPLE_SYMBOL,'timeout',122,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 0.08638405799865723
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.027803897857666016
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 59.4368360042572
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.9480037689208984
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 2.1436736583709717
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.27222204208374023
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 36.138304471969604
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 1.6637523174285889
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 39.36569285392761
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-136.2724153995514
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	0.020658373832702637
+	div	-0.029980123043060303
+	fma	120.2320568561554
+	rem	94.75281384587288
+	roundToIntegral	9.717721711034363
+	sqrt	1.7630909085273743
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 70 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 93.22561597824097
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 2.6873621940612793
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 2.3135743141174316
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8984780311584473
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.007894754409790039
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.07585930824279785
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 21.02487850189209
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6424567699432373
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 54.077797412872314
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 12.233429193496704
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-136.2724153995514
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	0.020658373832702637
+	div	-0.029980123043060303
+	fma	78.24709631502628
+	rem	79.34284044447399
+	roundToIntegral	9.717721711034363
+	sqrt	1.7630909085273743
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 80 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.061368227005005
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 2.1093451976776123
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.856752634048462
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 3.6465816497802734
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.2044553756713867
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 14.704468727111816
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 132.73525881767273
+error : LexToken(SIMPLE_SYMBOL,'timeout',174,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.1236822605133057
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.15736627578735352
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.009165763854980469
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-102.2048043012619
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	0.020658373832702637
+	div	0.4846073627471924
+	fma	69.57099629773035
+	rem	84.79986308171199
+	roundToIntegral	9.717721711034363
+	sqrt	1.4514077186584473
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 90 iterations.
+---------------------------------------------
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 19.14664912223816
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.7301037311553955
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 56.69926643371582
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.039283037185668945
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.17018246650696
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.42360782623291016
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.3601539134979248
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.30691027641296387
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.01733136177063
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.83763790130615
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-81.77374439239502
+	add	-0.3737959861755371
+	sub	-0.0399547815322876
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	66.00939226150513
+	rem	74.80699490755796
+	roundToIntegral	9.313040196895601
+	sqrt	1.4514077186584473
+	min	10.595040400822958
+	max	-5.43377810716629
+Finished 100 iterations.
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 30.22068977355957
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.24329209327697754
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 118.39501118659973
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 3.31708025932312
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.16965126991272
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.10665702819824
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.362009763717651
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6838390827178955
+error : LexToken(SIMPLE_SYMBOL,'timeout',216,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.63731288909912
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 84.50328826904297
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-81.77374439239502
+	add	-0.3737959861755371
+	sub	12.66918690999349
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	66.00939226150513
+	rem	88.47210102814894
+	roundToIntegral	9.313040196895601
+	sqrt	1.2427462736765544
+	min	10.595040400822958
+	max	-4.6118417263031
+Finished 110 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 135.86991810798645
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 4.857587575912476
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8837008476257324
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 374.62762212753296
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.28954029083251953
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 21.88343095779419
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 21.22842311859131
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 31.174596548080444
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.47903609275818
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.35139799118042
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-81.77374439239502
+	add	-0.3737959861755371
+	sub	10.28992486000061
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	59.86441253480457
+	rem	89.62893954912822
+	roundToIntegral	8.79713453292847
+	sqrt	1.2427462736765544
+	min	10.595040400822958
+	max	-4.6118417263031
+Finished 120 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 162.16867923736572
+error : LexToken(SIMPLE_SYMBOL,'timeout',242,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 16.728305101394653
+error : LexToken(SIMPLE_SYMBOL,'timeout',244,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 106.74959182739258
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.9711332321167
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.7002637386322021
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5179564952850342
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.980853796005249
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9556682109832764
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.1978521347045898
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',259,0)
+			 1/2 600
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-81.77374439239502
+	add	-0.3737959861755371
+	sub	10.28992486000061
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	59.86441253480457
+	rem	88.55459030324762
+	roundToIntegral	8.79713453292847
+	sqrt	1.2427462736765544
+	min	10.595040400822958
+	max	-4.6118417263031
+Finished 130 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.91964364051819
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.392879247665405
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.7561373710632324
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.36745595932006836
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.0861072540283203
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8205714225769043
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.7542932033538818
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 220.24324107170105
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.196603775024414
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.236338138580322
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-68.15386692682902
+	add	-0.3737959861755371
+	sub	10.28992486000061
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	59.86441253480457
+	rem	83.59861438721418
+	roundToIntegral	8.79713453292847
+	sqrt	1.2427462736765544
+	min	10.595040400822958
+	max	-4.6118417263031
+Finished 140 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 98.41507601737976
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 23.068371057510376
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9140782356262207
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.43912339210510254
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3065941333770752
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 18.573999643325806
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 4.4743359088897705
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 238.5806713104248
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4536600112915039
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.15874171257019
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-68.15386692682902
+	add	-0.3737959861755371
+	sub	10.28992486000061
+	mul	2.2997294267018638
+	div	0.4846073627471924
+	fma	57.65665763074701
+	rem	92.65042101012335
+	roundToIntegral	8.79713453292847
+	sqrt	0.7109574931008475
+	min	10.595040400822958
+	max	-4.6118417263031
+Finished 150 iterations.
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 41.10791492462158
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 49.300434589385986
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 3.5354015827178955
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.04412865638733
+error : LexToken(SIMPLE_SYMBOL,'timeout',308,0)
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 29.337101936340332
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',311,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',312,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 41.205466747283936
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 0.0187680721282959
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 59.14622354507446
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 143.56194281578064
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-68.15386692682902
+	add	-0.3737959861755371
+	sub	28.57462453842163
+	mul	2.2997294267018638
+	div	1.0307622296469552
+	fma	57.65665763074701
+	rem	95.21297117597179
+	roundToIntegral	8.79713453292847
+	sqrt	0.7109574931008475
+	min	38.73340601921082
+	max	-5.616256833076477
+Finished 160 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 12.901365280151367
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 62.04255557060242
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.0243990421295166
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 67.53774499893188
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 3.3202192783355713
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 51.23147892951965
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.370710372924805
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 49.48230051994324
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 89.12046980857849
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.28153300285339355
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-68.15386692682902
+	add	-0.3737959861755371
+	sub	28.57462453842163
+	mul	2.2997294267018638
+	div	1.0307622296469552
+	fma	57.65665763074701
+	rem	96.70375497944384
+	roundToIntegral	8.393272830889778
+	sqrt	0.8614194691181183
+	min	38.73340601921082
+	max	-4.619239228112357
+Finished 170 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 114.48762106895447
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 121.66914391517639
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.701906681060791
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.776834726333618
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 1.674870491027832
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 31.123865365982056
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.420426845550537
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 113.26322507858276
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.596067905426025
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 22.04756188392639
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-70.45448960576739
+	add	-0.3737959861755371
+	sub	28.57462453842163
+	mul	2.2997294267018638
+	div	1.0307622296469552
+	fma	57.65665763074701
+	rem	92.89885981082918
+	roundToIntegral	8.393272830889778
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	-4.619239228112357
+Finished 180 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 103.27327513694763
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.4372806549072266
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.9164674282074
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 4.068568706512451
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.0662541389465332
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 81.2665605545044
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 18.284077405929565
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.941200494766235
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.40025544166565
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 25.74261498451233
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-67.09564586480458
+	neg	-70.45448960576739
+	add	5.2246248324712115
+	sub	28.57462453842163
+	mul	2.2997294267018638
+	div	1.0307622296469552
+	fma	55.468103160028875
+	rem	88.73212350029308
+	roundToIntegral	8.393272830889778
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	-4.619239228112357
+Finished 190 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 28.33719754219055
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 279.0988771915436
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.4416248798370361
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 45.77770280838013
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.6914324760437
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3016848564147949
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.15620899200439453
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 150.83240580558777
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 84.42354965209961
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.31464624404907227
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-64.49207329750061
+	neg	-70.45448960576739
+	add	5.2246248324712115
+	sub	28.57462453842163
+	mul	1.7584888935089111
+	div	1.0307622296469552
+	fma	55.468103160028875
+	rem	86.60282585712581
+	roundToIntegral	8.073948065439863
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	-4.619239228112357
+Finished 200 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.30509209632873535
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 512.3577070236206
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.5164871215820312
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 3.48380970954895
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.01961493492126465
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.935852527618408
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 32.161619663238525
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 63.126993894577026
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4761812686920166
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.4991743564605713
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-56.1667183637619
+	neg	-61.581558287143714
+	add	5.2246248324712115
+	sub	28.57462453842163
+	mul	1.7584888935089111
+	div	1.0307622296469552
+	fma	55.468103160028875
+	rem	84.71143179493292
+	roundToIntegral	8.073948065439863
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	-4.619239228112357
+Finished 210 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8198399543762207
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 37.378949880599976
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 22.556522130966187
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 64.81026768684387
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.47438883781433105
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 68.93160462379456
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.503680467605591
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.428360223770142
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.389641523361206
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.758312702178955
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-56.1667183637619
+	neg	-61.581558287143714
+	add	-2.4010874884469167
+	sub	28.57462453842163
+	mul	1.7584888935089111
+	div	1.0307622296469552
+	fma	55.468103160028875
+	rem	80.99662984212242
+	roundToIntegral	7.749244306768693
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	-4.619239228112357
+Finished 220 iterations.
+---------------------------------------------
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 0.5169661045074463
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.079819679260254
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 10.623486995697021
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 15.789797306060791
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.0971980094909668
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 2.286665201187134
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.403523683547974
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 54.85529184341431
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 38.993993282318115
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 100.17557740211487
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-56.1667183637619
+	neg	-53.99517562654284
+	add	0.31748342514038086
+	sub	28.57462453842163
+	mul	1.7584888935089111
+	div	0.9026162624359131
+	fma	55.468103160028875
+	rem	81.53966533191621
+	roundToIntegral	7.749244306768693
+	sqrt	0.8614194691181183
+	min	34.17887026923044
+	max	0.5980876386165619
+Finished 230 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 72.19648313522339
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 35.760337352752686
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6904861927032471
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.07613849639892578
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.15879106521606445
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.014724254608154297
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.5144398212432861
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8911185264587402
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.19342517852783203
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 41.867876052856445
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-42.98744776513841
+	neg	-48.60231869220734
+	add	0.31748342514038086
+	sub	28.57462453842163
+	mul	1.7584888935089111
+	div	0.9026162624359131
+	fma	55.468103160028875
+	rem	85.36521724471474
+	roundToIntegral	7.749244306768693
+	sqrt	-0.9514628516303169
+	min	34.17887026923044
+	max	0.5980876386165619
+Finished 240 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8868026733398438
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 21.341395616531372
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4756293296813965
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.682123899459839
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 3.8381214141845703
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.45569419860839844
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6574201583862305
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 44.21678853034973
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 29.524452924728394
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.701230764389038
+error : LexToken(SIMPLE_SYMBOL,'timeout',500,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-42.98744776513841
+	neg	-48.60231869220734
+	add	0.31748342514038086
+	sub	28.57462453842163
+	mul	1.5637395858764649
+	div	1.0476211706797283
+	fma	55.468103160028875
+	rem	87.31646952561454
+	roundToIntegral	7.749244306768693
+	sqrt	-0.9514628516303169
+	min	34.17887026923044
+	max	0.5980876386165619
+Finished 250 iterations.
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.9102804660797119
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 4.392710208892822
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.036203861236572266
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 14.234293222427368
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.40255022048950195
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.7653310298919678
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.3331856727600098
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.503892660140991
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.8192782402038574
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.011788129806518555
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-42.98744776513841
+	neg	-48.60231869220734
+	add	3.5339916812049017
+	sub	23.721940279006958
+	mul	1.5637395858764649
+	div	1.0476211706797283
+	fma	55.468103160028875
+	rem	84.8586346748713
+	roundToIntegral	7.749244306768693
+	sqrt	-1.2656556844711304
+	min	34.17887026923044
+	max	0.5980876386165619
+Finished 260 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.132288694381714
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6305654048919678
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 44.0932822227478
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 19.00513529777527
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.0650632381439209
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 16.302407264709473
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.0857844352722168
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9964447021484375
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.01884484291077
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 15.991933107376099
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-42.98744776513841
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	27.378880671092443
+	mul	1.5637395858764649
+	div	1.0476211706797283
+	fma	55.468103160028875
+	rem	82.93947218618086
+	roundToIntegral	6.140079169437806
+	sqrt	-1.2656556844711304
+	min	34.17887026923044
+	max	0.5980876386165619
+Finished 270 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 1.9392447471618652
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 12.668774843215942
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.815476894378662
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 6.352483749389648
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.26391124725341797
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 68.53487133979797
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 3.986818552017212
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 17.149855852127075
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.1189568042755127
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 1.21885347366333
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-38.73138194084167
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	27.378880671092443
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	50.979322242736814
+	rem	84.58250021034817
+	roundToIntegral	6.140079169437806
+	sqrt	-1.2656556844711304
+	min	34.17887026923044
+	max	0.7092670917510986
+Finished 280 iterations.
+---------------------------------------------
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.4841279983520508
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.24468135833740234
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 79.07449793815613
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.2283785343170166
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9503309726715088
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 4.594928741455078
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.310017585754395
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 30.02771258354187
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.2018213272094727
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 4.277954339981079
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-38.73138194084167
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	27.378880671092443
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	48.54909118322226
+	rem	84.02678645315345
+	roundToIntegral	5.556278720498088
+	sqrt	-1.2656556844711304
+	min	30.145428448915485
+	max	0.6413621685721658
+Finished 290 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.305631875991821
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008354902267456055
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.4162237644195557
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.220296621322632
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.4888131618499756
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.6278784275054932
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 262.18151783943176
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008399009704589844
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.07158160209655762
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9015233516693115
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-38.73138194084167
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	27.378880671092443
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	48.54909118322226
+	rem	79.96286762037944
+	roundToIntegral	5.556278720498088
+	sqrt	-1.185829292644154
+	min	30.145428448915485
+	max	0.6413621685721658
+Finished 300 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.14935088157653809
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.1999790668487549
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 26.849316835403442
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 32.550814390182495
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 109.10419511795044
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 3.452625274658203
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.758607864379883
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 29.149344444274902
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 65.87214994430542
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.2618680000305176
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-38.73138194084167
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	24.00948339700699
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	48.54909118322226
+	rem	77.69646407630711
+	roundToIntegral	5.556278720498088
+	sqrt	-1.185829292644154
+	min	28.899895747502644
+	max	0.6413621685721658
+Finished 310 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.28018951416015625
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',623,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',624,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.1992032527923584
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 4.373273611068726
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 23.42100739479065
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5205743312835693
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 296.35499811172485
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 44.15625786781311
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 28.741143703460693
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.50199031829834
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-35.21270082213662
+	neg	-48.60231869220734
+	add	1.4570977210998535
+	sub	21.341763019561768
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	46.748210995285596
+	rem	76.96339438166672
+	roundToIntegral	4.766422445123848
+	sqrt	-1.185829292644154
+	min	28.899895747502644
+	max	0.6413621685721658
+Finished 320 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7032318115234375
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 259.4607741832733
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 0.4371795654296875
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.74020433425903
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 4.234587669372559
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 287.6072585582733
+error : LexToken(SIMPLE_SYMBOL,'timeout',652,0)
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 201.8319251537323
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008808135986328125
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.632572650909424
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.2114243507385254
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-48.60231869220734
+	add	-5.110393307425759
+	sub	21.341763019561768
+	mul	1.5637395858764649
+	div	-0.5431345939636231
+	fma	46.748210995285596
+	rem	77.00506122534479
+	roundToIntegral	-0.20331236194161556
+	sqrt	-1.185829292644154
+	min	28.899895747502644
+	max	0.5600755413373312
+Finished 330 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.472702503204346
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.124543905258179
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.17285919189453
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.254884719848633
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 12.959537267684937
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 282.21283054351807
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 26.323709964752197
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 5.02665114402771
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 5.425337791442871
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9411365985870361
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-45.090003490448005
+	add	-5.110393307425759
+	sub	21.341763019561768
+	mul	18.027141213417053
+	div	-0.5431345939636231
+	fma	46.748210995285596
+	rem	76.20262138048811
+	roundToIntegral	-0.20331236194161556
+	sqrt	-1.185829292644154
+	min	24.02236691388217
+	max	0.5600755413373312
+Finished 340 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.984907150268555
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 63.70248222351074
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 88.3926432132721
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 93.68008923530579
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.098923206329346
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.021869897842407227
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.13110709190368652
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.4053003787994385
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 1.3437514305114746
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.481235027313232
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-45.090003490448005
+	add	-6.947903692722321
+	sub	21.341763019561768
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	46.748210995285596
+	rem	79.57111929451553
+	roundToIntegral	-0.20331236194161556
+	sqrt	-1.0652079184850058
+	min	24.02236691388217
+	max	0.5600755413373312
+Finished 350 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 32.381208419799805
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.1287784576416016
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.9575605392456055
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 45.71669840812683
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 178.491441488266
+error : LexToken(SIMPLE_SYMBOL,'timeout',710,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.14510607719421387
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 74.42122507095337
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 248.82128930091858
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.7122764587402344
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.9735488891601562
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-45.090003490448005
+	add	-6.947903692722321
+	sub	21.341763019561768
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	46.748210995285596
+	rem	79.2438795711393
+	roundToIntegral	-0.20331236194161556
+	sqrt	-4.040185323128333
+	min	24.02236691388217
+	max	0.5600755413373312
+Finished 360 iterations.
+---------------------------------------------
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 38.35782480239868
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 1.1293251514434814
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008208274841308594
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 6.516924142837524
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 130.98172426223755
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 0.09622001647949219
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 38.83241868019104
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 21.304872035980225
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 38.22085213661194
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9212744235992432
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-45.090003490448005
+	add	3.128450870513916
+	sub	19.27960729598999
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	46.748210995285596
+	rem	79.92129634822024
+	roundToIntegral	-0.19204784101909825
+	sqrt	-3.782507879393441
+	min	22.054624617099762
+	max	0.5600755413373312
+Finished 370 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 3.2630996704101562
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 61.62313222885132
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.2758123874664307
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5343618392944336
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 113.05843782424927
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 24.179799795150757
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.070560932159424
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 0.008117198944091797
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 60.32665395736694
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.2914774417877197
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-40.01331523748544
+	add	3.128450870513916
+	sub	19.27960729598999
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	45.08884028026036
+	rem	81.03911332699221
+	roundToIntegral	-0.19204784101909825
+	sqrt	-3.782507879393441
+	min	20.365658191534187
+	max	0.5600755413373312
+Finished 380 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 268.1151547431946
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.0209484100341797
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.719615697860718
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.754040241241455
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7964231967926025
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.601573705673218
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.81699275970459
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 4.21461296081543
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.2188351154327393
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 1.8733677864074707
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-32.2573677500089
+	neg	-40.01331523748544
+	add	3.128450870513916
+	sub	19.27960729598999
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	47.752274924311145
+	rem	79.85438351423849
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.782507879393441
+	min	18.792497532708303
+	max	0.5600755413373312
+Finished 390 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.23376226425170898
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 15.441540718078613
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 79.80186748504639
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8033311367034912
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 37.90703988075256
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.19569611549377441
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4975142478942871
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 316.6265769004822
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3372495174407959
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6897075176239014
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-30.954337211755607
+	neg	-40.01331523748544
+	add	3.128450870513916
+	sub	19.27960729598999
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	47.752274924311145
+	rem	78.3000329486429
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-20.795227087461033
+Finished 400 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 22.520097970962524
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.19187283515930176
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 20.01617956161499
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',807,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',808,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4761040210723877
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 22.937026262283325
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.0355749130249023
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 23.5795578956604
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 102.70941042900085
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.4815006256103516
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-30.954337211755607
+	neg	-40.01331523748544
+	add	3.128450870513916
+	sub	19.27960729598999
+	mul	18.027141213417053
+	div	-0.31733517213301227
+	fma	45.5596187432607
+	rem	78.34291120273315
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-20.795227087461033
+Finished 410 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 30.663206338882446
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',823,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',824,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 2.3869845867156982
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.46618008613586426
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 44.924561977386475
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 100.9835684299469
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 94.18081665039062
+error : LexToken(SIMPLE_SYMBOL,'timeout',834,0)
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.4342927932739258
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.8816390037536621
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 20.195335626602173
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-29.42756107875279
+	neg	-40.01331523748544
+	add	3.128450870513916
+	sub	16.09215170145035
+	mul	15.451835325786046
+	div	-0.31733517213301227
+	fma	44.19268595787786
+	rem	82.41906843662267
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-19.282686523028783
+Finished 420 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 123.47797441482544
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 175.37843585014343
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 66.98841619491577
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 127.40411758422852
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 67.5973334312439
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 171.55340933799744
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 49.269505739212036
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.5250298976898193
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 100.30096650123596
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.030594825744628906
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-29.42756107875279
+	neg	-40.01331523748544
+	add	0.21437218983968098
+	sub	15.28127503395081
+	mul	7.457426607608795
+	div	-0.31733517213301227
+	fma	44.19268595787786
+	rem	80.90421961899851
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-19.282686523028783
+Finished 430 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 64.21039843559265
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6610751152038574
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 272.71434473991394
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 3.0643668174743652
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.8503239154815674
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.408045291900635
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.00022602081299
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.518487215042114
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.734134912490845
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 84.65471720695496
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-29.42756107875279
+	neg	-40.01331523748544
+	add	0.20022307336330414
+	sub	15.388226048151656
+	mul	0.1665412055121528
+	div	-0.31733517213301227
+	fma	44.19268595787786
+	rem	79.38033683671702
+	roundToIntegral	-0.18738528200097757
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-19.282686523028783
+Finished 440 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.114645481109619
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 36.44374203681946
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.017987489700317383
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4117133617401123
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 26.397928476333618
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5511806011199951
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.26807403564453125
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.11516118049621582
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008363485336303711
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.017206430435180664
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-29.42756107875279
+	neg	-40.01331523748544
+	add	0.20022307336330414
+	sub	15.388226048151656
+	mul	0.1665412055121528
+	div	-0.31733517213301227
+	fma	44.19268595787786
+	rem	79.93391017966415
+	roundToIntegral	-0.6948612175489705
+	sqrt	-3.5056504567464186
+	min	18.792497532708303
+	max	-19.282686523028783
+Finished 450 iterations.
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 42.71534514427185
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.007588386535644531
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.94748282432556
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 36.326210260391235
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.17426133155823
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 26.975799560546875
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 3.3049721717834473
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 27.588703632354736
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 89.9270486831665
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 4.000455617904663
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-29.42756107875279
+	neg	-40.01331523748544
+	add	0.20022307336330414
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	-0.31733517213301227
+	fma	42.43414468318224
+	rem	79.59676603117579
+	roundToIntegral	-0.6948612175489705
+	sqrt	-3.3207149058580394
+	min	18.792497532708303
+	max	-14.013027772307396
+Finished 460 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 4.51359486579895
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 6.139848947525024
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 96.43448805809021
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 67.82519960403442
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 17.564759492874146
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7454013824462891
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 3.3200275897979736
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 73.02355456352234
+error : LexToken(SIMPLE_SYMBOL,'timeout',936,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 158.63890147209167
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3803577423095703
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-27.45791352589925
+	neg	-40.01331523748544
+	add	0.20022307336330414
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	0.08412438631057739
+	fma	42.43414468318224
+	rem	80.81886172968595
+	roundToIntegral	-1.1781402856875667
+	sqrt	-3.3207149058580394
+	min	17.168350060780842
+	max	-14.013027772307396
+Finished 470 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 85.62646102905273
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 6.57900857925415
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 38.128353118896484
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 221.00223755836487
+error : LexToken(SIMPLE_SYMBOL,'timeout',948,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3950512409210205
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008504867553710938
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.040910243988037
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 61.98542094230652
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 9.196473121643066
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 176.15056490898132
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-27.45791352589925
+	neg	-40.01331523748544
+	add	0.20022307336330414
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	0.08412438631057739
+	fma	44.488387967600964
+	rem	81.34639477894228
+	roundToIntegral	-5.009889468914123
+	sqrt	-3.3207149058580394
+	min	17.168350060780842
+	max	-14.013027772307396
+Finished 480 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 6.845874786376953
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.9966869354248047
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 2.602468967437744
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 73.89226031303406
+error : LexToken(SIMPLE_SYMBOL,'timeout',968,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 86.07933831214905
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.09228897094726562
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 541.5903007984161
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 113.06137490272522
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.818270206451416
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 63.512744188308716
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-24.236156716066247
+	neg	-40.01331523748544
+	add	0.09389372432933134
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	0.08412438631057739
+	fma	44.488387967600964
+	rem	81.44521627716121
+	roundToIntegral	-5.009889468914123
+	sqrt	-3.3207149058580394
+	min	17.168350060780842
+	max	-15.491541610044592
+Finished 490 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9555895328521729
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.098899126052856
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9471430778503418
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 29.592154264450073
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 32.691808462142944
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.249772787094116
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 18.999773740768433
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.77646851539612
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.499969005584717
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 0.7047438621520996
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-24.236156716066247
+	neg	-40.01331523748544
+	add	0.09389372432933134
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	0.22473733241741473
+	fma	44.488387967600964
+	rem	82.12587138853578
+	roundToIntegral	-4.877639140401565
+	sqrt	-3.3207149058580394
+	min	17.168350060780842
+	max	-15.491541610044592
+Finished 500 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 80.32031512260437
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.07140016555786133
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.00984811782836914
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 52.543845653533936
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5812435150146484
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.29764294624328613
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 34.940306186676025
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1015,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1016,0)
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 12.087746381759644
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 3.9606940746307373
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-40.01331523748544
+	add	-2.7971039613087973
+	sub	15.388226048151656
+	mul	9.212761330604554
+	div	0.22473733241741473
+	fma	44.488387967600964
+	rem	81.45920231812984
+	roundToIntegral	-4.765775636185045
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.491541610044592
+Finished 510 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 109.92903852462769
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1023,0)
+			 1/2 600
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.08877944946289
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 20.45503568649292
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.4901423454284668
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.919555187225342
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 39.18664574623108
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 23.484628200531006
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.1597280502319336
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.690247297286987
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-40.01331523748544
+	add	-2.7971039613087973
+	sub	14.431534945964817
+	mul	8.267695231871171
+	div	0.22473733241741473
+	fma	44.488387967600964
+	rem	79.14760845692757
+	roundToIntegral	-4.765775636185045
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.491541610044592
+Finished 520 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6187357902526855
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.093846082687378
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.69245791435242
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 1.466691493988037
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9781334400177002
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 62.66717839241028
+error : LexToken(SIMPLE_SYMBOL,'timeout',1052,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.2898356914520264
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 18.256183624267578
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.29916858673095703
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 72.38819360733032
+error : LexToken(SIMPLE_SYMBOL,'timeout',1060,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-37.17832658972059
+	add	-2.7971039613087973
+	sub	14.431534945964817
+	mul	7.571970343589783
+	div	0.22473733241741473
+	fma	44.488387967600964
+	rem	81.11349816601958
+	roundToIntegral	-4.765775636185045
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.422949817445543
+Finished 530 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 1.714536190032959
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1063,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1064,0)
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 41.17631125450134
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 148.4234426021576
+error : LexToken(SIMPLE_SYMBOL,'timeout',1068,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.5912761688232422
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.54354000091553
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 76.94421863555908
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 4.2816174030303955
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 1.6012163162231445
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008318901062011719
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-37.17832658972059
+	add	-1.0344674825668334
+	sub	14.431534945964817
+	mul	7.571970343589783
+	div	0.8764515263693673
+	fma	44.117920244441315
+	rem	81.46194549762846
+	roundToIntegral	-4.765775636185045
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.422949817445543
+Finished 540 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 95.92402076721191
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 54.70228695869446
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 64.42730951309204
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.455536365509033
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.3567113876342773
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 0.3174140453338623
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.2779645919799805
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 1.6422972679138184
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.0940628051757812
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.5888614654541016
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-37.17832658972059
+	add	-1.0344674825668334
+	sub	11.451089915107282
+	mul	7.571970343589783
+	div	10.326304867863655
+	fma	44.117920244441315
+	rem	82.34143706669798
+	roundToIntegral	-4.765775636185045
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.422949817445543
+Finished 550 iterations.
+---------------------------------------------
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.09152817726135254
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.10561895370483398
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.05904269218444824
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.235795497894287
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7069129943847656
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 47.096843242645264
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 1.7053232192993164
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 6.1288535594940186
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.91926026344299
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3150784969329834
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-34.81300721168518
+	add	-1.0344674825668334
+	sub	11.451089915107282
+	mul	7.571970343589783
+	div	10.326304867863655
+	fma	43.54976102284023
+	rem	82.47607090930612
+	roundToIntegral	-4.649825421246613
+	sqrt	-3.3207149058580394
+	min	15.829984426498413
+	max	-15.422949817445543
+Finished 560 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.242959499359131
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 2.446781635284424
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1125,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1126,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.71658205986023
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 0.009979724884033203
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 167.39827489852905
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 0.0969994068145752
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 60.22565031051636
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 26.73546552658081
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1139,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1140,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-21.824800905428436
+	neg	-34.81300721168518
+	add	-1.0344674825668334
+	sub	11.451089915107282
+	mul	7.009318920282217
+	div	9.820215407539816
+	fma	43.54976102284023
+	rem	81.83452368869408
+	roundToIntegral	-4.649825421246613
+	sqrt	-3.3207149058580394
+	min	14.898764231625725
+	max	-15.422949817445543
+Finished 570 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.0899665355682373
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 2.616853713989258
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 254.36428308486938
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.896695613861084
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 146.54911589622498
+error : LexToken(SIMPLE_SYMBOL,'timeout',1150,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 52.81075739860535
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 88.44505858421326
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 3.5950112342834473
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 1.9961745738983154
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 427.3194053173065
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-19.83437621025812
+	neg	-34.81300721168518
+	add	-1.2477477278028215
+	sub	11.451089915107282
+	mul	7.009318920282217
+	div	9.372488723860847
+	fma	42.339390608999466
+	rem	82.6095257890359
+	roundToIntegral	-4.649825421246613
+	sqrt	-3.3207149058580394
+	min	14.898764231625725
+	max	-15.422949817445543
+Finished 580 iterations.
+---------------------------------------------
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 2.547431468963623
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.9113566875457764
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1165,0)
+			 1/2 600
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 90.58879208564758
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 26.13220500946045
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 14.113518953323364
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 116.63024997711182
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.90967559814453
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.9528188705444336
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.072319507598877
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-19.83437621025812
+	neg	-34.81300721168518
+	add	-1.7924138307571411
+	sub	11.451089915107282
+	mul	6.609425817217145
+	div	9.372488723860847
+	fma	42.339390608999466
+	rem	82.25123622200711
+	roundToIntegral	-7.784584909015229
+	sqrt	-3.3207149058580394
+	min	14.898764231625725
+	max	-15.422949817445543
+Finished 590 iterations.
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.17693328857421875
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 51.324023485183716
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 65.61221289634705
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 16.460323333740234
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 8.201122283935547
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 65.12764191627502
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 75.19115447998047
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 17.468968868255615
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.18928337097168
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.10822558403015137
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-19.83437621025812
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.854343109660682
+	mul	5.0382270336151125
+	div	9.372488723860847
+	fma	42.339390608999466
+	rem	82.8115134568719
+	roundToIntegral	-7.784584909015229
+	sqrt	-3.3207149058580394
+	min	14.898764231625725
+	max	-14.434415942744204
+Finished 600 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.010936498641967773
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1203,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1204,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.44576454162597656
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9675061702728271
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 32.13843297958374
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4986095428466797
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.08488678932189941
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.498613119125366
+error : LexToken(SIMPLE_SYMBOL,'timeout',1216,0)
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 0.20342707633972168
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 29.3569393157959
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-20.162707783959128
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.854343109660682
+	mul	5.0382270336151125
+	div	9.372488723860847
+	fma	42.339390608999466
+	rem	84.47046675961074
+	roundToIntegral	-7.784584909015229
+	sqrt	-3.3207149058580394
+	min	14.898764231625725
+	max	-13.032921950022379
+Finished 610 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.2940530776977539
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 30.453153610229492
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 104.82759642601013
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.3981363773345947
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.19318246841430664
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 249.00580978393555
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 13.950111150741577
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 1.2913103103637695
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.70708417892456
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6514334678649902
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-13.33967893322309
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.854343109660682
+	mul	6.494760709650376
+	div	9.657913458974738
+	fma	42.339390608999466
+	rem	84.59039252980723
+	roundToIntegral	-7.784584909015229
+	sqrt	-3.3207149058580394
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 620 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.5769236087799072
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 12.077334642410278
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 19.561908721923828
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.352195978164673
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9501383304595947
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 14.470473051071167
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 3.436582088470459
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.6320099830627441
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.6271281242370605
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.7667431831359863
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-13.33967893322309
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.158953152204818
+	mul	6.494760709650376
+	div	9.657913458974738
+	fma	42.339390608999466
+	rem	84.05805676403445
+	roundToIntegral	-7.6153823551924305
+	sqrt	-3.1091163579155414
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 630 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.791515111923218
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.13189935684204102
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 295.27843594551086
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 44.694899559020996
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.99038577079773
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 406.6604573726654
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7284386157989502
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.452879190444946
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 26.222484827041626
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 57.7388961315155
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-28.087545585632324
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.158953152204818
+	mul	6.494760709650376
+	div	9.657913458974738
+	fma	42.339390608999466
+	rem	83.73845686550385
+	roundToIntegral	-7.6153823551924305
+	sqrt	-3.1091163579155414
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 640 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.756924390792847
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.8224246501922607
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 240.67096662521362
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.2744739055633545
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9472336769104004
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.5402703285217285
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.789345026016235
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 47.62621736526489
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.3042616844177246
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.987335205078125
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-28.087545585632324
+	neg	-32.72703377902508
+	add	-1.7924138307571411
+	sub	10.158953152204818
+	mul	6.494760709650376
+	div	9.657913458974738
+	fma	36.30385492299054
+	rem	82.99333607647618
+	roundToIntegral	-7.450869387768682
+	sqrt	-3.1091163579155414
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 650 iterations.
+---------------------------------------------
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 3.8216958045959473
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 218.36855840682983
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 226.51141357421875
+error : LexToken(SIMPLE_SYMBOL,'timeout',1306,0)
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 3.0086708068847656
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 0.4327425956726074
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.009639263153076172
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 150.94042229652405
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 17.84499430656433
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1317,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1318,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 166.93483757972717
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-28.087545585632324
+	neg	-30.414851082695854
+	add	-1.7924138307571411
+	sub	16.712176163991295
+	mul	9.132296512001439
+	div	9.18224195241928
+	fma	36.30385492299054
+	rem	83.2214655488583
+	roundToIntegral	-7.450869387768682
+	sqrt	-3.1091163579155414
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 660 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 45.13179039955139
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.5295469760894775
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 71.5664701461792
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5853986740112305
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 4.520669221878052
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.8338022232055664
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.006062030792236
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 2.5017266273498535
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.361198425292969
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.05474400520324707
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-28.087545585632324
+	neg	-28.857500640969526
+	add	-1.7924138307571411
+	sub	15.944796703078532
+	mul	9.132296512001439
+	div	8.575472093763805
+	fma	36.30385492299054
+	rem	83.02042413568037
+	roundToIntegral	-7.450869387768682
+	sqrt	-2.9169479211171465
+	min	8.250554031795925
+	max	-12.161107431758534
+Finished 670 iterations.
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 3.855149745941162
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 72.75591492652893
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.1813976764678955
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.011106729507446289
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.3230338096618652
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 9.48812985420227
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.7539958953857422
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 105.76771473884583
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.2389557361602783
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 2.4165430068969727
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-28.087545585632324
+	neg	-27.328695130348205
+	add	-1.7924138307571411
+	sub	15.944796703078532
+	mul	9.132296512001439
+	div	8.575472093763805
+	fma	36.30385492299054
+	rem	82.21654035314992
+	roundToIntegral	-6.911423853465487
+	sqrt	-2.9169479211171465
+	min	8.250554031795925
+	max	-11.303933485694554
+Finished 680 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 85.05904603004456
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 520.0813329219818
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 30.317704677581787
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 68.2776620388031
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 4.568271636962891
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.07558298110962
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 65.86038851737976
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.06091189384460449
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 2.0705130100250244
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 13.348594427108765
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-1.5955926231715991
+	sub	15.944796703078532
+	mul	9.132296512001439
+	div	8.575472093763805
+	fma	36.30385492299054
+	rem	81.62637903792037
+	roundToIntegral	-6.911423853465487
+	sqrt	-2.9169479211171465
+	min	6.808228867394583
+	max	-11.303933485694554
+Finished 690 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.221086502075195
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 35.075408935546875
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008336067199707031
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 17.41595435142517
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.46142053604125977
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 1.778785228729248
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.0585429668426514
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1395,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1396,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7904078960418701
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 1.1280910968780518
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-1.5955926231715991
+	sub	15.944796703078532
+	mul	9.132296512001439
+	div	8.575472093763805
+	fma	36.30385492299054
+	rem	81.2384849322704
+	roundToIntegral	-6.777610502243039
+	sqrt	-2.7711424451125293
+	min	6.808228867394583
+	max	-11.12175777554512
+Finished 700 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 15.481507301330566
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7793562412261963
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 92.99043130874634
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 91.14044117927551
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.054412841796875
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 23.70752263069153
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.021714448928833008
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.281014919281006
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 2.2156014442443848
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 120.08757257461548
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-1.5955926231715991
+	sub	11.577026533043906
+	mul	8.7335914850235
+	div	8.575472093763805
+	fma	36.30385492299054
+	rem	80.07745352469456
+	roundToIntegral	-6.777610502243039
+	sqrt	-7.177410507202149
+	min	6.808228867394583
+	max	-11.12175777554512
+Finished 710 iterations.
+---------------------------------------------
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 3.375613212585449
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 2.2737131118774414
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.746429204940796
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8736720085144043
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7507345676422119
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.2717504501342773
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 3.4522109031677246
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.7731990814208984
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 44.03733777999878
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 94.93899273872375
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-1.5955926231715991
+	sub	11.577026533043906
+	mul	7.886164438156855
+	div	8.575472093763805
+	fma	35.35579144327264
+	rem	80.08413616834186
+	roundToIntegral	-6.647962084003521
+	sqrt	-7.177410507202149
+	min	6.808228867394583
+	max	-10.71294415473938
+Finished 720 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 89.50678539276123
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 25.47247838973999
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 35.960519313812256
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.466222286224365
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 25.75559139251709
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 21.441826820373535
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 0.4324939250946045
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.4122791290283203
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6126036643981934
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.1380598545074463
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-2.428204050064087
+	sub	9.637668371200563
+	mul	7.886164438156855
+	div	8.575472093763805
+	fma	35.35579144327264
+	rem	79.51727299924411
+	roundToIntegral	-6.647962084003521
+	sqrt	-7.177410507202149
+	min	6.808228867394583
+	max	-10.71294415473938
+Finished 730 iterations.
+---------------------------------------------
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 0.39896082878112793
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.995015859603882
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 82.79157996177673
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9469189643859863
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 51.51874566078186
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.7917842864990234
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 408.4659583568573
+error : LexToken(SIMPLE_SYMBOL,'timeout',1474,0)
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 229.04092812538147
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 35.97552990913391
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 168.54479908943176
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-10.123731961617104
+	sub	9.637668371200563
+	mul	2.5565267259424385
+	div	8.575472093763805
+	fma	35.35579144327264
+	rem	79.46742314977963
+	roundToIntegral	-6.647962084003521
+	sqrt	-7.177410507202149
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 740 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 62.968271255493164
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 255.72054934501648
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.059753894805908
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.339430332183838
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.087918043136597
+error : LexToken(SIMPLE_SYMBOL,'timeout',1490,0)
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.11716294288635254
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 89.16416692733765
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 56.25060772895813
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.12426781654358
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 24.103443145751953
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.783504909939236
+	neg	-27.328695130348205
+	add	-10.123731961617104
+	sub	9.637668371200563
+	mul	2.5565267259424385
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	80.71030618099108
+	roundToIntegral	-6.647962084003521
+	sqrt	-18.775414364678518
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 750 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.414424180984497
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 2.5799832344055176
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 52.87656116485596
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 313.1416425704956
+error : LexToken(SIMPLE_SYMBOL,'timeout',1508,0)
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 82.84215569496155
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.04911422729492
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 1.7840120792388916
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 299.37257862091064
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 45.16804599761963
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.0074656009674072266
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-19.343345189916676
+	neg	-27.328695130348205
+	add	-10.123731961617104
+	sub	9.299119023176342
+	mul	1.3472185653188955
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	81.10439834043355
+	roundToIntegral	-4.097359029146339
+	sqrt	-17.912877928126942
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 760 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3114602565765381
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.662887573242188
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.03829503059387207
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.5579209327697754
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.1697583198547363
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.942019462585449
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 5.043293476104736
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8240022659301758
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 163.70242929458618
+error : LexToken(SIMPLE_SYMBOL,'timeout',1538,0)
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 0.0933372974395752
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-27.328695130348205
+	add	-9.832230294192279
+	sub	8.972300608952843
+	mul	1.3472185653188955
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	81.8120003123827
+	roundToIntegral	-4.097359029146339
+	sqrt	-17.912877928126942
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 770 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.279066324234009
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.102861166000366
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 42.51272010803223
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.9817023277282715
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 63.62670350074768
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 70.86561369895935
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 41.99198508262634
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.450607538223267
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.16151738166809082
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.07531714439392
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-28.796788068044755
+	add	-11.700641776834216
+	sub	8.972300608952843
+	mul	1.3472185653188955
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	81.35441122114415
+	roundToIntegral	-4.097359029146339
+	sqrt	-17.912877928126942
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 780 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 367.89987993240356
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.2933058738708496
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 31.65751028060913
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 4.247768402099609
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.25023770332336426
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.9870221614837646
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6700751781463623
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.037639856338501
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.001439809799194
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.018056631088256836
+error : LexToken(SIMPLE_SYMBOL,'timeout',1580,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-28.796788068044755
+	add	-11.29869556427002
+	sub	8.972300608952843
+	mul	1.3472185653188955
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	81.61818797880292
+	roundToIntegral	-4.097359029146339
+	sqrt	-17.12358942239181
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 790 iterations.
+---------------------------------------------
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 8.759889602661133
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.3255364894866943
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.52852725982666
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.39815521240234375
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.14667153358459473
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.4893808364868164
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.484706163406372
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 170.832848072052
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 48.002753257751465
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 39.87993288040161
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-28.796788068044755
+	add	-11.29869556427002
+	sub	8.972300608952843
+	mul	1.188281257947286
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	81.03463628158036
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	6.808228867394583
+	max	-9.620781641740065
+Finished 800 iterations.
+---------------------------------------------
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 5.879413604736328
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.32735586166381836
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 174.71075558662415
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.401742696762085
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 2.5891993045806885
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.87734532356262
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 55.12112283706665
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.65979027748108
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 88.57239770889282
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 6.4325339794158936
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-27.483102278275922
+	add	-11.29869556427002
+	sub	8.972300608952843
+	mul	1.188281257947286
+	div	8.575472093763805
+	fma	34.54157304763794
+	rem	80.10280759783078
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	6.808228867394583
+	max	-5.403535042490277
+Finished 810 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 29.04158115386963
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.1343121528625488
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.86034941673279
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5138425827026367
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.398580074310303
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.906279802322388
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 30.556909799575806
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.378774404525757
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1637,0)
+			 1/2 600
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.48817992210388184
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-18.698600347836813
+	neg	-27.483102278275922
+	add	-11.29869556427002
+	sub	8.972300608952843
+	mul	1.188281257947286
+	div	8.575472093763805
+	fma	34.49617690443993
+	rem	80.26432650144929
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	6.808228867394583
+	max	-5.403535042490277
+Finished 820 iterations.
+---------------------------------------------
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 39.97723317146301
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.469951868057251
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 427.1091446876526
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6924967765808105
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.819220542907715
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 37.154460430145264
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 101.40133953094482
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 148.71621251106262
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.4471845626831055
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.576737403869629
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-27.483102278275922
+	add	-11.29869556427002
+	sub	11.091409998280664
+	mul	1.188281257947286
+	div	8.575472093763805
+	fma	34.49617690443993
+	rem	79.4678051567626
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	6.808228867394583
+	max	-5.403535042490277
+Finished 830 iterations.
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 19.855329275131226
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.70558500289917
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 29.29705810546875
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 22.12883496284485
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.2584898471832275
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 14.501837491989136
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.03278708457946777
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 37.66132116317749
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 27.94762635231018
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1679,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1680,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-27.483102278275922
+	add	-11.29869556427002
+	sub	10.436065978017348
+	mul	1.188281257947286
+	div	8.575472093763805
+	fma	34.49617690443993
+	rem	79.10955153996092
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	7.303445274179632
+	max	-5.403535042490277
+Finished 840 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.30685901641845703
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 49.772278785705566
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 342.1890637874603
+error : LexToken(SIMPLE_SYMBOL,'timeout',1686,0)
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.2246553897857666
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 45.68312096595764
+error : LexToken(SIMPLE_SYMBOL,'timeout',1690,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 376.2948877811432
+error : LexToken(SIMPLE_SYMBOL,'timeout',1692,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.13979792594909668
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.209610462188721
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.010857105255127
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 52.85429620742798
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-27.38241614466128
+	add	-11.29869556427002
+	sub	10.1168097337087
+	mul	1.188281257947286
+	div	6.055116187442433
+	fma	34.49617690443993
+	rem	80.31538512009705
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	7.303445274179632
+	max	-5.403535042490277
+Finished 850 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 11.77377986907959
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 37.95311117172241
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.23183369636535645
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.895852088928223
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 10.936938762664795
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5881228446960449
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 375.1950886249542
+error : LexToken(SIMPLE_SYMBOL,'timeout',1714,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.178567886352539
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 173.11533331871033
+error : LexToken(SIMPLE_SYMBOL,'timeout',1718,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.2876460552215576
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-27.38241614466128
+	add	-11.29869556427002
+	sub	10.1168097337087
+	mul	1.188281257947286
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	80.93174068980358
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	16.760030756825987
+	max	-5.005986164356099
+Finished 860 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.087584733963013
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 435.84200620651245
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.5859501361846924
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.7824711799621582
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 425.29309487342834
+error : LexToken(SIMPLE_SYMBOL,'timeout',1730,0)
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 2.191741704940796
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.529532194137573
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 43.11413764953613
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 11.410062313079834
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 156.3577687740326
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-26.241982102394104
+	add	-11.296028900146485
+	sub	9.790731276235274
+	mul	1.188281257947286
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	80.61295689298973
+	roundToIntegral	-4.097359029146339
+	sqrt	-15.748883148034414
+	min	16.760030756825987
+	max	-5.005986164356099
+Finished 870 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 107.20999932289124
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 6.359550476074219
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3401148319244385
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 16.050450563430786
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.216444253921509
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 40.979408740997314
+error : LexToken(SIMPLE_SYMBOL,'timeout',1752,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.09573245048522949
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.443231105804443
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 9.658333778381348
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.304452419281006
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-26.241982102394104
+	add	-11.296028900146485
+	sub	9.790731276235274
+	mul	1.188281257947286
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	81.56091219112143
+	roundToIntegral	-3.9932593624546815
+	sqrt	-15.748883148034414
+	min	16.760030756825987
+	max	-4.733008933067321
+Finished 880 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.311763048171997
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 329.6779594421387
+error : LexToken(SIMPLE_SYMBOL,'timeout',1764,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.648564338684082
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 0.6409509181976318
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 18.05091905593872
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.297407388687134
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 3.614238739013672
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.30585289001464844
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.46824002265930176
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.9761292934417725
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-16.400687310003466
+	neg	-26.241982102394104
+	add	-11.296028900146485
+	sub	9.790731276235274
+	mul	1.2077270984649657
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	81.46784248806183
+	roundToIntegral	-3.9932593624546815
+	sqrt	-15.748883148034414
+	min	16.057561457157135
+	max	-4.733008933067321
+Finished 890 iterations.
+---------------------------------------------
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 0.2217695713043213
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.39181065559387207
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.1928768157959
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 13.00827169418335
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7456305027008057
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 19.291813611984253
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.16035795211791992
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 354.0818428993225
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.008275032043457031
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 0.5339736938476562
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-15.209690928459167
+	neg	-25.07245268821716
+	add	-10.931612891535606
+	sub	9.790731276235274
+	mul	1.2077270984649657
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	81.96095355102115
+	roundToIntegral	-3.9092763176670755
+	sqrt	-15.748883148034414
+	min	16.057561457157135
+	max	-4.733008933067321
+Finished 900 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 17.712741136550903
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.16591238975524902
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 29.941431045532227
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.30897045135498047
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 0.5473208427429199
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 32.26237344741821
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 25.075199127197266
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 181.14774012565613
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.790752172470093
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.005803108215332
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-15.209690928459167
+	neg	-25.07245268821716
+	add	-10.931612891535606
+	sub	9.484395481646063
+	mul	1.2077270984649657
+	div	6.055116187442433
+	fma	36.61634872599346
+	rem	81.84682337401856
+	roundToIntegral	-3.9092763176670755
+	sqrt	-17.60070372581482
+	min	15.875683698654175
+	max	-3.8089374034635473
+Finished 910 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.21166467666625977
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 99.2717535495758
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 37.71667146682739
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.39297437667847
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.671809673309326
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.6023211479187012
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 2.6736295223236084
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 50.17582869529724
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.991342306137085
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 24.579307556152344
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-15.209690928459167
+	neg	-25.07245268821716
+	add	-9.967713043093681
+	sub	9.484395481646063
+	mul	1.2077270984649657
+	div	5.993923591530842
+	fma	36.61634872599346
+	rem	81.14984945706651
+	roundToIntegral	-3.9092763176670755
+	sqrt	-17.60070372581482
+	min	15.875683698654175
+	max	-3.8089374034635473
+Finished 920 iterations.
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.2527811527252197
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 18.473306894302368
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 5.82430362701416
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 46.45167112350464
+error : LexToken(SIMPLE_SYMBOL,'timeout',1848,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8973326683044434
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.732109785079956
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.794400691986084
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 33.707207679748535
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.6303365230560303
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 5.331164121627808
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-15.209690928459167
+	neg	-25.07245268821716
+	add	-9.967713043093681
+	sub	9.192148952773124
+	mul	1.2077270984649657
+	div	5.993923591530842
+	fma	36.61634872599346
+	rem	82.04342217678169
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	15.271225745861347
+	max	-3.8089374034635473
+Finished 930 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 94.92035460472107
+error : LexToken(SIMPLE_SYMBOL,'timeout',1862,0)
+			 2/2
+		 solving complete
+		 selected min
+		 finished inst generation
+		 solving 
+			 1/2 38.023390769958496
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.387958526611328
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.45910000801086426
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 79.26987743377686
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 28.96966052055359
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.579163312911987
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 267.5747492313385
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 78.70531868934631
+error : LexToken(SIMPLE_SYMBOL,'timeout',1878,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5435831546783447
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-15.209690928459167
+	neg	-25.07245268821716
+	add	-9.967713043093681
+	sub	9.192148952773124
+	mul	1.2077270984649657
+	div	5.993923591530842
+	fma	36.61634872599346
+	rem	82.8112200769421
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	13.35172556064747
+	max	-3.8089374034635473
+Finished 940 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 34.39064335823059
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1883,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',1884,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 69.0095865726471
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.0318939685821533
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.718562602996826
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 20.47136402130127
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 7.339029788970947
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 540.189802646637
+error : LexToken(SIMPLE_SYMBOL,'timeout',1896,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 89.1802921295166
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 55.0083487033844
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-14.748791203354344
+	neg	-25.07245268821716
+	add	-9.967713043093681
+	sub	9.192148952773124
+	mul	0.6018421925031221
+	div	5.993923591530842
+	fma	36.61634872599346
+	rem	82.54307626078054
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	13.35172556064747
+	max	-3.8089374034635473
+Finished 950 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 85.50587940216064
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 3.9469687938690186
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 57.71292543411255
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.3644678592681885
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.43548011779785156
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 195.18931221961975
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.5159280300140381
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.133663892745972
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 20.75956678390503
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.08056855201721191
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-14.748791203354344
+	neg	-25.07245268821716
+	add	-11.148467981454099
+	sub	9.192148952773124
+	mul	0.6018421925031221
+	div	5.981682797273
+	fma	36.61634872599346
+	rem	82.5362372872899
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	13.35172556064747
+	max	-4.965592250227927
+Finished 960 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.7434930801391602
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.514524221420288
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 0.4684579372406006
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.8921334743499756
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 15.51784610748291
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 31.235234022140503
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 281.6841642856598
+			 2/2
+		 solving complete
+		 selected max
+		 finished inst generation
+		 solving 
+			 1/2 45.34128665924072
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 1.188786506652832
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8390085697174072
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-14.312860706273247
+	neg	-24.057849462215717
+	add	-11.148467981454099
+	sub	9.192148952773124
+	mul	0.6018421925031221
+	div	5.981682797273
+	fma	36.61634872599346
+	rem	81.67447824363708
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 970 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 59.34189581871033
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.11018967628479
+			 2/2
+		 solving complete
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 0.14859914779663086
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.714508295059204
+error : LexToken(SIMPLE_SYMBOL,'timeout',1948,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.1392180919647217
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.04695749282836914
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 92.1942389011383
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 37.02423810958862
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 39.14902687072754
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 142.98337697982788
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-14.312860706273247
+	neg	-24.057849462215717
+	add	-11.148467981454099
+	sub	8.929936002282535
+	mul	0.6018421925031221
+	div	5.981682797273
+	fma	36.61634872599346
+	rem	81.76653145578003
+	roundToIntegral	-3.848505206541579
+	sqrt	-17.60070372581482
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 980 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 23.223116397857666
+			 2/2
+		 solving complete
+		 selected add
+		 finished inst generation
+		 solving 
+			 1/2 7.983283042907715
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1965,0)
+			 1/2 600
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.3398761749267578
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.449392557144165
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 36.12400269508362
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.41875290870666504
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 270.7866668701172
+error : LexToken(SIMPLE_SYMBOL,'timeout',1976,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.40993523597717285
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 2.4693763256073
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-13.89498291015625
+	neg	-24.057849462215717
+	add	-10.901085523998036
+	sub	8.929936002282535
+	mul	0.6018421925031221
+	div	5.981682797273
+	fma	36.61634872599346
+	rem	81.81511088615275
+	roundToIntegral	-3.848505206541579
+	sqrt	-25.491589857981754
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 990 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6941306591033936
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 263.1136646270752
+error : LexToken(SIMPLE_SYMBOL,'timeout',1984,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.406451463699341
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.8408682346343994
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.0477640628814697
+			 2/2
+		 solving complete
+		 selected sqrt
+		 finished inst generation
+		 solving 
+			 1/2 0.13793373107910156
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.6513869762420654
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 4.4698638916015625
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 20.43327283859253
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+error : LexToken(SIMPLE_SYMBOL,'timeout',1999,0)
+			 1/2 600
+error : LexToken(SIMPLE_SYMBOL,'timeout',2000,0)
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-13.89498291015625
+	neg	-24.057849462215717
+	add	-10.901085523998036
+	sub	8.929936002282535
+	mul	0.6018421925031221
+	div	5.981682797273
+	fma	36.61634872599346
+	rem	82.18320015582539
+	roundToIntegral	-3.772799134254453
+	sqrt	-24.531690544552273
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 1000 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.028037548065185547
+			 2/2
+		 solving complete
+		 selected roundToIntegral
+		 finished inst generation
+		 solving 
+			 1/2 4.030360460281372
+			 2/2
+		 solving complete
+		 selected abs
+		 finished inst generation
+		 solving 
+			 1/2 199.44428777694702
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 86.64397525787354
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.148329973220825
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.205275297164917
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 99.44777131080627
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 32.01958966255188
+			 2/2
+		 solving complete
+		 selected mul
+		 finished inst generation
+		 solving 
+			 1/2 1.667309284210205
+			 2/2
+		 solving complete
+		 selected div
+		 finished inst generation
+		 solving 
+			 1/2 1.7886416912078857
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.253624591562485
+	neg	-26.843228340148926
+	add	-10.901085523998036
+	sub	8.929936002282535
+	mul	0.6169386704762777
+	div	5.74170859336853
+	fma	36.61634872599346
+	rem	82.01534212218878
+	roundToIntegral	-3.6939270914646594
+	sqrt	-24.531690544552273
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 1010 iterations.
+---------------------------------------------
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 3.5516011714935303
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 2.5775458812713623
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 38.91615533828735
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 79.64901876449585
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 10.420165300369263
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 1.917083740234375
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 48.36316466331482
+error : LexToken(SIMPLE_SYMBOL,'timeout',2034,0)
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 0.48847007751464844
+			 2/2
+		 solving complete
+		 selected neg
+		 finished inst generation
+		 solving 
+			 1/2 22.104111194610596
+			 2/2
+		 solving complete
+		 selected fma
+		 finished inst generation
+		 solving 
+			 1/2 0.009777545928955078
+			 2/2
+		 solving complete
+---------------------------------------------
+	abs	-17.253624591562485
+	neg	-25.83745804854802
+	add	-10.901085523998036
+	sub	8.929936002282535
+	mul	0.6169386704762777
+	div	5.74170859336853
+	fma	35.74458702405294
+	rem	83.09971372598608
+	roundToIntegral	-3.6939270914646594
+	sqrt	-24.531690544552273
+	min	13.35172556064747
+	max	-4.0465191277590655
+Finished 1020 iterations.
+---------------------------------------------
+		 selected sub
+		 finished inst generation
+		 solving 
+			 1/2 10.87865400314331
+			 2/2
+		 solving complete
+		 selected rem
+		 finished inst generation
+		 solving 
+			 1/2 52.131869077682495
