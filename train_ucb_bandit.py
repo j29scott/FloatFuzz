@@ -7,6 +7,7 @@ import json
 from Fuzz import *
 rng = randrange(sys.maxsize)
 seed(rng)
+Settings.PythonRandomSeed = rng
 print("Seed was:", rng)
 
 N = 2500

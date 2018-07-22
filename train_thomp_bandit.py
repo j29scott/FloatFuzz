@@ -8,7 +8,7 @@ from Fuzz import *
 rng = randrange(sys.maxsize)
 seed(rng)
 print("Seed was:", rng)
-
+Settings.PythonRandomSeed = rng
 N = 2500
 
 #seed(6446321609587222541)

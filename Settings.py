@@ -4,10 +4,10 @@ FuzzerPopulation = 5
 FuzzerNumberOfMutations = 3
 FuzzerNumberOfHardestKept = 1
 FuzzerOverrideTerminationOnMaxScore = False
-
+FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
-SolverTimeout = 30
+SolverTimeout = 60
 SolverMemoryLimit = None
 
 ## Generator Settings

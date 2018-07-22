@@ -16,6 +16,7 @@ class Fuzzer:
 		self.gen = mk_gen()
 		self.mutater = mutater(self.gen)
 		self.mutater.ReadModel()
+		self.startPop = Settings.FuzzerNumberPopulationStart
 		
 	def Fuzz(self):
 		LogPrint("Fuzzer Start")
@@ -31,11 +32,11 @@ class Fuzzer:
 				break
 			LogPrint("Solving.")
 			if iter == 0:
-				for i in range(self.nPop):
+				for i in range(self.startPop):
 					population.append(self.gen.gen())
-				for i in range(self.nPop):
+				for i in range(self.startPop):
 					population[i].Solve(self.gen.consts)
-					LogPrint("\t("+str(i+1)+"/"+str(self.nPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
+					LogPrint("\t("+str(i+1)+"/"+str(self.startPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
 			else:
 				assert len(population) == self.nKeepBest, "error"
 				n = 0

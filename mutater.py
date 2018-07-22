@@ -27,12 +27,17 @@ class Mutater(object):
 
 		
 class RandomMutater(Mutater):
-	def __init__(self,gen=None):
+	def __init__(self,gen=None,id=None):
 		if gen == None:
 			self.gen = mk_gen()
 		else:
 			self.gen = gen
 		self.name = "random"
+		
+		if id == None:
+			self.id = Settings.PythonRandomSeed
+		else:
+			self.id = id
 		
 	def Mutate(self, instance):
 		numTerms = instance.NumTerms()
@@ -98,7 +103,7 @@ class RandomMutater(Mutater):
 		return [ast_list,indx,done]
 		
 	def Reward(self,rewardVal):
-		with open("rewards.txt", "a") as myfile:
+		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
@@ -108,12 +113,19 @@ class RandomMutater(Mutater):
 		pass	
 		
 class EpsilonBandit(Mutater):
-	def __init__(self,gen=None):
+	def __init__(self,gen=None,id=None):
 		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
 			self.gen = gen
+			
+			
+		if id == None:
+			self.id = Settings.PythonRandomSeed
+		else:
+			self.id = id	
+			
 			
 		self.epsilon = 0.33
 		
@@ -164,11 +176,11 @@ class EpsilonBandit(Mutater):
 		self.N[self.lastAction] += 1
 		self.n += 1
 		print("\t\tempirical means = " , self.empiricalMeans)
-		with open("rewards.txt", "a") as myfile:
-			myfile.write(str(rewardVal)+ "\n")
+		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
+			myfile.write(str(rewardVal) + "\n")
 	def WriteModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'w') as file:
+			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:
 				file.write(str(self.epsilon) + "\n")
 				
 				file.write(str(self.n) + "\n")
@@ -185,7 +197,7 @@ class EpsilonBandit(Mutater):
 		
 	def ReadModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'r') as file:
+			with open("models/" +self.name + str(self.id) +  ".model", 'r') as file:
 				lines = file.readlines()
 				self.epsilon = float(lines[0])
 				self.n = int(lines[1])
@@ -211,13 +223,19 @@ class EpsilonBandit(Mutater):
 			
 	
 class ThompsonBandit(Mutater):
-	def __init__(self,gen=None):
+	def __init__(self,gen=None,id=None):
 		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
 			self.gen = gen
 
+		if id == None:
+			self.id = Settings.PythonRandomSeed
+		else:
+			self.id = id
+			
+			
 		self.ops = []
 		for i in range(len(gen.ops)):
 			self.ops.append(gen.ops[i])
@@ -274,12 +292,12 @@ class ThompsonBandit(Mutater):
 			self.alphaBetaPairs[self.lastAction][1]+=1
 
 		print("\t\tempirical means = " , self.empiricalMeans)
-		with open("rewards.txt", "a") as myfile:
+		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'w') as file:
+			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:
 				file.write(str(self.k) + "\n")
 								
 				for i in range(len(self.alphaBetaPairs)):
@@ -290,7 +308,7 @@ class ThompsonBandit(Mutater):
 		
 	def ReadModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'r') as file:
+			with open("models/" +self.name + str(self.id) +  ".model", 'r') as file:
 				lines = file.readlines()
 				self.k = int(lines[0])
 				
@@ -306,13 +324,20 @@ class ThompsonBandit(Mutater):
 			
 			
 class UCBBandit(Mutater):
-	def __init__(self,gen=None):
+	def __init__(self,gen=None,id=None):
 		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
 			self.gen = gen
 
+		if id == None:
+			self.id = Settings.PythonRandomSeed
+		else:
+			self.id = id	
+			
+			
+			
 		self.ops = []
 		for i in range(len(gen.ops)):
 			self.ops.append(gen.ops[i])
@@ -364,12 +389,12 @@ class UCBBandit(Mutater):
 		self.N[self.lastAction] += 1
 		self.n += 1
 		print("\t\tempirical means = " , self.empiricalMeans)
-		with open("rewards.txt", "a") as myfile:
+		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'w') as file:	
+			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:
 				for i in range(len(self.N)):
 					file.write(str(self.N[i]) + " ")
 				file.write("\n")
@@ -384,7 +409,7 @@ class UCBBandit(Mutater):
 		
 	def ReadModel(self):
 		try:
-			with open("models/" +self.name + ".model", 'r') as file:
+			with open("models/" +self.name + str(self.id) +  ".model", 'r') as file:
 				lines = file.readlines()
 				
 				self.N = []
