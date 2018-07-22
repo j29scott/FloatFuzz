@@ -1,6 +1,0 @@
-#!/bin/bash
-git pull
-make cleandata;
-while true; do
-	python3 genetic.py
-done

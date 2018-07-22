@@ -4,6 +4,7 @@ from random import seed,randrange,Random
 import sys
 import pickle
 import json
+import Settings
 from Fuzz import *
 rng = randrange(sys.maxsize)
 seed(rng)
@@ -14,7 +15,7 @@ i=0
 #seed(6446321609587222541)
 while True:
 	print("Fuzzer Iteration " + str(i) + " of " + str(N))
-	fuzzer = Fuzzer(UCBBandit)
+	fuzzer = Fuzzer(RandomMutater)
 	if fuzzer.mutater.nIter >= N:
 		break
 	fuzzer.Fuzz()

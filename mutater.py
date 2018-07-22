@@ -38,6 +38,8 @@ class RandomMutater(Mutater):
 			self.id = Settings.PythonRandomSeed
 		else:
 			self.id = id
+			
+		self.nIter = 0
 		
 	def Mutate(self, instance):
 		numTerms = instance.NumTerms()
@@ -97,20 +99,38 @@ class RandomMutater(Mutater):
 		if op.isRounded:
 			start = 2
 		for i in range(start,len(ast_list)):
-			[ast_list[i], indx, done] = self.mutater(ast_list[i],indx,n,depth+1)
+			[ast_list[i], indx, done] = self.mutate_core(ast_list[i],indx,n,depth+1)
 			if done:
 				break
 		return [ast_list,indx,done]
 		
 	def Reward(self,rewardVal):
+		if rewardVal >= 0:
+			rewardVal = 1.0
+		else:
+			rewardVal = 0.0
+		
+		
+		self.nIter += 1
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
-		pass
+		try:
+			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:	
+				file.write(str(self.nIter) + "\n")
+		except IOError as e:
+			print("Couldn't save file.")
 		
 	def ReadModel(self):
-		pass	
+		try:
+			with open("models/" +self.name + str(self.id) +  ".model", 'r') as file:
+				lines = file.readlines()					
+				self.nIter = int(lines[0])
+				
+		except IOError as e:
+			print("Couldn't open model.")
+				
 		
 class EpsilonBandit(Mutater):
 	def __init__(self,gen=None,id=None):
@@ -126,8 +146,9 @@ class EpsilonBandit(Mutater):
 		else:
 			self.id = id	
 			
+		self.nIter = 0
 			
-		self.epsilon = 0.33
+		self.epsilon = 0.10
 		
 		self.ops = []
 		for i in range(len(gen.ops)):
@@ -163,6 +184,7 @@ class EpsilonBandit(Mutater):
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
 			c += 1
 		print("\t\treturn " + instance.ToString())
+		
 		return instance
 	
 	def Reward(self,rewardVal):
@@ -178,6 +200,7 @@ class EpsilonBandit(Mutater):
 		print("\t\tempirical means = " , self.empiricalMeans)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
+		self.nIter += 1
 	def WriteModel(self):
 		try:
 			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:
@@ -192,6 +215,8 @@ class EpsilonBandit(Mutater):
 				for i in range(len(self.empiricalMeans)):
 					file.write(str(self.empiricalMeans[i]) + " ")
 				file.write("\n")
+				
+				file.write(str(self.nIter) + "\n")
 		except IOError as e:
 			print("Couldn't save file.")
 		
@@ -216,6 +241,9 @@ class EpsilonBandit(Mutater):
 					lines[3].pop()
 				for i in range(len(lines[3])):
 					self.empiricalMeans.append(float(lines[3][i]))
+					
+					
+				self.nIter = int(lines[4])
 				
 		except IOError as e:
 			print("Couldn't open model.")
@@ -235,7 +263,9 @@ class ThompsonBandit(Mutater):
 		else:
 			self.id = id
 			
-			
+		self.nIter = 0
+		
+
 		self.ops = []
 		for i in range(len(gen.ops)):
 			self.ops.append(gen.ops[i])
@@ -288,12 +318,16 @@ class ThompsonBandit(Mutater):
 	def Reward(self,rewardVal):
 		if rewardVal >= 0:
 			self.alphaBetaPairs[self.lastAction][0]+=1
+			rewardVal = 1.0
 		else:
 			self.alphaBetaPairs[self.lastAction][1]+=1
-
+			rewardVal = 0.0
+			
 		print("\t\tempirical means = " , self.empiricalMeans)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
+		
+		self.nIter += 1
 		
 	def WriteModel(self):
 		try:
@@ -303,6 +337,9 @@ class ThompsonBandit(Mutater):
 				for i in range(len(self.alphaBetaPairs)):
 					file.write(str(self.alphaBetaPairs[i][0]) + " " + str(self.alphaBetaPairs[i][1]) + " ")
 				file.write("\n")
+				
+				file.write(str(self.nIter) + "\n")
+				
 		except IOError as e:
 			print("Couldn't save file.")
 		
@@ -318,6 +355,8 @@ class ThompsonBandit(Mutater):
 					lines[1].pop()
 				for i in range(self.nActions):
 					self.alphaBetaPairs.append([int(lines[1][2*i]),int(lines[1][2*i+1])])
+				
+				self.nIter = int(lines[2])
 				
 		except IOError as e:
 			print("Couldn't open model.")
@@ -336,7 +375,7 @@ class UCBBandit(Mutater):
 		else:
 			self.id = id	
 			
-			
+		self.nIter = 0	
 			
 		self.ops = []
 		for i in range(len(gen.ops)):
@@ -391,6 +430,7 @@ class UCBBandit(Mutater):
 		print("\t\tempirical means = " , self.empiricalMeans)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
+		self.nIter += 1
 		
 	def WriteModel(self):
 		try:
@@ -404,6 +444,9 @@ class UCBBandit(Mutater):
 				file.write("\n")
 				
 				file.write(str(self.n) + "\n")
+				
+				file.write(str(self.nIter) + "\n")
+				
 		except IOError as e:
 			print("Couldn't save file.")
 		
@@ -428,6 +471,8 @@ class UCBBandit(Mutater):
 					self.empiricalMeans.append(float(lines[1][i]))
 					
 				self.n = int(lines[2])
+				
+				self.nIter = int(lines[3])
 				
 		except IOError as e:
 			print("Couldn't open model.")

@@ -35,3 +35,9 @@ ConstMaxValue = 1.0
 
 ##RNG
 PythonRandomSeed = -1
+
+##Bandit
+BanditAlgorithm = ""
+BanditModel = ""
+BanditTrainingMode = True
+BanditNumberTrainingIterations = 500

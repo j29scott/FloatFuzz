@@ -1,0 +1,10 @@
+#!/bin/bash
+git pull
+make cleandata;
+make cleanmodels;
+while true; do
+	python3 rand_bandit.py
+	python3 train_eps_bandit.py
+	python3 train_thomp_bandit.py
+	python3 train_ucb_bandit.py
+done
