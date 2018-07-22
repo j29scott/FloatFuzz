@@ -13,3 +13,4 @@ floatfuzz.egg-info
 out.txt
 err.txt
 tmpdata/*
+models/*
