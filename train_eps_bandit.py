@@ -9,9 +9,10 @@ rng = randrange(sys.maxsize)
 seed(rng)
 print("Seed was:", rng)
 
-
+N = 2500
 
 #seed(6446321609587222541)
 for i in range(2500):
+	print("Fuzzer Iteration " + str(i) + " of " + str(N))
 	fuzzer = Fuzzer(EpsilonBandit)
 	fuzzer.Fuzz()

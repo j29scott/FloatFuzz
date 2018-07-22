@@ -98,7 +98,8 @@ class RandomMutater(Mutater):
 		return [ast_list,indx,done]
 		
 	def Reward(self,rewardVal):
-		pass
+		with open("rewards.txt", "a") as myfile:
+			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
 		pass
@@ -130,7 +131,7 @@ class EpsilonBandit(Mutater):
 		self.lastAction = -1
 		
 	def Mutate(self, instance):
-		print("input  " + instance.ToString())
+		print("\t\tinput  " + instance.ToString())
 		instance = copy.deepcopy(instance)
 		instance.solved = False
 		self.lastAction = -1
@@ -143,19 +144,28 @@ class EpsilonBandit(Mutater):
 					self.lastAction , val = a, self.empiricalMeans[a]
 		oper = self.ops[self.lastAction]
 		
-		print("action = " + oper.name)
+		print("\t\taction = " + oper.name)
 		done = False
-		while not done:
+		c = 0
+		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
-		print("return " + instance.ToString())
+			c += 1
+		print("\t\treturn " + instance.ToString())
 		return instance
 	
 	def Reward(self,rewardVal):
+	
+		if rewardVal >= 0:
+			rewardVal = 1.0
+		else:
+			rewardVal = 0.0
+	
 		self.empiricalMeans[self.lastAction] = (self.N[self.lastAction] * self.empiricalMeans[self.lastAction] + rewardVal) / (self.N[self.lastAction] + 1)
 		self.N[self.lastAction] += 1
 		self.n += 1
-		print("empirical means = " , self.empiricalMeans)
-		
+		print("\t\tempirical means = " , self.empiricalMeans)
+		with open("rewards.txt", "a") as myfile:
+			myfile.write(str(rewardVal)+ "\n")
 	def WriteModel(self):
 		try:
 			with open("models/" +self.name + ".model", 'w') as file:
@@ -224,7 +234,7 @@ class ThompsonBandit(Mutater):
 			self.alphaBetaPairs.append([1,1])
 		
 	def Mutate(self, instance):
-		print("input  " + instance.ToString())
+		print("\t\tinput  " + instance.ToString())
 		instance = copy.deepcopy(instance)
 		instance.solved = False
 		
@@ -248,11 +258,13 @@ class ThompsonBandit(Mutater):
 				
 		oper = self.ops[self.lastAction]
 		
-		print("action = " + oper.name)
+		print("\t\taction = " + oper.name)
 		done = False
-		while not done:
+		c = 0
+		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
-		print("return " + instance.ToString())
+			c += 1
+		print("\t\treturn " + instance.ToString())
 		return instance
 	
 	def Reward(self,rewardVal):
@@ -261,7 +273,9 @@ class ThompsonBandit(Mutater):
 		else:
 			self.alphaBetaPairs[self.lastAction][1]+=1
 
-		print("empirical means = " , self.empiricalMeans)
+		print("\t\tempirical means = " , self.empiricalMeans)
+		with open("rewards.txt", "a") as myfile:
+			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
 		try:
@@ -314,7 +328,7 @@ class UCBBandit(Mutater):
 
 		
 	def Mutate(self, instance):
-		print("input  " + instance.ToString())
+		print("\t\tinput  " + instance.ToString())
 		instance = copy.deepcopy(instance)
 		instance.solved = False
 		
@@ -330,18 +344,28 @@ class UCBBandit(Mutater):
 				
 		oper = self.ops[self.lastAction]
 		
-		print("action = " + oper.name)
+		print("\t\taction = " + oper.name)
 		done = False
-		while not done:
+		c = 0
+		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
-		print("return " + instance.ToString())
+			c += 1
+		print("\t\treturn " + instance.ToString())
 		return instance
 	
 	def Reward(self,rewardVal):
+	
+		if rewardVal >= 0:
+			rewardVal = 1.0
+		else:
+			rewardVal = 0.0
+	
 		self.empiricalMeans[self.lastAction] = (self.N[self.lastAction] * self.empiricalMeans[self.lastAction] + rewardVal) / (self.N[self.lastAction] + 1)
 		self.N[self.lastAction] += 1
 		self.n += 1
-		print("empirical means = " , self.empiricalMeans)
+		print("\t\tempirical means = " , self.empiricalMeans)
+		with open("rewards.txt", "a") as myfile:
+			myfile.write(str(rewardVal) + "\n")
 		
 	def WriteModel(self):
 		try:

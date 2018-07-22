@@ -1,7 +1,7 @@
 ## Fuzzer Settings
 FuzzerNumberOfIterations = 5
 FuzzerPopulation = 5
-FuzzerNumberOfMutations = 2
+FuzzerNumberOfMutations = 3
 FuzzerNumberOfHardestKept = 1
 FuzzerOverrideTerminationOnMaxScore = False
 
