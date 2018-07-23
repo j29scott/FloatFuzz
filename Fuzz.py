@@ -7,7 +7,7 @@ import time
 from gen import *
 
 class Fuzzer:
-	def __init__(self,mutater,logName = str(time.time())):
+	def __init__(self,mutater,logName = str(time.time()),modelName = None):
 		self.nIter = Settings.FuzzerNumberOfIterations
 		self.nPop = Settings.FuzzerPopulation
 		self.nKeepBest = Settings.FuzzerNumberOfHardestKept
@@ -15,7 +15,7 @@ class Fuzzer:
 		self.nRandom = self.nPop - self.nKeepBest - self.nKeepBest * self.nMutations
 		self.logName = logName
 		self.gen = mk_gen()
-		self.mutater = mutater(self.gen)
+		self.mutater = mutater(self.gen,modelName)
 		self.mutater.ReadModel()
 		self.startPop = Settings.FuzzerNumberPopulationStart
 		

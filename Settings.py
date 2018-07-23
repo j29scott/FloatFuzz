@@ -1,13 +1,13 @@
 ## Fuzzer Settings
 FuzzerNumberOfIterations = 2
-FuzzerPopulation = 5
-FuzzerNumberOfMutations = 4
+FuzzerPopulation = 25
+FuzzerNumberOfMutations = 2
 FuzzerNumberOfHardestKept = 1
 FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
-SolverTimeout = 60
+SolverTimeout = 600
 SolverMemoryLimit = None
 
 ## Generator Settings
@@ -37,7 +37,5 @@ ConstMaxValue = 1.0
 PythonRandomSeed = -1
 
 ##Bandit
-BanditAlgorithm = ""
-BanditModel = ""
-BanditTrainingMode = True
+BanditTrainingMode = False
 BanditNumberTrainingIterations = 1000
