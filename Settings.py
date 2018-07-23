@@ -40,4 +40,4 @@ PythonRandomSeed = -1
 BanditAlgorithm = ""
 BanditModel = ""
 BanditTrainingMode = True
-BanditNumberTrainingIterations = 50000
+BanditNumberTrainingIterations = 1000

@@ -36,7 +36,7 @@ class inst:
 			out.write(";  terms = "  + str(self.numTerms) 	+ "\n" )
 			out.write(";  score = "  + str(self.Score())	+ "\n")
 			out.write(";  stdout= "  + self.stdout  		+ "\n")
-			out.write(self.ToString(consts))
+			out.write(self.ToString(consts,justVal=False))
 			out.close()
 		return
 		
