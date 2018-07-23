@@ -23,18 +23,27 @@ class Fuzzer:
 		LogPrint("Fuzzer Start")
 		hardnessLog = []
 		population = []
-		log = open("tmpdata/run"+self.logName + self.mutater.name +".txt","w")
 		ret = []
+		log = open("tmpdata/run"+self.logName + str(Settings.PythonRandomSeed) + self.mutater.name +".txt","w")
+		instanceSet = set()
 		for iter in range(self.nIter):
 			LogPrint("----------------------------------------------------")
 			LogPrint("Starting Generation #"+str(iter))
 			if iter != 0 and hardnessLog[-1] >= Settings.SolverTimeout and Settings.FuzzerOverrideTerminationOnMaxScore == False:
 				LogPrint("Achieved expected score, Fuzzing Complete.")
+				while len(hardnessLog) < self.nIter:
+					hardnessLog.append(hardnessLog[-1])
+					log.write(str(hardnessLog[-1])+"\n")
+					log.flush()
 				break
 			LogPrint("Solving.")
 			if iter == 0:
 				for i in range(self.startPop):
-					population.append(self.gen.gen())
+					inst = self.gen.gen()
+					while inst.ToString() in instanceSet:
+						inst = self.gen.gen()
+					instanceSet.add(inst.ToString())
+					population.append(inst)
 				for i in range(self.startPop):
 					population[i].Solve(self.gen.consts)
 					LogPrint("\t("+str(i+1)+"/"+str(self.startPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
@@ -45,9 +54,16 @@ class Fuzzer:
 					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Kept Inst\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
 					n += 1
 					for j in range(self.nMutations):
-						population.append(self.mutater.Mutate(population[i]))
+						inst = self.mutater.Mutate(population[i])
+						mutFail = False
+						if inst.ToString() in instanceSet:
+							mutFail = True
+							while inst.ToString() in instanceSet:
+								inst = self.gen.gen()
+								LogPrint("\t Mutation Failed.")
+						population.append(inst)
 						population[-1].Solve(self.gen.consts)
-						if Settings.BanditTrainingMode:
+						if Settings.BanditTrainingMode and not mutFail:
 							self.mutater.Reward(population[-1].time - population[i].time)
 						LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(round(population[-1].Score(),3)) + "\tTime = " + str(round(population[-1].time,3)) + "\tIsSat = "+str(population[-1].stdout))
 						n += 1

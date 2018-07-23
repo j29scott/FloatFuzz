@@ -1,0 +1,5 @@
+[joescott@gra-login1 analysis]$ sbatch eps.sh
+Submitted batch job 6524224
+[joescott@gra-login1 analysis]$ sbatch rand.sh
+
+## COULDN"T DO OTHERS

@@ -33,7 +33,7 @@ class inst:
 			out = open(outFilePath+str(time.time())+".smt2","w")
 			
 			out.write(";  time  = "  + str(self.time) 		+ "\n" )
-			out.write(";  terms = "  + str(self.numTerms) 	+ "\n" )
+			out.write(";  terms = "  + str(self.NumTerms()) 	+ "\n" )
 			out.write(";  score = "  + str(self.Score())	+ "\n")
 			out.write(";  stdout= "  + self.stdout  		+ "\n")
 			out.write(self.ToString(consts,justVal=False))
