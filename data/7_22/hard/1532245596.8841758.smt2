@@ -1,0 +1,6 @@
+;  time  = 60
+;  terms = 8
+;  score = 60
+;  stdout= timeout
+
+(fp.isNaN (fp.mul RNE (fp.min x1 x2) (fp.rem x2 x0)))
