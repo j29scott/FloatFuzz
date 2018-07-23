@@ -23,7 +23,7 @@ class Fuzzer:
 		LogPrint("Fuzzer Start")
 		hardnessLog = []
 		population = []
-		log = open("tmpdata/run"+self.logName+".txt","w")
+		log = open("tmpdata/run"+self.logName + self.mutater.name +".txt","w")
 		ret = []
 		for iter in range(self.nIter):
 			LogPrint("----------------------------------------------------")
