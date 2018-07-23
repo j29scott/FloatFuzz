@@ -12,8 +12,8 @@ SolverMemoryLimit = None
 
 ## Generator Settings
 GeneratorDepthBasedGeneration = True
-GeneratorMaxDepth = 2
-GeneratorNumConst = 2
+GeneratorMaxDepth = 3
+GeneratorNumConst = 3
 GeneratorConstWeight = 1
 GeneratorTermBasedGeneration = False
 
