@@ -1,7 +1,7 @@
 ## Fuzzer Settings
-FuzzerNumberOfIterations = 5
+FuzzerNumberOfIterations = 2
 FuzzerPopulation = 5
-FuzzerNumberOfMutations = 3
+FuzzerNumberOfMutations = 4
 FuzzerNumberOfHardestKept = 1
 FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
@@ -12,8 +12,8 @@ SolverMemoryLimit = None
 
 ## Generator Settings
 GeneratorDepthBasedGeneration = True
-GeneratorMaxDepth = 3
-GeneratorNumConst = 3
+GeneratorMaxDepth = 2
+GeneratorNumConst = 2
 GeneratorConstWeight = 1
 GeneratorTermBasedGeneration = False
 

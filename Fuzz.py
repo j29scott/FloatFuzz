@@ -1,4 +1,5 @@
 import Settings
+import sys
 from gen import *
 from inst import *
 from util import LogPrint
@@ -49,6 +50,10 @@ class Fuzzer:
 						self.mutater.Reward(population[-1].time - population[i].time)
 						LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(round(population[-1].Score(),3)) + "\tTime = " + str(round(population[-1].time,3)) + "\tIsSat = "+str(population[-1].stdout))
 						n += 1
+						if Settings.BanditTrainingMode:
+							if self.mutater.nIter >= Settings.BanditNumberTrainingIterations:
+								sys.exit(1)
+							
 				for i in range(self.nRandom):
 					population.append(self.gen.gen())
 					population[-1].Solve(self.gen.consts)
