@@ -47,7 +47,8 @@ class Fuzzer:
 					for j in range(self.nMutations):
 						population.append(self.mutater.Mutate(population[i]))
 						population[-1].Solve(self.gen.consts)
-						self.mutater.Reward(population[-1].time - population[i].time)
+						if Settings.BanditTrainingMode:
+							self.mutater.Reward(population[-1].time - population[i].time)
 						LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(round(population[-1].Score(),3)) + "\tTime = " + str(round(population[-1].time,3)) + "\tIsSat = "+str(population[-1].stdout))
 						n += 1
 						if Settings.BanditTrainingMode:
