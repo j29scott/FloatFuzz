@@ -11,5 +11,5 @@ seed(rng)
 print("Seed was:", rng)
 Settings.PythonRandomSeed = rng
 
-fuzzer = Fuzzer(EpsilonBandit,"eps")
+fuzzer = Fuzzer(EpsilonBandit,"")
 fuzzer.Fuzz()

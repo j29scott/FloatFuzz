@@ -14,6 +14,6 @@ N = Settings.BanditNumberTrainingIterations
 i=0
 #seed(6446321609587222541)
 
-fuzzer = Fuzzer(UCBBandit,"ucb")
+fuzzer = Fuzzer(UCBBandit,"")
 fuzzer.Fuzz()
 

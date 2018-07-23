@@ -12,5 +12,5 @@ print("Seed was:", rng)
 Settings.PythonRandomSeed = rng
 
 
-fuzzer = Fuzzer(RandomMutater,"rand")
+fuzzer = Fuzzer(RandomMutater,"")
 fuzzer.Fuzz()
