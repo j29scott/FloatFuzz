@@ -95,4 +95,4 @@ PythonRandomSeed = -1
 
 ##Bandit
 BanditTrainingMode = True
-BanditNumberTrainingIterations = 50
+BanditNumberTrainingIterations = 50000

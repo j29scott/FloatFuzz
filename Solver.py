@@ -83,3 +83,4 @@ class MathSat:
 		out = subprocess_cmd(cmd)
 		inst.times[self.name] = min(time.time() - start,Settings.SolverTimeout)
 		inst.stdout[self.name] = out 
+		os.remove("tmp/"+inst.name+".smt")
