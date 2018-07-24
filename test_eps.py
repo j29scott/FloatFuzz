@@ -1,6 +1,7 @@
 from mutater import *
 from gen import *
 from random import seed,randrange,Random
+from Solver import Z3Solver,XSatSolver,Colibri,MathSat
 import sys
 import pickle
 import json
@@ -11,5 +12,5 @@ seed(rng)
 print("Seed was:", rng)
 Settings.PythonRandomSeed = rng
 
-fuzzer = Fuzzer(EpsilonBandit,modelName="")
+fuzzer = Fuzzer([MathSat()],EpsilonBandit,modelName="")
 fuzzer.Fuzz()

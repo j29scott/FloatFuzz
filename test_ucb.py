@@ -1,6 +1,7 @@
 from mutater import *
 from gen import *
 from random import seed,randrange,Random
+from Solver import Z3Solver,XSatSolver,Colibri,MathSat
 import sys
 import pickle
 import Settings
@@ -14,6 +15,6 @@ N = Settings.BanditNumberTrainingIterations
 i=0
 #seed(6446321609587222541)
 
-fuzzer = Fuzzer(UCBBandit,modelName="")
+fuzzer = Fuzzer([MathSat()],UCBBandit,modelName="")
 fuzzer.Fuzz()
 
