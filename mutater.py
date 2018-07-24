@@ -195,7 +195,7 @@ class EpsilonBandit(Mutater):
 		self.empiricalMeans[self.lastAction] = (self.N[self.lastAction] * self.empiricalMeans[self.lastAction] + rewardVal) / (self.N[self.lastAction] + 1)
 		self.N[self.lastAction] += 1
 		self.n += 1
-		LogPrint("\t\tempirical means = " , self.empiricalMeans,verbose=3)
+		LogPrint("\t\tempirical means = " + str(self.empiricalMeans),verbose=3)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		self.nIter += 1
@@ -319,7 +319,7 @@ class ThompsonBandit(Mutater):
 			self.alphaBetaPairs[self.lastAction][1]+=1
 			rewardVal = 0.0
 			
-		LogPrint("\t\tempirical means = " , self.empiricalMeans,verbose=3)
+		LogPrint("\t\tempirical means = " + str(self.empiricalMeans),verbose=3)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		

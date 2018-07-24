@@ -60,7 +60,7 @@ class Colibri:
 		inst.ToFile("tmp/"+inst.name+".smt")
 		
 		#cmd = "cd solvers/xsat;" + ("make IN="+"../../tmp/"+inst.name+".smt ;") + "python2 xsat.py ; " + "cd ../../ ;"
-		cmd = "./solvers/colibri/bin/starexec_run_default tmp/"+inst.name+".smt"
+		cmd = "timeout " + str(Settings.SolverTimeout) + " " + "./solvers/colibri/bin/starexec_run_default tmp/"+inst.name+".smt"
 		start = time.time()
 		out = subprocess_cmd(cmd)
 		inst.times[self.name] = time.time() - start
@@ -78,8 +78,8 @@ class MathSat:
 		inst.ToFile("tmp/"+inst.name+".smt")
 		
 		#cmd = "cd solvers/xsat;" + ("make IN="+"../../tmp/"+inst.name+".smt ;") + "python2 xsat.py ; " + "cd ../../ ;"
-		cmd = "./solvers/mathsat-5.5.2-linux-x86_64/bin/mathsat tmp/"+inst.name+".smt"
+		cmd = "timeout " + str(Settings.SolverTimeout) + " " + "./solvers/mathsat-5.5.2-linux-x86_64/bin/mathsat tmp/"+inst.name+".smt"
 		start = time.time()
 		out = subprocess_cmd(cmd)
-		inst.times[self.name] = time.time() - start
+		inst.times[self.name] = min(time.time() - start,Settings.SolverTimeout)
 		inst.stdout[self.name] = out 

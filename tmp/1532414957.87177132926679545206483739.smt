@@ -1,0 +1,26 @@
+;  time  = {}
+;  terms = 24
+;  score = -1
+;  stdout= {}
+(set-logic QF_FP)
+(declare-const x0 (_ FloatingPoint 8 24))
+(declare-const x1 (_ FloatingPoint 8 24))
+(declare-const x2 (_ FloatingPoint 8 24))
+(declare-const x3 (_ FloatingPoint 8 24))
+(declare-const x4 (_ FloatingPoint 8 24))
+(assert (not (fp.isNaN x0)))
+(assert (not (fp.isInfinite x0)))
+(assert (not (fp.isZero x0)))
+(assert (not (fp.isNaN x1)))
+(assert (not (fp.isInfinite x1)))
+(assert (not (fp.isZero x1)))
+(assert (not (fp.isNaN x2)))
+(assert (not (fp.isInfinite x2)))
+(assert (not (fp.isZero x2)))
+(assert (not (fp.isNaN x3)))
+(assert (not (fp.isInfinite x3)))
+(assert (not (fp.isZero x3)))
+(assert (not (fp.isNaN x4)))
+(assert (not (fp.isInfinite x4)))
+(assert (not (fp.isZero x4)))
+(assert (fp.lt (fp.div RNE (fp.abs (fp.roundToIntegral RNE (fp.min x1 x3))) (fp.add RNE (fp.abs (fp.sub RNE x1 x3)) (fp.max (fp.max x0 x3) (fp.abs x0)))) (fp.sqrt RNE (fp.abs (fp.neg (fp.max x1 x2))))))(check-sat)

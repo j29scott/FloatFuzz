@@ -71,7 +71,7 @@ class Fuzzer:
 					population.append(inst)
 					self.solvers[0].Solve(population[-1],self.gen.consts)
 					if Settings.BanditTrainingMode and not mutFail:
-						self.mutater.Reward(population[-1].time - population[i].time)
+						self.mutater.Reward(population[-1].times[self.solvers[0].name] - population[i].times[self.solvers[0].name])
 					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(population[-1].Score()) + "\tTime = " + str(population[-1].times) + "\tIsSat = "+str(population[-1].stdout))
 					n += 1
 					if Settings.BanditTrainingMode:
