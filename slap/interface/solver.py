@@ -21,7 +21,7 @@ SOLVERS = {
 	'cvc4': ('cvc4', '')
 }
 
-def solve(ast, funcs, solver='z3'):
+def solve(ast, funcs, solver='z3',extra_consts = "", extra_asserts = ""):
 	'''
 	@:return Solves a problem composed of different constraints and definitions, and returns a
 	dictionary with keys 'sat' to a boolean, 'model' to the model.
@@ -38,7 +38,8 @@ def solve(ast, funcs, solver='z3'):
 	smtlib = smtlib_string(ast, funcs)
 
 	with open(tmp_filename, "w") as f:
-		f.write(smtlib)
+		f.write(extra_consts + smtlib + extra_asserts)
+		print(extra_consts + smtlib + extra_asserts)
 
 	f2 = tmpf.NamedTemporaryFile(delete=False)
 

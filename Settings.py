@@ -7,15 +7,73 @@ FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
-SolverTimeout = 600
+
+SolverTimeout = 60
 SolverMemoryLimit = None
 
+
+
 ## Generator Settings
-GeneratorDepthBasedGeneration = True
+GeneratorDepthBasedGeneration = False
 GeneratorMaxDepth = 4
 GeneratorNumConst = 4
 GeneratorConstWeight = 1
 GeneratorTermBasedGeneration = False
+
+##OPERATER Settings
+# OperatorAbs    = False
+# OperatorNeg    = True
+# OperatorAdd    = True
+# OperatorSub    = True
+# OperatorMul    = True
+# OperatorDiv    = True
+# OperatorFMA    = False
+# OperatorRem    = False
+# OperatorR2I    = False
+# OperatorSqrt   = False
+# OperatorMin    = False
+# OperatorMax    = False
+# OperatorLeq    = True
+# OperatorLt     = True
+# OperatorGeq    = True
+# OperatorGt     = True
+# OperatorEq     = True
+# OperatorIsNorm = False
+# OperatorIsSub  = False
+# OperatorIsZero = False
+# OperatorIsNan  = False
+# OperatorIsNeg  = False
+# OperatorIsPos  = False
+
+
+OperatorAbs    = True
+OperatorNeg    = True
+OperatorAdd    = True
+OperatorSub    = True
+OperatorMul    = True
+OperatorDiv    = True
+OperatorFMA    = False
+OperatorRem    = False
+OperatorR2I    = True
+OperatorSqrt   = True
+OperatorMin    = True
+OperatorMax    = True
+OperatorLeq    = True
+OperatorLt     = True
+OperatorGeq    = True
+OperatorGt     = True
+OperatorEq     = True
+OperatorIsNorm = True
+OperatorIsSub  = True
+OperatorIsZero = True
+OperatorIsNan  = True
+OperatorIsNeg  = True
+OperatorIsPos  = True
+
+##
+ForceSatisfiableInstance = False
+ForceUnsatisfiableInstance = False
+
 
 ## Logger
 Verbose = 1
@@ -28,14 +86,13 @@ ConstNonNanTerms = True
 ConstNonInfTerms = True
 ConstNonZeroTerms = True
 ConstNonSubNormalTerms = False
-ConstRestrictRange = False
-ConstMinValue = -1.0
-ConstMaxValue = 1.0
+ConstRestrictRange_m1_p1 = False
+ConstRestrictRange_fpmin_fpmax = False
 
 
 ##RNG
 PythonRandomSeed = -1
 
 ##Bandit
-BanditTrainingMode = False
-BanditNumberTrainingIterations = 1000
+BanditTrainingMode = True
+BanditNumberTrainingIterations = 50

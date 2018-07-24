@@ -7,7 +7,7 @@ import time
 from gen import *
 
 class Fuzzer:
-	def __init__(self,mutater,logName = str(time.time()),modelName = None):
+	def __init__(self,solvers,mutater,logName = str(time.time()),modelName = None):
 		self.nIter = Settings.FuzzerNumberOfIterations
 		self.nPop = Settings.FuzzerPopulation
 		self.nKeepBest = Settings.FuzzerNumberOfHardestKept
@@ -18,8 +18,14 @@ class Fuzzer:
 		self.mutater = mutater(self.gen,modelName)
 		self.mutater.ReadModel()
 		self.startPop = Settings.FuzzerNumberPopulationStart
-		
+		self.solvers = solvers
 	def Fuzz(self):
+		if len(self.solvers) == 1:
+			self.SingleSolverFuzz()
+		
+
+			
+	def SingleSolverFuzz(self):
 		LogPrint("Fuzzer Start")
 		hardnessLog = []
 		population = []
@@ -45,36 +51,41 @@ class Fuzzer:
 					instanceSet.add(inst.ToString())
 					population.append(inst)
 				for i in range(self.startPop):
-					population[i].Solve(self.gen.consts)
-					LogPrint("\t("+str(i+1)+"/"+str(self.startPop)+")\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
+					self.solvers[0].Solve(population[i],self.gen.consts)
+					LogPrint("\t("+str(i+1)+"/"+str(self.startPop)+")\t" + "Score = " +str(population[i].Score()) + "\tTime = " + str(population[i].times) + "\tIsSat = " + str(population[i].stdout))
 			else:
 				assert len(population) == self.nKeepBest, "error"
 				n = 0
 				for i in range(self.nKeepBest):
-					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Kept Inst\t" + "Score = " +str(round(population[i].Score(),3)) + "\tTime = " + str(round(population[i].time,3)) + "\tIsSat = "+str(population[i].stdout))
+					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Kept Inst\t" + "Score = " +str(population[i].Score()) + "\tTime = " + str(population[i].times) + "\tIsSat = "+str(population[i].stdout))
 					n += 1
-					for j in range(self.nMutations):
-						inst = self.mutater.Mutate(population[i])
-						mutFail = False
-						if inst.ToString() in instanceSet:
-							mutFail = True
-							while inst.ToString() in instanceSet:
-								inst = self.gen.gen()
-								LogPrint("\t Mutation Failed.")
-						population.append(inst)
-						population[-1].Solve(self.gen.consts)
-						if Settings.BanditTrainingMode and not mutFail:
-							self.mutater.Reward(population[-1].time - population[i].time)
-						LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(round(population[-1].Score(),3)) + "\tTime = " + str(round(population[-1].time,3)) + "\tIsSat = "+str(population[-1].stdout))
-						n += 1
-						if Settings.BanditTrainingMode:
-							if self.mutater.nIter >= Settings.BanditNumberTrainingIterations:
-								sys.exit(1)
-							
+				for j in range(self.nMutations):
+					inst = self.mutater.Mutate(population[i])
+					mutFail = False
+					if inst.ToString() in instanceSet:
+						mutFail = True
+						while inst.ToString() in instanceSet:
+							inst = self.gen.gen()
+							LogPrint("\t Mutation Failed.")
+					instanceSet.add(inst.ToString())
+					population.append(inst)
+					self.solvers[0].Solve(population[-1],self.gen.consts)
+					if Settings.BanditTrainingMode and not mutFail:
+						self.mutater.Reward(population[-1].time - population[i].time)
+					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(population[-1].Score()) + "\tTime = " + str(population[-1].times) + "\tIsSat = "+str(population[-1].stdout))
+					n += 1
+					if Settings.BanditTrainingMode:
+						if self.mutater.nIter >= Settings.BanditNumberTrainingIterations:
+							sys.exit(1)
+						
 				for i in range(self.nRandom):
-					population.append(self.gen.gen())
-					population[-1].Solve(self.gen.consts)
-					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\tRand Inst\t" + "Score = " +str(round(population[-1].Score(),3)) + "\tTime = " + str(round(population[-1].time,3)) + "\tIsSat = "+str(population[-1].stdout))
+					inst = self.mutater.Mutate(population[i])
+					if inst.ToString() in instanceSet:
+						while inst.ToString() in instanceSet:
+							inst = self.gen.gen()
+					population.append(inst)
+					self.solvers[0].Solve(population[-1],self.gen.consts)
+					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\tRand Inst\t" + "Score = " +str(population[-1].Score()) + "\tTime = " + str(population[-1].times) + "\tIsSat = "+str(population[-1].stdout))
 					n += 1
 			self.mutater.WriteModel()
 			population.sort()
@@ -92,8 +103,13 @@ class Fuzzer:
 			log.flush()
 			population = ret
 		self.mutater.WriteModel()
+		if len(hardnessLog) == self.nIter:
+			LogPrint("Ranout of iterations.")
 		return ret
 			
 			
 		if len(hardnessLog) == nIter:
 			LogPrint("Ranout of iterations.")
+			
+	def BinarySolver(self):
+		pass

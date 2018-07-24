@@ -248,3 +248,6 @@ def mk_fp_rtn():
 
 def mk_fp_rtz():
     return slap.theory.floatingpoint.RoundingMode("RTZ")
+	
+def mk_fp_constant(val):
+	return slap.theory.floatingpoint.RoundingMode(val)

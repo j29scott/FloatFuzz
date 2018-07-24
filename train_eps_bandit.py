@@ -1,6 +1,7 @@
 from mutater import *
 from gen import *
 from random import seed,randrange,Random
+from Solver import Z3Solver,XSatSolver,Colibri,MathSat
 import sys
 import pickle
 import json
@@ -13,6 +14,6 @@ i=0
 #seed(6446321609587222541)
 while True:
 	print("Fuzzer Iteration " + str(i))
-	fuzzer = Fuzzer(EpsilonBandit)
+	fuzzer = Fuzzer([MathSat()],EpsilonBandit)
 	fuzzer.Fuzz()
 	i+= 1

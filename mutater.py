@@ -6,7 +6,7 @@ from inst import *
 import numpy as np
 import pickle
 from Ast_List import *
-
+from util import LogPrint
 class Mutater(object):
 
 	@abstractmethod
@@ -44,7 +44,7 @@ class RandomMutater(Mutater):
 	def Mutate(self, instance):
 		numTerms = instance.NumTerms()
 		n = randint(0,numTerms-1)
-		ret = inst(copy.deepcopy(instance.val))
+		ret = inst(copy.deepcopy(instance.val),self.gen.consts)
 		[ret.val,indx,success] = self.mutate_core(ret.val,0,n,0)
 		return ret
 		
@@ -120,7 +120,7 @@ class RandomMutater(Mutater):
 			with open("models/" +self.name + str(self.id) +  ".model", 'w') as file:	
 				file.write(str(self.nIter) + "\n")
 		except IOError as e:
-			print("Couldn't save file.")
+			LogPrint("Couldn't save file.",verbose=3)
 		
 	def ReadModel(self):
 		try:
@@ -129,12 +129,11 @@ class RandomMutater(Mutater):
 				self.nIter = int(lines[0])
 				
 		except IOError as e:
-			print("Couldn't open model.")
+			LogPrint("Couldn't open model.",verbose=3)
 				
 		
 class EpsilonBandit(Mutater):
 	def __init__(self,gen=None,id=None):
-		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
@@ -164,9 +163,8 @@ class EpsilonBandit(Mutater):
 		self.lastAction = -1
 		
 	def Mutate(self, instance):
-		print("\t\tinput  " + instance.ToString())
-		instance = copy.deepcopy(instance)
-		instance.solved = False
+		LogPrint("\t\tinput  " + instance.ToString(),verbose=3)
+		instance = inst(copy.deepcopy(instance.val),self.gen.consts)
 		self.lastAction = -1
 		if np.random.rand(1)[0] < self.epsilon:
 			self.lastAction = np.random.randint(0,self.nActions)
@@ -177,13 +175,13 @@ class EpsilonBandit(Mutater):
 					self.lastAction , val = a, self.empiricalMeans[a]
 		oper = self.ops[self.lastAction]
 		
-		print("\t\taction = " + oper.name)
+		LogPrint("\t\taction = " + oper.name,verbose=3)
 		done = False
 		c = 0
 		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
 			c += 1
-		print("\t\treturn " + instance.ToString())
+		LogPrint("\t\treturn " + instance.ToString(),verbose=3)
 		
 		return instance
 	
@@ -197,7 +195,7 @@ class EpsilonBandit(Mutater):
 		self.empiricalMeans[self.lastAction] = (self.N[self.lastAction] * self.empiricalMeans[self.lastAction] + rewardVal) / (self.N[self.lastAction] + 1)
 		self.N[self.lastAction] += 1
 		self.n += 1
-		print("\t\tempirical means = " , self.empiricalMeans)
+		LogPrint("\t\tempirical means = " , self.empiricalMeans,verbose=3)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		self.nIter += 1
@@ -218,7 +216,7 @@ class EpsilonBandit(Mutater):
 				
 				file.write(str(self.nIter) + "\n")
 		except IOError as e:
-			print("Couldn't save file.")
+			LogPrint("Couldn't save file.",verbose=3)
 		
 	def ReadModel(self):
 		try:
@@ -246,13 +244,12 @@ class EpsilonBandit(Mutater):
 				self.nIter = int(lines[4])
 				
 		except IOError as e:
-			print("Couldn't open model.")
+			LogPrint("Couldn't open model.",verbose=3)
 			
 			
 	
 class ThompsonBandit(Mutater):
 	def __init__(self,gen=None,id=None):
-		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
@@ -282,9 +279,8 @@ class ThompsonBandit(Mutater):
 			self.alphaBetaPairs.append([1,1])
 		
 	def Mutate(self, instance):
-		print("\t\tinput  " + instance.ToString())
-		instance = copy.deepcopy(instance)
-		instance.solved = False
+		LogPrint("\t\tinput  " + instance.ToString(),verbose=3)
+		instance = inst(copy.deepcopy(instance.val),self.gen.consts)
 		
 		
 		#Sample
@@ -306,13 +302,13 @@ class ThompsonBandit(Mutater):
 				
 		oper = self.ops[self.lastAction]
 		
-		print("\t\taction = " + oper.name)
+		LogPrint("\t\taction = " + oper.name,verbose=3)
 		done = False
 		c = 0
 		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
 			c += 1
-		print("\t\treturn " + instance.ToString())
+		LogPrint("\t\treturn " + instance.ToString(),verbose=3)
 		return instance
 	
 	def Reward(self,rewardVal):
@@ -323,7 +319,7 @@ class ThompsonBandit(Mutater):
 			self.alphaBetaPairs[self.lastAction][1]+=1
 			rewardVal = 0.0
 			
-		print("\t\tempirical means = " , self.empiricalMeans)
+		LogPrint("\t\tempirical means = " , self.empiricalMeans,verbose=3)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		
@@ -341,7 +337,7 @@ class ThompsonBandit(Mutater):
 				file.write(str(self.nIter) + "\n")
 				
 		except IOError as e:
-			print("Couldn't save file.")
+			LogPrint("Couldn't save file.",verbose=3)
 		
 	def ReadModel(self):
 		try:
@@ -359,12 +355,11 @@ class ThompsonBandit(Mutater):
 				self.nIter = int(lines[2])
 				
 		except IOError as e:
-			print("Couldn't open model.")
+			LogPrint("Couldn't open model.",verbose=3)
 			
 			
 class UCBBandit(Mutater):
 	def __init__(self,gen=None,id=None):
-		print("hello world.")
 		if gen == None:
 			self.gen = mk_gen()
 		else:
@@ -392,10 +387,8 @@ class UCBBandit(Mutater):
 
 		
 	def Mutate(self, instance):
-		print("\t\tinput  " + instance.ToString())
-		instance = copy.deepcopy(instance)
-		instance.solved = False
-		
+		("\t\tinput  " + instance.ToString())
+		instance = inst(copy.deepcopy(instance.val),self.gen.consts)
 		
 		Hoef = np.zeros(self.nActions)
 		for a in range(self.nActions):
@@ -408,13 +401,13 @@ class UCBBandit(Mutater):
 				
 		oper = self.ops[self.lastAction]
 		
-		print("\t\taction = " + oper.name)
+		LogPrint("\t\taction = " + oper.name,verbose=3)
 		done = False
 		c = 0
 		while not done and c < 50:
 			[instance,done] = replace_fixed_op_randomly(instance,self.ops[self.lastAction],self.gen)
 			c += 1
-		print("\t\treturn " + instance.ToString())
+		LogPrint("\t\treturn " + instance.ToString(),verbose=3)
 		return instance
 	
 	def Reward(self,rewardVal):
@@ -427,7 +420,7 @@ class UCBBandit(Mutater):
 		self.empiricalMeans[self.lastAction] = (self.N[self.lastAction] * self.empiricalMeans[self.lastAction] + rewardVal) / (self.N[self.lastAction] + 1)
 		self.N[self.lastAction] += 1
 		self.n += 1
-		print("\t\tempirical means = " , self.empiricalMeans)
+		LogPrint("\t\tempirical means = " +str(self.empiricalMeans),verbose=3)
 		with open("models/" + self.name + str(self.id) +".rewards", "a") as myfile:
 			myfile.write(str(rewardVal) + "\n")
 		self.nIter += 1
@@ -448,7 +441,7 @@ class UCBBandit(Mutater):
 				file.write(str(self.nIter) + "\n")
 				
 		except IOError as e:
-			print("Couldn't save file.")
+			LogPrint("Couldn't save file.",verbose=3)
 		
 	def ReadModel(self):
 		try:
@@ -475,5 +468,5 @@ class UCBBandit(Mutater):
 				self.nIter = int(lines[3])
 				
 		except IOError as e:
-			print("Couldn't open model.")
+			LogPrint("Couldn't open model.",verbose=3)
 

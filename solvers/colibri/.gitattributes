@@ -1,0 +1,4 @@
+bin/smtlib_rte_checker diff=binary
+/other_solver/* export-ignore
+/other_solver export-ignore
+description/*

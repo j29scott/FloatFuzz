@@ -10,7 +10,7 @@ from slap.theory.scope import Let
 
 from slap.interface.context import Context
 
-def smtlib_string(ast : list, funcs):
+def smtlib_string(ast : list, funcs, extra_consts="" ,extra_asserts = ""):
     funcs = [decl_const_or_fun(definition) for definition in funcs]
     new_ast = []
     before_asserts = True
@@ -28,9 +28,10 @@ def smtlib_string(ast : list, funcs):
             new_ast.append(c)
         else:
             new_ast.append(c)
+			
     smtlib = "\n".join([str(command) for command in new_ast])
     logger.info("\n"+smtlib)
-    return smtlib
+    return extra_consts + smtlib + extra_asserts
 
 def decl_const_or_fun(definition):
     if isinstance(definition, Sort):

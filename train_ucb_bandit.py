@@ -3,6 +3,7 @@ from gen import *
 from random import seed,randrange,Random
 import sys
 import pickle
+from Solver import Z3Solver,XSatSolver,Colibri,MathSat
 import json
 from Fuzz import *
 rng = randrange(sys.maxsize)
@@ -13,8 +14,7 @@ N = Settings.BanditNumberTrainingIterations
 i=0
 #seed(6446321609587222541)
 while True:
-	print("Fuzzer Iteration " + str(i) + " of " + str(N))
-	fuzzer = Fuzzer(UCBBandit)
+	fuzzer = Fuzzer([MathSat()],UCBBandit)
 	if fuzzer.mutater.nIter >= N:
 		break
 	fuzzer.Fuzz()

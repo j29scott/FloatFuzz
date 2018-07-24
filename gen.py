@@ -33,7 +33,7 @@ class Generator:
 		ops.append(operator(None,0,False,False,weight = Settings.GeneratorConstWeight ,name = "const"))
 				
 	def gen(self,depth=0):
-		return inst(self.gen_list(depth))
+		return inst(self.gen_list(depth),self.consts)
 	
 	def BooleanOps(self):
 		return self.boolean_ops
@@ -215,28 +215,52 @@ def mk_gen(numConsts = Settings.GeneratorNumConst ,width = Settings.FloatWidth, 
 
 	rne = mk_fp_rne()
 	ops = []
-	ops.append(operator(mk_fp_abs,				nargs=1,isRounded=False,isBoolean=False	,name="abs"))
-	ops.append(operator(mk_fp_neg,				nargs=1,isRounded=False,isBoolean=False	,name="neg"))
-	ops.append(operator(mk_fp_add,				nargs=2,isRounded=True,	isBoolean=False	,name="add"))
-	ops.append(operator(mk_fp_sub,				nargs=2,isRounded=True,	isBoolean=False	,name="sub"))
-	ops.append(operator(mk_fp_mul,				nargs=2,isRounded=True,	isBoolean=False	,name="mul"))
-	ops.append(operator(mk_fp_div,				nargs=2,isRounded=True,	isBoolean=False	,name="div"))
-	ops.append(operator(mk_fp_fma,				nargs=3,isRounded=True,	isBoolean=False	,name="fma"))
-	ops.append(operator(mk_fp_rem,				nargs=2,isRounded=False,isBoolean=False	,name="rem"))
-	ops.append(operator(mk_fp_roundToIntegral,	nargs=1,isRounded=True,	isBoolean=False	,name="roundToIntegral"))
-	ops.append(operator(mk_fp_sqrt,				nargs=1,isRounded=True,	isBoolean=False	,name="sqrt"))
-	ops.append(operator(mk_fp_min,				nargs=2,isRounded=False,isBoolean=False	,name="min"))
-	ops.append(operator(mk_fp_max,				nargs=2,isRounded=False,isBoolean=False	,name="max"))
-	ops.append(operator(mk_fp_leq,				nargs=2,isRounded=False,isBoolean=True	,name="leq"))
-	ops.append(operator(mk_fp_lt,				nargs=2,isRounded=False,isBoolean=True	,name="lt"))
-	ops.append(operator(mk_fp_geq,				nargs=2,isRounded=False,isBoolean=True	,name="geq"))
-	ops.append(operator(mk_fp_gt,				nargs=2,isRounded=False,isBoolean=True	,name="gt"))
-	ops.append(operator(mk_fp_eq,				nargs=2,isRounded=False,isBoolean=True	,name="eq"))
-	ops.append(operator(mk_fp_isNormal,			nargs=1,isRounded=False,isBoolean=True	,name="isNormal"))
-	ops.append(operator(mk_fp_isSubnormal,		nargs=1,isRounded=False,isBoolean=True	,name="isSubnormal"))
-	ops.append(operator(mk_fp_isZero,			nargs=1,isRounded=False,isBoolean=True	,name="isZero"))
-	ops.append(operator(mk_fp_isNan,			nargs=1,isRounded=False,isBoolean=True	,name="isNan"))
-	ops.append(operator(mk_fp_isNegative,		nargs=1,isRounded=False,isBoolean=True	,name="isNegative"))
-	ops.append(operator(mk_fp_isPositive,		nargs=1,isRounded=False,isBoolean=True	,name="isPositive"))
+	
+	if Settings.OperatorAbs:
+		ops.append(operator(mk_fp_abs,				nargs=1,isRounded=False,isBoolean=False	,name="abs"))
+	if Settings.OperatorNeg:
+		ops.append(operator(mk_fp_neg,				nargs=1,isRounded=False,isBoolean=False	,name="neg"))
+	if Settings.OperatorAdd:
+		ops.append(operator(mk_fp_add,				nargs=2,isRounded=True,	isBoolean=False	,name="add"))
+	if Settings.OperatorSub:
+		ops.append(operator(mk_fp_sub,				nargs=2,isRounded=True,	isBoolean=False	,name="sub"))
+	if Settings.OperatorMul:
+		ops.append(operator(mk_fp_mul,				nargs=2,isRounded=True,	isBoolean=False	,name="mul"))
+	if Settings.OperatorDiv:
+		ops.append(operator(mk_fp_div,				nargs=2,isRounded=True,	isBoolean=False	,name="div"))
+	if Settings.OperatorFMA:
+		ops.append(operator(mk_fp_fma,				nargs=3,isRounded=True,	isBoolean=False	,name="fma"))
+	if Settings.OperatorRem:
+		ops.append(operator(mk_fp_rem,				nargs=2,isRounded=False,isBoolean=False	,name="rem"))
+	if Settings.OperatorR2I:
+		ops.append(operator(mk_fp_roundToIntegral,	nargs=1,isRounded=True,	isBoolean=False	,name="roundToIntegral"))
+	if Settings.OperatorSqrt:
+		ops.append(operator(mk_fp_sqrt,				nargs=1,isRounded=True,	isBoolean=False	,name="sqrt"))
+	if Settings.OperatorMin:
+		ops.append(operator(mk_fp_min,				nargs=2,isRounded=False,isBoolean=False	,name="min"))
+	if Settings.OperatorMax:
+		ops.append(operator(mk_fp_max,				nargs=2,isRounded=False,isBoolean=False	,name="max"))
+	if Settings.OperatorLeq:
+		ops.append(operator(mk_fp_leq,				nargs=2,isRounded=False,isBoolean=True	,name="leq"))
+	if Settings.OperatorLt:
+		ops.append(operator(mk_fp_lt,				nargs=2,isRounded=False,isBoolean=True	,name="lt"))
+	if Settings.OperatorGeq:
+		ops.append(operator(mk_fp_geq,				nargs=2,isRounded=False,isBoolean=True	,name="geq"))
+	if Settings.OperatorGt:
+		ops.append(operator(mk_fp_gt,				nargs=2,isRounded=False,isBoolean=True	,name="gt"))
+	if Settings.OperatorEq:
+		ops.append(operator(mk_fp_eq,				nargs=2,isRounded=False,isBoolean=True	,name="eq"))
+	if Settings.OperatorIsNorm:
+		ops.append(operator(mk_fp_isNormal,			nargs=1,isRounded=False,isBoolean=True	,name="isNormal"))
+	if Settings.OperatorIsSub:
+		ops.append(operator(mk_fp_isSubnormal,		nargs=1,isRounded=False,isBoolean=True	,name="isSubnormal"))
+	if Settings.OperatorIsZero:
+		ops.append(operator(mk_fp_isZero,			nargs=1,isRounded=False,isBoolean=True	,name="isZero"))
+	if Settings.OperatorIsNan:
+		ops.append(operator(mk_fp_isNan,			nargs=1,isRounded=False,isBoolean=True	,name="isNan"))
+	if Settings.OperatorIsNeg:
+		ops.append(operator(mk_fp_isNegative,		nargs=1,isRounded=False,isBoolean=True	,name="isNegative"))
+	if Settings.OperatorIsPos:
+		ops.append(operator(mk_fp_isPositive,		nargs=1,isRounded=False,isBoolean=True	,name="isPositive"))
 
 	return Generator(ops=ops,exponent=ne,mantisa=ns)

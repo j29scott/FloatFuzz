@@ -1,63 +1,55 @@
 import sys
 import os
+import copy
 from slap.mk import *
 from slap.interface.solver import solve
 from slap.interface.printer import smtlib_string
 import numpy as np
 import time
 import Settings
+import Consts
 
 
 
 class inst:
-	def __init__(self, val):
-		self.val = val
-		self.solved = False
-		self.time = -1
+	def __init__(self, val, consts):
+		self.val = copy.deepcopy(val)
+		self.times = {}
+		self.stdout = {}
 		self.numTerms = self.NumTerms(val)
+		self.name = str(time.time()) + str(Settings.PythonRandomSeed)
+		self.consts = consts
 		
-	def Solve(self,consts,saveIfHard=True,outFilePath="tmpdata/hard/"):
-		if self.solved:
-			print("already solved.")
-			return
-		ast = self.ToAST(consts,justVal = False)
-		self.solved = True
-		res = solve(ast,consts)
-		self.time = min(res['time'],Settings.SolverTimeout)
-		self.stdout = res['stdout']
-		if self.stdout.find("error") != -1:
-			print (self.stdout)
-			print (self.ToString(consts))
-			sys.exit(1)
-		if self.time >= Settings.SolverTimeout * 0.90 and saveIfHard:
-			out = open(outFilePath+str(time.time())+".smt2","w")
-			
-			out.write(";  time  = "  + str(self.time) 		+ "\n" )
-			out.write(";  terms = "  + str(self.NumTerms()) 	+ "\n" )
-			out.write(";  score = "  + str(self.Score())	+ "\n")
-			out.write(";  stdout= "  + self.stdout  		+ "\n")
-			out.write(self.ToString(consts,justVal=False))
-			out.close()
-		return
-		
+		self.extra_consts  = "(set-logic QF_FP)\n"
+		self.extra_asserts = ""
+		if Settings.ConstRestrictRange_m1_p1:
+			self.extra_consts += Consts.def_fp32_pone + "\n" + Consts.def_fp32_none + "\n"
+			for i in range(len(consts)):
+				self.extra_asserts += "(assert (fp.lt " + consts[i].name + " " + Consts.pone + " ))" + "\n"
+				self.extra_asserts += "(assert (fp.gt " + consts[i].name + " " + Consts.none + " ))" + "\n"
+		self.extra_asserts += "(check-sat)"
 	def Score(self):
-		#return (self.time/self.maxTime) * max((self.maxTerms - self.numTerms)/self.maxTerms,0.0)
-		if self.solved:
-			#return (self.time/self.maxTime)
-			return self.time
-		else:
-			return None
+		score = -1
+		for solver in self.times:
+			if score == -1:
+				score = 0
+			score += self.times[solver]
+		return score
 			
 	def ToString(self,consts=[],justVal = True):
 		ast = self.ToAST(consts,justVal)
 		if justVal:
 			return str(ast)
-		return str(smtlib_string(ast,consts))
+		if justVal:	
+			return str(smtlib_string(ast,consts))
+		else:
+			return self.extra_consts+smtlib_string(ast,consts)+self.extra_asserts
 		
 	def ToAST(self,consts=[],justVal=True):
 		if  justVal:
 			return self.ConvertList()
-		ast = [mk_set_logic("QF_FP")]
+		ast = []
+		#ast = [mk_set_logic("QF_FP")]
 		for i in range(len(consts)):
 			if Settings.ConstNonNanTerms:
 				ast.append(mk_assert(mk_not(mk_fp_isNan(consts[i]))))
@@ -67,8 +59,15 @@ class inst:
 				ast.append(mk_assert(mk_not(mk_fp_isZero(consts[i]))))
 			if Settings.ConstNonSubNormalTerms:
 				ast.append(mk_assert(mk_not(mk_fp_isSubnormal(consts[i]))))
-		ast.append(mk_assert(self.ConvertList()))
-		ast.append(mk_check_sat())
+		
+		if Settings.ForceUnsatisfiableInstance:
+			ast.append(mk_assert(mk_and(self.ConvertList(),mk_not(self.ConvertList()))))
+		elif Settings.ForceSatisfiableInstance:
+			ast.append(mk_assert(mk_or(self.ConvertList(),mk_not(self.ConvertList()))))
+		else:
+			ast.append(mk_assert(self.ConvertList()))
+		
+		#ast.append(mk_check_sat())
 		return ast
 		
 	def ConvertList(self,form = None, isDriver=True):
@@ -143,7 +142,14 @@ class inst:
 				ret += self.NumFloatOps(form[i],False)
 			return ret
 
-	
+	def ToFile(self,fname=""):
+		out = open(fname,"w")
+		out.write(";  time  = "  + str(self.times) 		+ "\n" )
+		out.write(";  terms = "  + str(self.NumTerms()) 	+ "\n" )
+		out.write(";  score = "  + str(self.Score())	+ "\n")
+		out.write(";  stdout= "  + str(self.stdout)  		+ "\n")
+		out.write(self.ToString(self.consts,justVal=False))
+		out.close()
 
 	def __lt__(self, other):
 		return self.Score() < other.Score()

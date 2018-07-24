@@ -1,0 +1,361 @@
+\documentclass[a4paper]{article}
+
+\usepackage{listings}
+\usepackage{xspace}
+\usepackage[utf8]{inputenc}
+\usepackage[frenchb]{babel}
+\usepackage{graphicx}
+\usepackage{xspace}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+\usepackage{wasysym}
+
+\newcommand{\pco}{{\tt PathCrawler-online.com}}
+\newcommand{\SANTE}{\ensuremath{\mbox{\scshape Sante}}\xspace}
+\newcommand{\SANTEController}{\textsc{Sante\-Controller}\xspace}
+\newcommand{\PathCrawler}{\textsc{Path\-Crawler}\xspace}
+\newcommand{\Framac}{\ensuremath{\mbox{\scshape Frama-C}}\xspace}
+\newcommand{\FramaC}{\ensuremath{\mbox{\scshape Frama-C}}\xspace}
+\newcommand{\COLIBRI}{\ensuremath{\mbox{\scshape Colibri}}\xspace}
+\newcommand{\ACSL}{\ensuremath{\mbox{\scshape ACSL}}\xspace}
+\newcommand{\PDG}{\ensuremath{\mbox{\scshape Pdg}}\xspace}
+\newcommand{\Value}{\ensuremath{\mbox{\scshape Value}}\xspace}
+\newcommand{\Slicing}{\ensuremath{\mbox{\scshape Slicing}}\xspace}
+\newcommand{\From}{\ensuremath{\mbox{\scshape From}}\xspace}
+\newcommand{\Jessie}{\ensuremath{\mbox{\scshape Jessie}}\xspace}
+\newcommand{\WP}{\ensuremath{\mbox{\scshape Wp}}\xspace}
+\newcommand{\SMTLIB}{\ensuremath{\mbox{\scshape SMT-LIB}}\xspace}
+
+\newcommand{\safe}{\textit{safe}}
+\newcommand{\bug}{\textit{bug}}
+\newcommand{\unknown}{\textit{unknown}}
+\newcommand{\alarms}{\mathop{\textit{alarms}}\nolimits}
+
+\newcommand{\todo}{\textbf{TODO}}
+\usepackage{color}
+
+\newcommand{\commentNK}[1]{\color{red}((NK: {#1}))\color{black}}
+\newcommand{\commentPC}[1]{\color{orange}((PC: {#1}))\color{black}}
+\newcommand{\commentBY}[1]{\color{blue}((BY: {#1}))\color{black}}
+\newcommand{\commentBM}[1]{\color{purple}((BM: {#1}))\color{black}}
+\newcommand{\commentOC}[1]{\color{green}((OC: {#1}))\color{black}}
+\newcommand{\commentAP}[1]{\color{gray}((AP: {#1}))\color{black}}
+
+\title{\COLIBRI}
+\author{Bruno Marre\and Benjamin Blanc\and Patricia Mouy\and Zakaria Chihani\and
+  Franck Vedrine\and François Bobot}
+
+\begin{document}
+
+\maketitle
+
+\COLIBRI{}  is a library
+(COnstraint LIBrary for ve\-RI\-fi\-cation) developed at
+CEA LIST and used for verification or test data generation purposes
+since 2000, using the techniques of constraint programming.
+The variety of types and constraints provided by \COLIBRI{} makes it possible to
+use it in many testing  tools at CEA LIST like GATeL \cite{gatelMBT10}, for model based
+testing from Lustre/SCADE, and Osmose \cite{BardinH08},
+for structural testing from binary code, \PathCrawler{} tool for
+concolic C testing.
+
+\section{General presentation}\label{SubsecColibriGeneral}
+
+\COLIBRI{} is a finite domain solver that use usual constraint
+programming techniques. The basis is that one or many domains are
+attached to each terms, and the constraints tighten the domains of one
+term using the domains of the other terms involve in the constraint.
+When no constraints could improve anymore the domain of any term, a
+decision is made. Usually it splits the domain in two, but other
+techniques can be used as 3B filtering which decide on the extremes of
+the domains and if unsatisfiable try to improve this bound.
+
+The domains are very specific, no reduction to simpler theory like
+bit-blasting is used. \COLIBRI uses a domain of union of intervals for
+real and integer inter-reduced with a domain of congruence. For
+floating points it uses a domain of interval. For bitvector a domain
+that indicates if the bits are set, unset or unknown.
+
+In addition to these domains which reason on local properties, \COLIBRI
+uses for integer, reals, and floating point DBM. The DBM use lots of
+patterns to be able to do limited but useful non-linear reasoning.
+
+The power of the reasoning of \COLIBRI, in particular in the floating
+point, are due to the information sharing and inter dependences of all these
+reasoning techniques.
+
+The combination of all the components of \COLIBRI is simplified since,
+like all CP-solver, all the domains and constraints are improving the
+same model.
+
+% \COLIBRI{} %mainly
+% provides basic constraints for arithmetic operations and
+% comparisons of various numeric types (integers, reals and floats). Cast constraints
+% are available for cast operations between these types. \COLIBRI{} also provides
+% basic procedures to instantiate variables in their domains
+% making it possible to
+% design different instantiation
+% strategies (or \textit{labeling procedures}). These
+% implement specific heuristics
+% to determine the way the variables should be instantiated during constraint resolution
+% (e.g. a particular order of instantiation)
+% and the choice of values inside their domain
+% (e.g. trying boundary or middle values first).
+% Thus the three aforementioned testing tools have
+% designed their own labeling procedures  on the basis of \COLIBRI{} primitives.
+
+
+% The domains of numerical variables are represented by %mapped to
+% unions of disjoint intervals with
+% finite bounds (no infinities or NaNs): integer bounds for integers, double float
+% bounds for reals, and double/simple float bounds for double/simple floating point
+% formats. These unions of intervals make it possible to accurately handle domain
+% differences.
+% For each numeric type and each basic unary/binary operation or
+% comparison, \COLIBRI{} provides the corresponding constraint.
+
+% Moreover, for each arithmetic operation, additional filtering rules apply %simple
+% algebraic simplifications, which are very similar for integer and real arithmetics,
+% whereas floating arithmetics uses specific rules. Here are a few examples
+% of basic algebraic simplifications.
+% \begin{itemize}
+% \item \textit{Factorization of constraints.}
+% If the constraint store contains
+% $A+B=C$ and a new contraint $A+B=X$ is added (or derived)
+% in the store, then
+% only one of these two constraints remains in the store
+% and the variables $C$ and $X$  are  \textit{unified},
+% that is, they are identified and their domain is set to the intersection
+% of the domains of $C$ and $X$.
+% \item \textit{Special values (neutral elements, absorbing elements).}
+% The constraint $A+0=X$ leads to the unification of $A$ and $X$.
+% \item \textit{Identities between arguments.}
+% The constraint $A+A=C$ is transformed into $2*A=C$ which is more
+% precisely handled by interval arithmetics.
+% The constraint $A+X=A$ in integer and real arithmetics
+% leads to the unification of $X$ with $0$  (which is not valid
+% in floating point arithmetics, cf Section~\ref{SubsecColibriRealFloat}).
+% \end{itemize}
+
+\section{Bounded and modular integer arithmetics}\label{SubsecColibriIntArithmetics}
+\COLIBRI{} provides two kinds of arithmetics for integers: bounded arithmetics for ideal
+finite integers and modular arithmetics for signed/unsigned computer integers.
+
+Bounded arithmetics is implemented with classical filtering rules for integer interval arithmetics.
+These rules are managed in the projection functions of each
+arithmetic constraint.
+Moreover, a congruence domain is associated to each integer variable.
+Filtering rules handle these congruences in order to compute new
+ones and maintain the consistency of interval bounds with
+congruences (as in \cite{LeconteB06}).
+The congruences are introduced by multiplications by a constant
+and propagated in the projection functions of each arithmetic constraint.
+
+
+
+Modular arithmetics constraints are implemented by a combination of
+bounded arithmetics constraints with modulus constraints as detailed in
+\cite{GotliebLM10}. Thus they benefit from the mechanisms provided for bounded integer
+arithmetics. Notice that using the unions of disjoint intervals for the domain
+representation makes it possible to precisely represent the domain of
+signed/unsigned integers. For example, consider the constraint $A +_{2^3} B = C$ over 3-bit
+unsigned integers where $A \in 2..4$, $B \in 4..7$ and $C \in 0..7$.
+This constraint is handled by the constraints corresponding to the bounded
+arithmetic expression $C = A + B - K * 8$
+where $K \in 0..1$ represents the overflow status.
+The filtering of these constraints converges to the interval $C \in [0..3, 6..7]$
+where the sub-interval $0..3$ of $C$ is reached when there is an overflow (i.e. $K = 1$).
+The domain representation by compact intervals in this case would be less precise and
+result in a complete interval $C \in [0..7]$ without any reduction.
+
+% \section{Example of test generation in bounded vs. modular arithmetics}\label{SubsecColibriExample}
+% %\paragraph{Example of test generation in bounded vs. modular arithmetics.}
+
+% Suppose that the constraints for the program
+% path $\pi$ executing the lines 3,4,5,6  in the program below
+% are incrementally posted to \COLIBRI{} in order to generate a test for this path.
+% \begin{lstlisting}[stepnumber=1]
+% int f(int x) {
+%   int y;
+%   if(x >= 0)
+%     y = x + 1;
+%   if(y < x)
+%     y = 0;
+%   return y;
+% }
+% \end{lstlisting}
+% Assume that logical variables $X$ and $Y$ represent the values of \verb'x' and \verb'y', and
+% the initial domain of the input is $X\in [ MinInt..MaxInt ]$.
+% Posting the constraint $X\ge 0$ reduces the domain of $X$ to  $[ 0..MaxInt ]$
+% in any kind of arithmetics.
+% If bounded arithmetics (without overflows) is used, then
+% posting the second constraint $Y=X+1$ activates filtering rules for the $plus$ constraint
+% and results in the following constraints and domains:
+% $$Y=X+1, \ \ X\in [ 0 \enskip .. \enskip MaxInt-1 ],  \ \ Y\in [ 1 \enskip .. \enskip MaxInt ].$$
+% Posting the third constraint $Y < X$ activates filtering rules again, and \COLIBRI{}
+% reports that the constraints have no solution. The desired path $\pi$ cannot
+% be activated without overflows.
+
+% If modular arithmetics (with authorized overflows) is chosen,
+% then $MaxInt+1=MinInt$, thus
+% posting the second constraint $Y=X+1$ results in
+% $$Y=X+1, \ \ X\in [0\enskip ..\enskip MaxInt],  \ \ Y\in [ MinInt ]\cup[1\enskip ..\enskip MaxInt ].$$
+% When the third constraint $Y < X$ is posted, \COLIBRI{} finds the unique solution
+% and generates a test $X=MaxInt$ activating the chosen path $\pi$.
+
+\section{Real and floating point arithmetics}\label{SubsecColibriRealFloat}
+Real arithmetics is implemented with classical
+filtering rules for real interval arithmetics
+where interval bounds are double floats. In real interval arithmetics
+each projection function is computed using different rounding modes for the lower
+and the upper bounds of the resulting intervals. The lower bound is computed by
+rounding downward, towards $-1.0\mathit{Inf}$ (i.e. $-\infty$),
+while the upper bound is computed by rounding
+upward, towards $+1.0\mathit{Inf}$ (i.e. $+\infty$).
+This enlarging ensures that the resulting interval
+is the smallest interval of doubles including all real solutions.
+
+Floating point arithmetics is implemented with a specific interval arithmetics as
+introduced by Claude Michel in \cite{Michel02}. Notice that properties like
+associativity or distributivity do not hold in floating point calculus.
+The projection functions in this arithmetics have to take into account
+{\em absorption} and {\em cancellation} phenomena specific to floating point
+computations. These phenomena are handled by specific filtering rules allowing to
+further reduce  the domains of floating point variables. For example,
+%the identity occurring in
+the constraint $A +_F X = A$ over floating point numbers
+%shows
+means that $X$ is absorbed by $A$.
+The minimal absolute value in the domain of $X$ can be used to eliminate all the
+values in the domain of $A$ that do not absorb this minimum. Thus, in double
+precision with the default rounding mode (called {\em nearest to even}), for
+$X = 1.0$ the domain of $A$ is strongly reduced to the union of two interval
+of values that can absorb $X$:
+$$[\mathit{MinDouble}\, ..\, -9007199254740996.0, \ 9007199254740992.0\, ..\, \mathit{MaxDouble}].$$
+
+\COLIBRI{} uses very general and powerful filtering rules for addition
+and subtraction operations as described in \cite{MarreM10}. For example, for the
+constraint $A+B=1.0$ in double precision with the {\em nearest to even} rounding mode,
+such filtering rules converge to the same interval for $A$ and $B$
+$$[-9007199254740991.0\ ..\ 9007199254740992.0].$$
+
+\section{Bitvectors}
+
+\COLIBRI{} doesn't use bit-blasting but a domain specific to
+bitvectors\cite{Michel2012}. It has been recently reimplemented. This
+domain is implemented with two integers (GMP), one that specify the
+bits that are known to not be set, the other that specify the bits
+that are known to be set. So all the propagations for the bitwise
+operations could be efficiently implemented. The bitvector terms are
+also seen as bounded integer terms. So the bitvector terms have two
+domains, bitvector and bounded terms with modulo, that are
+inter-reduced. The propagators for the arithmetic and bitwise
+bitvector operations work on both domains like in \cite{BardinHP10},
+where benchmarks show that \COLIBRI{} can be competitive with powerful
+SMT solvers of 2010.
+
+\section{Implementation details}\label{SubsecColibriImplementation}
+
+\COLIBRI{} is implemented in ECLiPSe Prolog \cite{Eclipse11}. Its suspensions,
+generic unification and meta-term mechanisms make it possible to easily
+design new abstract domains and associated constraints.
+Incremental constraint posting with on-the-fly filtering
+and automatic backtracking to a previous constraint state provided by \COLIBRI{}
+are important benefits for
+search-based state exploration tools, and in particular, for
+test generation tools.
+
+To conclude this presentation of \COLIBRI{}, let
+us remark that the accuracy of its implementation relies a lot on the use of union
+of intervals and the combination of abstract domain filtering rules with algebraic
+simplifications.
+% with big integer bounds or double float bounds. This could be
+%considered very expensive for constraints systems involving heavy computations.
+%However,
+% Experiments in \cite{BardinHP10} using \SMTLIB
+% benchmarks show that \COLIBRI{} can be competitive with powerful SMT solvers.
+
+
+\section{SMTCOMP 2016}
+
+Since the beginning \COLIBRI have been used at CEA, as an internal
+library. During the last months, as part of the SOPRANO project
+(ANR-14-CE28-0020), an effort have been made to make a standalone
+program from this library that could read and solve \SMTLIB problems.
+We focused on \texttt{QF\_FP} and \texttt{QF\_BV} because the technique
+used for solving these problems in the CP community (specific domains,
+propagation) are very different from the one used in SMT community
+(bit-blasting).
+
+However the semantic of \COLIBRI have been guided by its usage:
+\begin{itemize}
+\item The tools that use \COLIBRI always check the absence of RTE
+  (runtime errors eg divide by zero). So \COLIBRI
+  could make the hypothesis that all RTE are impossible and reduce the
+  domains accordingly.
+\item NaN and infinite are considered as RTE by the tools.
+\item On floating points, the IEEE equality is the only equality used.
+\item The API on floating points is limited to floating points
+  operators so $+0$ and $-0$ can be confounded (division by zero is an
+  RTE).
+\item The rounding mode \emph{Nearest to even} is the only one
+  implemented, the others are never used except in very specialized
+  programs where they are used scarcely due to the cost of changing
+  the rounding mode.
+\end{itemize}
+
+More generally \COLIBRI threat partial functions using a three valued
+logic, where a problem is unsatisfiable if it is interpreted as false
+or unknown in every model. \SMTLIB threat partial functions by making
+them total and letting models use an arbitrary value for the not
+defined cases. So \COLIBRI considers unsatisfiable problems that the
+\SMTLIB considers satisfiable.
+
+In order to bridge the gap between this two semantics we used an RTE
+checker written in OCaml and that use Z3 as a backend. We use the
+following step for solving the \SMTLIB benchmarks:
+
+\begin{enumerate}
+\item Tidy the benchmark (remove set-info, rename variables with complicated
+  names eg. \verb&|c::main::1::a!0@1#1|&,...)
+\item Send the benchmark to \COLIBRI
+  \begin{enumerate}
+  \item If \COLIBRI answer SAT, check that the models is still one
+    when $+0$ and $-0$ are distinguished.
+    \begin{enumerate}
+    \item If it is the case, return SAT
+    \item Otherwise, return UNKNOWN
+    \end{enumerate}
+  \item If \COLIBRI answer UNKNOWN, return UNKNOWN
+  \item If \COLIBRI answer UNSAT:
+    \begin{enumerate}
+    \item Generate a formula that checks if it exists a model that
+      interprets the formula as undefined in \COLIBRI semantic (eg,
+      the result of an application or variable is NaN) and that
+      satisfy the formula in \SMTLIB semantic. Send it
+      to Z3.
+      \begin{enumerate}
+      \item If Z3 answer SAT, return SAT
+      \item If Z3 answer UNKNOWN, return UNKNOWN
+      \item If Z3 answer UNSAT, return UNSAT
+      \end{enumerate}
+    \end{enumerate}
+  \end{enumerate}
+\end{enumerate}
+
+
+\bibliographystyle{abbrv}
+\bibliography{biblio2}
+
+\end{document}
+
+
+
+% Local variables:
+% mode: latex
+% TeX-master: "main.tex"
+% End:

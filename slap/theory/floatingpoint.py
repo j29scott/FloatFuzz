@@ -47,6 +47,29 @@ class RoundingMode(slap.theory.core.SpecConstant):
             return ctx.RTN()
         elif self.val == "RTZ":
             return ctx.RTZ()
+			
+			
+class DefineConst(slap.theory.core.SpecConstant):
+    def __init__(self, val):
+        slap.theory.core.SpecConstant.__init__(self, val)
+
+    def to_string(self, language):
+        return self.val
+
+    def __str__(self):
+        return self.val
+
+    def cval(self, ctx):
+        if self.val == "RNE":
+            return ctx.RNE()
+        elif self.val == "RNA":
+            return ctx.RNA()
+        elif self.val == "RTP":
+            return ctx.RTP()
+        elif self.val == "RTN":
+            return ctx.RTN()
+        elif self.val == "RTZ":
+            return ctx.RTZ()			
 
 class FloatingPointAbs(FloatingPoint):
     def __init__(self):
