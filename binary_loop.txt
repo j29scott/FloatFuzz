@@ -1,0 +1,7 @@
+#!/bin/bash
+git pull
+make cleandata;
+make cleanmodels;
+while true; do
+	python3 binary.py
+done
