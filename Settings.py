@@ -1,7 +1,7 @@
 ## Fuzzer Settings
-FuzzerNumberOfIterations = 25
+FuzzerNumberOfIterations = 2
 FuzzerPopulation = 5
-FuzzerNumberOfMutations = 2
+FuzzerNumberOfMutations = 4
 FuzzerNumberOfHardestKept = 1
 FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
@@ -94,5 +94,5 @@ ConstRestrictRange_fpmin_fpmax = False
 PythonRandomSeed = -1
 
 ##Bandit
-BanditTrainingMode = False
-BanditNumberTrainingIterations = 50000
+BanditTrainingMode = True
+BanditNumberTrainingIterations = 600

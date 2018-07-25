@@ -17,7 +17,7 @@ i=0
 #seed(6446321609587222541)
 while True:
 	print("Fuzzer Iteration " + str(i) + " of " + str(N))
-	fuzzer = Fuzzer([Z3Solver,MathSat],RandomMutater)
+	fuzzer = Fuzzer([Z3Solver,MathSat],ThompsonBandit)
 	if fuzzer.mutater.nIter >= N:
 		break
 	fuzzer.Fuzz()
