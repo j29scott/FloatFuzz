@@ -104,6 +104,7 @@ class Fuzzer:
 			log.write(str(hardestSum/self.nKeepBest)+"\n")
 			log.flush()
 			population = ret
+			population[0].ToFile("tmpdata/final/"+"run"+self.logName + str(Settings.PythonRandomSeed) + self.mutater.name)
 		self.mutater.WriteModel()
 		if len(hardnessLog) == self.nIter:
 			LogPrint("Ranout of iterations.")
