@@ -7,7 +7,7 @@ FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
-
+PrimarySolver = "z3"
 SolverTimeout = 600
 SolverMemoryLimit = None
 
@@ -15,8 +15,8 @@ SolverMemoryLimit = None
 
 ## Generator Settings
 GeneratorDepthBasedGeneration = False
-GeneratorMaxDepth = 8
-GeneratorNumConst = 8
+GeneratorMaxDepth = 4
+GeneratorNumConst = 4
 GeneratorConstWeight = 1
 GeneratorTermBasedGeneration = False
 

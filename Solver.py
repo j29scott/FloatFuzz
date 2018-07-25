@@ -47,7 +47,7 @@ class XSatSolver:
 		out = subprocess_cmd(cmd)
 		inst.times[self.name] = time.time() - start
 		inst.stdout[self.name] = out 
-		
+		os.remove("tmp/"+inst.name+".smt")
 		
 		
 class Colibri:
@@ -65,7 +65,7 @@ class Colibri:
 		out = subprocess_cmd(cmd)
 		inst.times[self.name] = time.time() - start
 		inst.stdout[self.name] = out 
-		
+		os.remove("tmp/"+inst.name+".smt")
 		
 		
 class MathSat:

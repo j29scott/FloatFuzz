@@ -29,12 +29,22 @@ class inst:
 				self.extra_asserts += "(assert (fp.gt " + consts[i].name + " " + Consts.none + " ))" + "\n"
 		self.extra_asserts += "(check-sat)"
 	def Score(self):
-		score = -1
-		for solver in self.times:
-			if score == -1:
-				score = 0
-			score += self.times[solver]
+		score = 0
+		if len(self.times) == 1:
+			score = 0
+			for solver in self.times:
+				score += self.times[solver]
+		else:
+			main_score = -1
+			other_score = 999999999999999.0
+			for solver in self.times:
+				if solver == Settings.PrimarySolver:
+					main_score = self.times[solver]
+				else:
+					other_score = min(other_score,self.times[solver])
+				score = other_score - main_score
 		return score
+			
 			
 	def ToString(self,consts=[],justVal = True):
 		ast = self.ToAST(consts,justVal)
