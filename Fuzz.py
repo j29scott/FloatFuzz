@@ -112,3 +112,6 @@ class Fuzzer:
 			
 		if len(hardnessLog) == nIter:
 			LogPrint("Ranout of iterations.")
+			
+	def CrossValidation(self):
+		

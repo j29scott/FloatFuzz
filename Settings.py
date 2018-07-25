@@ -8,7 +8,7 @@ FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
 PrimarySolver = "z3"
-SolverTimeout = 600
+SolverTimeout = 60
 SolverMemoryLimit = None
 
 
@@ -95,4 +95,4 @@ PythonRandomSeed = -1
 
 ##Bandit
 BanditTrainingMode = True
-BanditNumberTrainingIterations = 600
+BanditNumberTrainingIterations = 50000
