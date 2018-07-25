@@ -15,6 +15,6 @@ N = Settings.BanditNumberTrainingIterations
 i=0
 #seed(6446321609587222541)
 
-fuzzer = Fuzzer([TestZ3Solver,MathSat],UCBBandit,modelName="")
+fuzzer = Fuzzer([Z3Solver,MathSat],UCBBandit,modelName="")
 fuzzer.Fuzz()
 
