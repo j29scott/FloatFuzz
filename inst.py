@@ -163,3 +163,6 @@ class inst:
 
 	def __lt__(self, other):
 		return self.Score() < other.Score()
+		
+	#def ToMatrix(self,gen):
+		#for i in range(
