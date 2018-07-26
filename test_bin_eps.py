@@ -12,5 +12,5 @@ seed(rng)
 print("Seed was:", rng)
 Settings.PythonRandomSeed = rng
 
-fuzzer = Fuzzer([Z3Solver,MathSat],EpsilonBandit,modelName="")
+fuzzer = Fuzzer([MathSat,Z3Solver],EpsilonBandit,modelName="")
 fuzzer.Fuzz()
