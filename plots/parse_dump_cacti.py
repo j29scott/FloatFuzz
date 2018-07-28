@@ -47,19 +47,19 @@ def makeCactiLine(files):
 	print(cacti)
 	return cacti
 
-all = makeCactiLine(glob.glob("FloatFuzz/data/7_25_test/final/*rand*"))
+all = makeCactiLine(glob.glob("../data/7_26_test/final/*rand*"))
 plt.plot(all['z3'],label = "z3 rand")
 plt.plot(all['mathsat'],label = "MathSat rand")	
 
-all = makeCactiLine(glob.glob("FloatFuzz/data/7_25_test/final/*Eps*"))
+all = makeCactiLine(glob.glob("../data/7_26_test/final/*Eps*"))
 plt.plot(all['z3'],label = "z3 eps")
 plt.plot(all['mathsat'],label = "MathSat eps")	
 
-all = makeCactiLine(glob.glob("FloatFuzz/data/7_25_test/final/*Thomp*"))
+all = makeCactiLine(glob.glob("../data/7_26_test/final/*Thomp*"))
 plt.plot(all['z3'],label = "z3 Thomp")
 plt.plot(all['mathsat'],label = "MathSat Thomp")	
 
-all = makeCactiLine(glob.glob("FloatFuzz/data/7_25_test/final/*UCB*"))
+all = makeCactiLine(glob.glob("../data/7_26_test/final/*UCB*"))
 plt.plot(all['z3'],label = "z3 UCB")
 plt.plot(all['mathsat'],label = "MathSat UCB")	
 

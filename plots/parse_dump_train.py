@@ -31,10 +31,10 @@ def getData(files):
 
 
 scores = []
-scores.append(getData(glob.glob("FloatFuzz/data/7_25_train/rand*.rew*")))
-scores.append(getData(glob.glob("FloatFuzz/data/7_25_train/Eps*.rew*")))		
-scores.append(getData(glob.glob("FloatFuzz/data/7_25_train/Thom*.rew*")))	
-scores.append(getData(glob.glob("FloatFuzz/data/7_25_train/UCB*.rew*")))	
+scores.append(getData(glob.glob("../data/7_25_train/rand*.rew*")))
+scores.append(getData(glob.glob("../data/7_25_train/Eps*.rew*")))		
+scores.append(getData(glob.glob("../data/7_25_train/Thom*.rew*")))	
+scores.append(getData(glob.glob("../data/7_25_train/UCB*.rew*")))	
 plt.plot(scores[0],label = "Random")
 plt.plot(scores[1],label = "Epsilon")
 plt.plot(scores[2],label = "Thompson")
