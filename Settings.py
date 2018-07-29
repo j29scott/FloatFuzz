@@ -7,7 +7,7 @@ FuzzerOverrideTerminationOnMaxScore = False
 FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
-PrimarySolver = "mathsat"
+PrimarySolver = "z3"
 SolverTimeout = 600
 SolverMemoryLimit = None
 

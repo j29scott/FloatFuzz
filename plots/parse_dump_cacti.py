@@ -47,32 +47,35 @@ def makeCactiLine(files):
 	print(cacti)
 	return cacti
 
-all = makeCactiLine(glob.glob("../data/7_26_test/final/*rand*"))
+	
+dir = "../data/7_28_test_mathvz3/final/"	
+	
+all = makeCactiLine(glob.glob(dir + "*rand*"))
 plt.plot(all['z3'],label = "z3 rand")
 plt.plot(all['mathsat'],label = "MathSat rand")	
 
-all = makeCactiLine(glob.glob("../data/7_26_test/final/*Eps*"))
+plt.legend()
+plt.show()
+
+all = makeCactiLine(glob.glob(dir + "*Eps*"))
 plt.plot(all['z3'],label = "z3 eps")
 plt.plot(all['mathsat'],label = "MathSat eps")	
 
-all = makeCactiLine(glob.glob("../data/7_26_test/final/*Thomp*"))
+plt.legend()
+plt.show()
+
+all = makeCactiLine(glob.glob(dir + "*Thomp*"))
 plt.plot(all['z3'],label = "z3 Thomp")
 plt.plot(all['mathsat'],label = "MathSat Thomp")	
 
-all = makeCactiLine(glob.glob("../data/7_26_test/final/*UCB*"))
+plt.legend()
+plt.show()
+
+all = makeCactiLine(glob.glob(dir + "*UCB*"))
 plt.plot(all['z3'],label = "z3 UCB")
 plt.plot(all['mathsat'],label = "MathSat UCB")	
 
-
-#print(avgEps(glob.glob("FloatFuzz/data/7_25_train/Eps*.model")))
-#print(avgThomp(glob.glob("FloatFuzz/data/7_25_train/Thomp*.model")))
-#print(avgUCB(glob.glob("FloatFuzz/data/7_25_train/UCB*.model")))
-#getData(glob.glob("FloatFuzz/data/7_23_train/run*Eps*.txt")))	
-#getData(glob.glob("FloatFuzz/data/7_23_train/run*Thomp*.txt"))
-#getData(glob.glob("FloatFuzz/data/7_23_train/run*UCB*.txt"))
-#plt.plot(scores[0],label = "Random")
-#plt.plot(scores[1],label = "Epsilon")
-#plt.plot(scores[2],label = "Thompson")
-#plt.plot(scores[3],label = "UCB")
 plt.legend()
 plt.show()
+
+
