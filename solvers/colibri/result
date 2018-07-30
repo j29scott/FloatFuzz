@@ -1,1 +1,1 @@
-sat
+./solvers/colibri/bin/starexec_run_default: line 61: ./smt_colibri_local_linux.sh: Permission denied
