@@ -6,10 +6,18 @@ import time
 from slap.interface.solver import solve
 
 def subprocess_cmd(command):
-	process = subprocess.Popen(command,stdout=subprocess.PIPE, shell=True)
-	proc_stdout = process.communicate()[0].decode('utf-8').strip()
-	print(proc_stdout,file=sys.stderr)
+	process = subprocess.Popen(command,stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+	proc_stdout,proc_stderr = process.communicate() #()[0].decode('utf-8').strip()
+	proc_stdout = proc_stdout.decode('utf-8').strip()
+	proc_stderr = proc_stderr.decode('utf-8').strip()
 	lines = str(proc_stdout).split("\n")
+	
+	#print(proc_stderr,file=sys.stderr)
+	
+	if proc_stderr.find("error") != -1 or proc_stderr.find("Error") != -1 or proc_stderr.find("traceback") != -1 or proc_stderr.find("Traceback") != -1:
+		return "err"
+	if proc_stderr != "":
+		print("unhandled error warning.",file=sys.stderr)
 	return lines[-1]
 
 class Z3Solver:

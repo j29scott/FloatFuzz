@@ -1,0 +1,11 @@
+Training:
+	Z3 				-> 7_23_train
+	MathSat 		-> 7_24_train
+	Z3 vs MathSat 	-> 7_25_train
+	MathSat vs Z3	-> 7_26_train
+	
+Evaluation:
+	Z3				-> 7_23_analysis2
+	MathSat			-> 7_25_test2
+	Z3 vs MathSat	-> 7_29
+	MathSat vs Z3	-> 7_28_test_mathvz3

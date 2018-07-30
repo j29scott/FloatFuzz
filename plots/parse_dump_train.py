@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import glob
 
-length = 500
+length = 1000
 min_rew = 50
 def getData(files):
 	avg = []
@@ -31,13 +31,15 @@ def getData(files):
 
 
 scores = []
-scores.append(getData(glob.glob("../data/7_25_train/rand*.rew*")))
-scores.append(getData(glob.glob("../data/7_25_train/Eps*.rew*")))		
-scores.append(getData(glob.glob("../data/7_25_train/Thom*.rew*")))	
-scores.append(getData(glob.glob("../data/7_25_train/UCB*.rew*")))	
+dir = "../data/7_28_test_mathvz3/"
+scores.append(getData(glob.glob(dir+"rand*.rew*")))
+scores.append(getData(glob.glob(dir+"Eps*.rew*")))		
+scores.append(getData(glob.glob(dir+"Thom*.rew*")))	
+scores.append(getData(glob.glob(dir+"UCB*.rew*")))	
 plt.plot(scores[0],label = "Random")
 plt.plot(scores[1],label = "Epsilon")
 plt.plot(scores[2],label = "Thompson")
 plt.plot(scores[3],label = "UCB")
+plt.xscale('log')
 plt.legend()
 plt.show()

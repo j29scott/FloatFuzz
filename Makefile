@@ -29,6 +29,7 @@ cleandata:
 	rm -rf tmpdata/*
 	mkdir tmpdata/hard
 	mkdir tmpdata/final
+	mkdir tmpdata/bug
 cleandatanosave:
 	rm -rf tmpdata/*
 	mkdir tmpdata/hard

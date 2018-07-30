@@ -8,14 +8,15 @@ FuzzerNumberPopulationStart = 1
 
 ## Solver Settings
 PrimarySolver = "z3"
-SolverTimeout = 600
+BugMode = True
+SolverTimeout = 30
 SolverMemoryLimit = None
 
 
 
 ## Generator Settings
 GeneratorDepthBasedGeneration = False
-GeneratorMaxDepth = 6
+GeneratorMaxDepth = 2
 GeneratorNumConst = 10
 GeneratorConstWeight = 1
 GeneratorTermBasedGeneration = False
@@ -52,8 +53,8 @@ OperatorAdd    = True
 OperatorSub    = True
 OperatorMul    = True
 OperatorDiv    = True
-OperatorFMA    = False
-OperatorRem    = False
+OperatorFMA    = True
+OperatorRem    = True
 OperatorR2I    = True
 OperatorSqrt   = True
 OperatorMin    = True
@@ -82,11 +83,11 @@ Verbose = 1
 FloatWidth = 32
 
 ##Const Settings
-ConstNonNanTerms = True
-ConstNonInfTerms = True
-ConstNonZeroTerms = True
+ConstNonNanTerms = False
+ConstNonInfTerms = False
+ConstNonZeroTerms = False
 ConstNonSubNormalTerms = False
-ConstRestrictRange_m1_p1 = False
+ConstRestrictRange_m1_p1 = True
 ConstRestrictRange_fpmin_fpmax = False
 
 
@@ -94,5 +95,5 @@ ConstRestrictRange_fpmin_fpmax = False
 PythonRandomSeed = -1
 
 ##Bandit
-BanditTrainingMode = False
+BanditTrainingMode = True
 BanditNumberTrainingIterations = 5000

@@ -109,3 +109,21 @@ class Fuzzer:
 		if len(hardnessLog) == self.nIter:
 			LogPrint("Ranout of iterations.")
 		return ret
+	
+	def Find_Bugs(self):
+		while True:
+			self.mutater.WriteModel()
+			inst = self.gen.gen()
+			for i in range(len(self.solvers)):
+				self.solvers[i].Solve(inst,self.gen.consts)
+			if inst.Inconsistent():
+				inst.ToFile("tmpdata/bug/" + inst.name + ".smt")
+				continue
+			inst = self.mutater.Mutate(inst)
+			for i in range(len(self.solvers)):
+				self.solvers[i].Solve(inst,self.gen.consts)
+			if inst.Inconsistent():
+				inst.ToFile("tmpdata/bug/" + inst.name + ".smt")
+				self.mutater.Reward(1.0)
+			else:
+				self.mutater.Reward(-1.0)

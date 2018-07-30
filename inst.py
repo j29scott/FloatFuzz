@@ -29,7 +29,14 @@ class inst:
 				self.extra_asserts += "(assert (fp.gt " + consts[i].name + " " + Consts.none + " ))" + "\n"
 		self.extra_asserts += "(check-sat)"
 	def Score(self):
+	
 		score = 0
+		if Settings.BugMode:
+			if self.Inconsistent():
+				return 1.0
+			else:
+				return 0.0
+
 		if len(self.times) == 1:
 			score = 0
 			for solver in self.times:
@@ -163,6 +170,27 @@ class inst:
 
 	def __lt__(self, other):
 		return self.Score() < other.Score()
-		
+	
+	def Inconsistent(self):
+		print("stdout",self.stdout)
+		for solver in self.stdout:
+			clean = ""
+			for i in range(len(self.stdout[solver])):
+				if self.stdout[solver][i].isalpha():
+					clean = clean + self.stdout[solver][i]
+			self.stdout[solver] = clean
+		ans = ""
+		for solver in self.stdout:
+			if self.stdout[solver] == "timeout" or self.stdout[solver] == "unknown" or self.stdout[solver] == "err":
+				continue
+			if ans == "":
+				ans = self.stdout[solver]
+				continue
+			if ans == self.stdout[solver]:
+				continue
+			print(ans + " != " + self.stdout[solver])
+			return True
+		return False
+	
 	#def ToMatrix(self,gen):
 		#for i in range(

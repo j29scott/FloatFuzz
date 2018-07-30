@@ -23,7 +23,7 @@ def getData(files):
 		
 		if len(data) > 0:
 			N = max(N,len(data[-1]))
-	N =min(N,length)
+	N =min(N,npop)
 	for i in range(N):
 		for j in range(len(data)):
 			if i < len(data[j]):
@@ -34,6 +34,8 @@ def getData(files):
 						#data[j].append(timeout)
 						data[j] = np.append(data[j],timeout)
 					break
+			elif i == len(data[j]):
+				data[j] = np.append(data[j],data[j][-1])
 		x = 0.0
 		m=0.0
 		for j in range(len(data)):
@@ -47,7 +49,7 @@ def getData(files):
 		avg.append(x/m)
 	return avg
 
-dir = "../data/7_29/"	
+dir = "../data/7_28_test_mathvz3/"	
 	
 scores = []
 scores.append(getData(glob.glob(dir + "run*random*.txt")))

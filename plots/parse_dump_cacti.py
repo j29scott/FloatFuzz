@@ -5,7 +5,7 @@ import glob
 import io
 import json
 
-
+max_n = 100
 
 def getTimes(files):
 	data = []
@@ -44,7 +44,11 @@ def makeCactiLine(files):
 				break
 			else:
 				cacti[solver].append(data[solver][i] + cacti[solver][i-1])
-	print(cacti)
+	#print(cacti)
+	print(len(cacti))
+	for solver in cacti:
+		while len(cacti[solver]) > max_n:
+			cacti[solver].pop(0)
 	return cacti
 
 	
