@@ -16,3 +16,4 @@ tmpdata/*
 models/*
 test/*
 tmp/*
+solvers/colibri/*
