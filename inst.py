@@ -31,7 +31,6 @@ class inst:
 	def Score(self):
 	
 		score = 0
-		other_score = 
 		if Settings.BugMode:
 			if self.Inconsistent():
 				return 1.0
