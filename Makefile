@@ -27,6 +27,7 @@ cleanmodels:
 
 cleandata:
 	rm -rf tmpdata/*
+	rm -rf tmp/*
 	mkdir tmpdata/hard
 	mkdir tmpdata/final
 	mkdir tmpdata/bug
