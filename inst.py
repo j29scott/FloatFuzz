@@ -31,6 +31,7 @@ class inst:
 	def Score(self):
 	
 		score = 0
+		other_score = 
 		if Settings.BugMode:
 			if self.Inconsistent():
 				return 1.0
@@ -50,9 +51,9 @@ class inst:
 				else:
 					other_score = min(other_score,self.times[solver])
 		
-		if other_score >= Settings.SolverTimeout:
-			other_score = Settings.SolverTimeout * 2.0
-		score = other_score - main_score
+			if other_score >= Settings.SolverTimeout:
+				other_score = Settings.SolverTimeout * 2.0
+			score = other_score - main_score
 		return score
 			
 			
