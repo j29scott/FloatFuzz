@@ -49,7 +49,10 @@ class inst:
 					main_score = self.times[solver]
 				else:
 					other_score = min(other_score,self.times[solver])
-				score = other_score - main_score
+		
+		if other_score >= Settings.SolverTimeout:
+			other_score = Settings.SolverTimeout * 2.0
+		score = other_score - main_score
 		return score
 			
 			

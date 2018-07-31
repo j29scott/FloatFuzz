@@ -31,7 +31,7 @@ def getData(files):
 
 
 scores = []
-dir = "../data/7_28_test_mathvz3/"
+dir = "../data/7_30/models/"
 scores.append(getData(glob.glob(dir+"rand*.rew*")))
 scores.append(getData(glob.glob(dir+"Eps*.rew*")))		
 scores.append(getData(glob.glob(dir+"Thom*.rew*")))	
