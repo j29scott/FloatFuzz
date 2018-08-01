@@ -21,6 +21,7 @@ class Fuzzer:
 		self.solvers = []
 		for i in range(len(solvers)):
 			self.solvers.append(solvers[i]())
+		Settings.PrimarySolver = self.solvers[0].name
 	def Fuzz(self):
 		return self.FuzzerLoop()
 			
@@ -72,7 +73,7 @@ class Fuzzer:
 					for k in range(len(self.solvers)):
 						self.solvers[k].Solve(population[-1],self.gen.consts)
 					if Settings.BanditTrainingMode and not mutFail:
-						self.mutater.Reward(population[-1].Score())
+						self.mutater.Reward(population[0].Score() - population[imut].Score())
 					LogPrint("\t("+str(n+1)+"/"+str(self.nPop)+")\t Mutated Inst\t" + "Score = " +str(population[-1].Score()) + "\tTime = " + str(population[-1].times) + "\tIsSat = "+str(population[-1].stdout))
 					n += 1
 					if Settings.BanditTrainingMode:

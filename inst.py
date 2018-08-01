@@ -29,7 +29,6 @@ class inst:
 				self.extra_asserts += "(assert (fp.gt " + consts[i].name + " " + Consts.none + " ))" + "\n"
 		self.extra_asserts += "(check-sat)"
 	def Score(self):
-	
 		score = 0
 		if Settings.BugMode:
 			if self.Inconsistent():
